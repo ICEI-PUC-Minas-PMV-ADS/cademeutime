@@ -12,10 +12,15 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 ## Integrantes
 
 :small_blue_diamond: Ayrles Alves de Lima Sales
+
 :small_blue_diamond: Fernanda Araujo Macieira
+
 :small_blue_diamond: Gabriela França Alves Miranda
+
 :small_blue_diamond: Katryn Ribeiro de Jesus Oliveira
+
 :small_blue_diamond: Paola Marsura Verreschi de Oliveira
+
 :small_blue_diamond: Ríder Rocha Cantuária
 
 ## Orientador
