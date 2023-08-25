@@ -1,41 +1,35 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+No cenário atual, encontrar parceiros para a prática de esportes ou atividades físicas em comum pode ser um desafio, especialmente quando se busca motivação, companhia e a oportunidade de compartilhar interesses saudáveis. A falta de uma plataforma adequada para a conexão entre pessoas com objetivos semelhantes pode levar a dificuldades na formação de hábitos ativos e a uma sensação de isolamento na busca por um estilo de vida saudável.
+
+Nossa proposta visa resolver esse problema ao desenvolver um aplicativo inovador que permita às pessoas encontrarem facilmente outras pessoas em suas proximidades que compartilham o interesse por um mesmo esporte ou atividade física.
+
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Surge como uma solução para a lacuna existente na conexão entre entusiastas de esportes e atividades físicas. Ao promover encontros para a prática de exercícios, o aplicativo contribui diretamente para a saúde física e mental dos usuários, incentivando um estilo de vida ativo e socialmente engajado. Além disso, ao criar uma comunidade unida em torno de interesses comuns, combatendo a solidão e a falta de motivação, o que muitas vezes são obstáculos para a adesão consistente a hábitos saudáveis.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Desenvolver um aplicativo móvel que facilite a conexão entre indivíduos que compartilham o interesse por esportes e atividades físicas, proporcionando uma plataforma para a formação de parcerias de treino e a construção de uma comunidade saudável e motivadora.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Como objetivos específicos, destacamos:
+
+- Criar uma interface intuitiva e amigável para os usuários, permitindo o fácil registro e gerenciamento de perfis com informações sobre esportes preferidos e disponibilidade.
+
+- Implementar um sistema de geolocalização eficiente que permita aos usuários localizar parceiros de atividades físicas próximos a eles.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A prática de exercícios em grupo tem sido objeto de estudos e reportagens que apontam benefícios significativos para a motivação e resultados. Nesse contexto, o aplicativo surge como uma solução que conecta pessoas com interesses esportivos similares.
+Estudos como o da American Osteopathic Association indicam que o exercício em grupo melhora o bem-estar mental, reduzindo estresse e ansiedade. Além disso, sites como, YoPro e PulseAcademia, relatam a influência positiva da conversa entre parceiros de treino nos resultados e no ânimo assim como no esforço e na atenção durante os exercícios.
+À luz desses dados, se alinha às tendências identificadas nos estudos e reportagens, fornecendo uma plataforma para a prática esportiva em grupo, incentivando a motivação e a formação de conexões saudáveis. A criação do aplicativo encontra respaldo na necessidade de fortalecer o suporte social, fator fundamental para o sucesso de rotinas de exercícios e promoção de bem-estar físico e emocional.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O aplicativo é direcionado a pessoas de todas as idades que procuram parceiros para praticar esportes ou atividades físicas em grupo. Isso inclui entusiastas do fitness, iniciantes em busca de apoio, pessoas que buscam diversificar suas rotinas de exercícios e até mesmo indivíduos que desejam expandir suas redes sociais por meio de interesses compartilhados.
+
 
 Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
