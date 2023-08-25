@@ -29,12 +29,3 @@ Estudos como o da American Osteopathic Association indicam que o exercício em g
 ## Público-Alvo
 
 O aplicativo é direcionado a pessoas de todas as idades que procuram parceiros para praticar esportes ou atividades físicas em grupo. Isso inclui entusiastas do fitness, iniciantes em busca de apoio, pessoas que buscam diversificar suas rotinas de exercícios e até mesmo indivíduos que desejam expandir suas redes sociais por meio de interesses compartilhados.
-
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
