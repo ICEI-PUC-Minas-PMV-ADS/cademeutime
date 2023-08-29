@@ -79,31 +79,28 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Cadastro de Usuário:Os usuários devem poder criar contas na aplicação, fornecendo informações básicas como nome, e-mail e senha. | ALTA | 
+|RF-002| Autenticação e Autorização:A aplicação deve permitir que os usuários façam login de forma segura e autorizada. | MÉDIA |
+|RF-003| Criação de Eventos Esportivos: Os usuários devem ser capazes de criar eventos esportivos, definindo detalhes como localização, dados, horário e tipo de esporte.   | MÉDIA |
+|RF-004| Visualização de Eventos: Os usuários devem poder ver uma lista de eventos esportivos disponíveis, com detalhes como localização no mapa, participantes confirmados e informações relevantes.   | MÉDIA |
+|RF-005| Participação em Eventos: Os usuários devem poder se inscrever em eventos esportivos existentes e confirmar sua participação.   | MÉDIA |
+|RF-006| Integração com API de Geolocalização:A aplicação deve integrar-se a uma API de geolocalização para exibir a localização dos eventos no mapa. Os eventos devem ser marcados de forma clara no mapa, permitindo que os usuários visualizem facilmente sua proximidade.   | MÉDIA |
+|RF-007| Notificações: Os usuários devem receber notificações sobre eventos próximos, atualizações de eventos em que estão inscritos e outras informações relevantes.  | MÉDIA |
+|RF-008| Avaliação e Comentários: Os usuários devem poder avaliar eventos após a participação e deixar comentários para compartilhar experiências. | MÉDIA |
 
 ### Requisitos não Funcionais
 
+
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
+|RNF-001| Desempenho: A aplicação deve ter tempos de resposta rápidos ao carregar eventos e atualizar informações. A integração com uma API de geolocalização não deve causar atrasos visíveis na exibição do mapa. | MÉDIA | 
+|RNF-002| Segurança: As senhas dos usuários devem ser armazenadas de forma segura utilizando técnicas de hash e salting. As comunicações entre a aplicação e os servidores devem ser criptografados usando HTTPS. |  BAIXA |
+|RNF-003| Escalabilidade: A aplicação deve ser capaz de lidar com um aumento no número de usuários e eventos sem liberação significativa do desempenho. |  BAIXA | 
+|RNF-004| Disponibilidade:A aplicação deve ter alta disponibilidade, minimizando o tempo de inatividade não planejado. |  BAIXA |
+|RNF-005| Compatibilidade com Dispositivos: A aplicação deve ser responsiva e funcionar bem em dispositivos móveis, tablets e desktops. |  BAIXA |
+|RNF-006| Interface intuitiva: A interface do usuário deve ser intuitiva e fácil de usar, mesmo para novos usuários. | BAIXA |
+|RNF-007| Backup e Recuperação: Deve haver um sistema de backup regular para garantir que os dados dos eventos e dos usuários sejam protegidos contra perda.  | BAIXA | 
+ 
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
