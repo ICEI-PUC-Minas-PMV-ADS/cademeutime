@@ -8,19 +8,18 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Desta forma, constatou-se que o presente projeto possui 2 principais personas:
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+•	Esportistas 
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+•	Pessoas que buscam uma rede de contatos para determinado esporte
+
+A seguir, passamos à análise detalhada das personas e suas respectivas histórias de usuários.
+
+|NOME  | PERFIL  |HISTÓRIA  | MOTIVAÇÕES | FRUSTRAÇÃO | 
+| ------------ | -------------- |------------ | ------------ | -------- | 
+| *Murilo Gonçalves*  ![BikeRegistradasegurodebicicletabaratoecompleto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-pmv-ads-2023-2-e4-g4-t5/assets/103230282/70c3191e-fd11-43f4-9379-43593f1fbb3d)  | Idade: 35 anos Ocupação: Competidor internacional   |  Murilo sempre foi uma pessoa muito ativa e tem o ciclismo como paixão. Com sua intensa rotina de treinos para as competições, busca uma rede de contatos dentro nicho ao qual possa fazer parte, principalmente para o acompanhar nas longas horas de treino.| Conversar sobre o esporte ao qual dedica a maior parte do seu tempo com pessoas que realmente o entendem os seus anseios e conquistas. Murilo também sente que tem uma missão: Incentiva a nova geração às práticas esportivas. | Ele sente que, com exceção do futebol, nenhuma modalidade esportiva é incentivada no Brasil.|
+| *Alice Ferreira*  ![10-dicas-de-saude-mental-para-mulheres-1024x768](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-pmv-ads-2023-2-e4-g4-t5/assets/103230282/64061110-251d-446f-af81-6ef40958b09e) |  Idade: 27 anos  Ocupação: Personal trainer.     |  Alice vive o sonho de trabalhar com o que ama. Após conhecer o musculação aos 19 anos, decidiu seguir carreira. Com muitos alunos hoje e a rotina bastante cheia, Alice procura formas que a fizessem aliviar as pressões do dia-a-dia e viu o tênis como uma uma excelente opção.|Com o intuito de manter sua constância na prática, Alice busca amigos tanto para a partida e quanto como uma forma de incentivo.| Seus amigos não são ligados aos esporte, preferindo ambientes fechados como a academia.  |
 
 ## Histórias de Usuários
 
