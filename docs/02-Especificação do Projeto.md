@@ -138,26 +138,53 @@ A matriz deve contemplar todos os elementos relevantes que fazem parte do sistem
 
 # Gerenciamento de Projeto
 
-De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Para desenvolver projetos um profissional deve se preocupar em gerenciar todas essas dez áreas. Elas se complementam e se relacionam, de tal forma que não se deve apenas examinar uma área de forma estanque. É preciso considerar, por exemplo, que as áreas de Escopo, Cronograma e Custos estão muito relacionadas. Assim, se eu amplio o escopo de um projeto eu posso afetar seu cronograma e seus custos.
+Qualquer que seja o motivo que leve um projeto a ser realizado deve-se perguntar, bem no início do seu ciclo de vida: é viável realizá-lo? Que benefícios este projeto trará, e a que custo? A partir destas respostas nasce a construção de um projeto e com ele surge a necessidade de se fazer gestão.
 
-## Gerenciamento de Tempo
+Como documento norteador levaremos em consideração O Guia de Conhecimento em Gerenciamento de Projetos (PMBoK) na sua versão 6. O PMBoK é um documento extenso que contempla conhecimentos e práticas validadas para à gestão de projeto, sua atualização é periódica a cada 4 anos contemplando assim a evolução dos conhecimentos e tecnologias da área.
 
-Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
+Para o Guia PMBoK v6 gerenciamento de projeto é fazer a gestão integrada e multidisciplinar de 10 áreas pilares, sendo elas: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições e Partes Interessadas. Para que isto ocorra de forma plena sem gerar entraves no desenvolvimento do projeto, precisamos considerar que todos estes pilares são essenciais e estão diretamente relacionados.
 
-![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
+Desta forma para realizar esta etapa, a equipe optou por utilizar a metodologia ágil do tipo scrum e para acompanhar o andamento e gerenciamento do projeto optamos pela utilização do quadro Kanban, utilizando a ferramenta na área de projetos do próprio GitHub. 
 
-O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
+Com a ferramenta registramos as etapas do projeto, elucidando as datas de entrega e requisitos, a ferramenta por sua vez apresenta uma visão hierárquica de todo o projeto, proporcionando assim uma melhor compreensão e/ou organização.
 
-![Gráfico de Gantt](img/02-grafico-gantt.png)
+Já na concepção do projeto fora definido a seguinte estrutura de reuniões conforme a metodologia Scrum: A cada etapa (sprint) será realizada uma reunião de planejamento (Planning meeting), na sequência serão realizadas 3 dailys semanais (Segunda, quarta e sexta-feira no período noturno) ao final de cada sprint irá ocorrer uma reunião geral entre as equipes e o professor orientador para apresentação do andamento do projeto (quinta-feira seguinte a data de entrega da sprint), após este momento a equipe irá realizar um reunião retro, neste momento sem a presença do orientador, onde serão alinhados os pontos positivos e negativos da sprint antes de seguir para a nova sprint e recomeçar o ciclo. 
 
-## Gerenciamento de Equipe
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
+![gerenciamentodequipe](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-pmv-ads-2023-2-e4-g4-t5/assets/103156976/b2edef59-9965-4cf5-bd2e-8981cff6529a)
 
-![Simple Project Timeline](img/02-project-timeline.png)
+## Gerenciamento de Tempo e Gerenciamento de Equipe
+
+A gestão de pessoas em projetos tem por objetivo fundamental tornar a relação entre o capital e o trabalho a mais produtiva e menos conflituosa possível. Nesta concepção as pessoas e seus conhecimentos, habilidades e competências passam a ser um dos pilares para um projeto bem sucedido.
+
+Ter um controle adequado das tarefas e demandas de cada membro da equipe propicia uma visão mais ampla acerca do projeto, sendo também uma ferramenta útil de gestão, considerando que desta forma eventuais desvios do planejamento possam ser identificados pela equipe de forma mais rápida, alcançando assim uma solução imediata.
+
+Este gerenciamento permite que o projeto alcance altos níveis de produtividade. Para facilitar este processo de gestão de tarefas e tempo a equipe optou por utilizar a ferramenta Projects própria do Github. 
+
+Com a ferramenta Projects, as tarefas podem ser rastreadas por status, bucket, prioridade e responsável, bem como seu estado de execução conforme exposto na tela abaixo:
+
+![gerencimentotempoetarefa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-pmv-ads-2023-2-e4-g4-t5/assets/103156976/932dc431-2868-4e6f-a291-98ac501d178a)
+
 
 ## Gestão de Orçamento
 
 O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
 
-![Orçamento](img/02-orcamento.png)
+Ter uma visão clara dos dados financeiros do projeto ajudará a equipe economizar tempo, reduzir erros e garantir maior qualidade na entrega de cada etapa.
+
+|Gasto estimado | Valor                                       |
+|-----------------|-------------------------------------------------------|
+| Recursos Humanos | R$ 20.000,00 |
+| Design (R$ 25,00/Hora)) | R$ 5.000,00 |
+| Desenvolvedor (R$ 70,00/Hora) | R$ 140.000,00 |
+| Administrador (R$ 25,00/Hora) | R$ 3.000,00 |
+| Hardware | R$ 0.000,00 |
+| 2 Iphones11| R$ 6.400,00 |
+| 2 SamsungS22 | R$ 10.800,00 |
+| 1 IPAD PRO | R$ 9.400,00 |
+| 1 Samsung Galax TAB 8 | R$ 4.800,00 |
+| 6 notebooks | R$ 36.000,00 |
+| Especialização Profissional | R$ 1.400,00 |
+| Cursos e treinamentos | R$ 100.000,00 |
+| Licenças de Softwares | R$ 50.000,00 |
+| TOTAL | R$ 386.800,00 |
