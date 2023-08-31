@@ -7,7 +7,7 @@
 
 `Turma 05 - 2023/2 - Grupo 4`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+CADÊ MEU TIME? é uma aplicação voltada para o encontro! Encontrar parceiros que compartilham do mesmo interesse pelo seu esporte preferido, seja ele qual for! Encontre o seu time, a sua dupla, organize o seu evento e pratique o seu esporte favorito de forma simples e dinâmica!
 
 ## Integrantes
 
