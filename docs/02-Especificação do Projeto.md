@@ -163,7 +163,8 @@ Este gerenciamento permite que o projeto alcance altos níveis de produtividade.
 
 Com a ferramenta Projects, as tarefas podem ser rastreadas por status, bucket, prioridade e responsável, bem como seu estado de execução conforme exposto na tela abaixo:
 
-![gerencimentotempoetarefa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-pmv-ads-2023-2-e4-g4-t5/assets/103156976/932dc431-2868-4e6f-a291-98ac501d178a)
+
+![gerenciamento tempo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-pmv-ads-2023-2-e4-g4-t5/assets/103156976/d54b2c04-845d-4f6b-9d89-539f4ebea6e6)
 
 
 ## Gestão de Orçamento
