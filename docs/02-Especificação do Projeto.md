@@ -124,9 +124,9 @@ Na linguagem de modelagem unificada (UML), o objetivo do diagrama de caso de uso
 
 # Matriz de Rastreabilidade
 
-A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
+A principal finalidade de uma matriz de rastreabilidade é proporcionar uma visão clara e organizada das conexões entre diferentes partes de um projeto, permitindo que os envolvidos compreendam facilmente como as mudanças em um requisito afetam os outros elementos e vice-versa. Isso também é extremamente útil em situações de auditoria, onde é necessário demonstrar a rastreabilidade e a conformidade ao longo do processo de desenvolvimento.
 
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
+Em resumo, a matriz de rastreabilidade é uma ferramenta poderosa para garantir a consistência, a integridade e a qualidade de um projeto, ao manter o rastreamento das relações entre os diferentes componentes envolvidos no processo de desenvolvimento.
 
 |ID        |DESCRIÇÃO DO REQUISITO           |PRIORIDADE         |REQUISITOS RELACIONADOS     |
 |----------|---------------------------------|-------------------|----------------------------|
