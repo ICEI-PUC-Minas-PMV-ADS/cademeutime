@@ -93,12 +93,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| Desempenho: A aplicação deve ter tempos de resposta rápidos ao carregar eventos e atualizar informações. A integração com uma API de geolocalização não deve causar atrasos visíveis na exibição do mapa. | MÉDIA | 
-|RNF-002| Segurança: As senhas dos usuários devem ser armazenadas de forma segura utilizando técnicas de hash e salting. As comunicações entre a aplicação e os servidores devem ser criptografados usando HTTPS. |  BAIXA |
-|RNF-003| Escalabilidade: A aplicação deve ser capaz de lidar com um aumento no número de usuários e eventos sem liberação significativa do desempenho. |  BAIXA | 
-|RNF-004| Disponibilidade:A aplicação deve ter alta disponibilidade, minimizando o tempo de inatividade não planejado. |  BAIXA |
-|RNF-005| Compatibilidade com Dispositivos: A aplicação deve ser responsiva e funcionar bem em dispositivos móveis, tablets e desktops. |  BAIXA |
-|RNF-006| Interface intuitiva: A interface do usuário deve ser intuitiva e fácil de usar, mesmo para novos usuários. | BAIXA |
-|RNF-007| Backup e Recuperação: Deve haver um sistema de backup regular para garantir que os dados dos eventos e dos usuários sejam protegidos contra perda.  | BAIXA | 
+|RNF-002| Compatibilidade com Dispositivos: A aplicação deve ser responsiva e funcionar bem em dispositivos móveis, tablets e desktops. |  BAIXA | 
  
 ## Restrições
 
@@ -107,7 +102,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|02| Não pode contratar terceiros para a implementação do projeto.        |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
