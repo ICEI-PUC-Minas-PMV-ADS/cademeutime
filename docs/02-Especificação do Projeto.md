@@ -79,8 +79,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-001| Cadastro de Usuário:Os usuários devem poder criar contas na aplicação, fornecendo informações básicas como nome, e-mail e senha. | ALTA | 
-|RF-002| Autenticação e Autorização:A aplicação deve permitir que os usuários façam login de forma segura e autorizada. | MÉDIA |
-|RF-003| Criação de Eventos Esportivos: Os usuários devem ser capazes de criar eventos esportivos, definindo detalhes como localização, dados, horário e tipo de esporte.   | MÉDIA |
+|RF-002| Autenticação e Autorização:A aplicação deve permitir que os usuários façam login de forma segura e autorizada. | ALTA |
+|RF-003| Criação de Eventos Esportivos: Os usuários devem ser capazes de criar eventos esportivos, definindo detalhes como localização, dados, horário e tipo de esporte.   | ALTA |
 |RF-004| Visualização de Eventos: Os usuários devem poder ver uma lista de eventos esportivos disponíveis, com detalhes como localização no mapa, participantes confirmados e informações relevantes.   | MÉDIA |
 |RF-005| Participação em Eventos: Os usuários devem poder se inscrever em eventos esportivos existentes e confirmar sua participação.   | MÉDIA |
 |RF-006| Integração com API de Geolocalização:A aplicação deve integrar-se a uma API de geolocalização para exibir a localização dos eventos no mapa. Os eventos devem ser marcados de forma clara no mapa, permitindo que os usuários visualizem facilmente sua proximidade.   | MÉDIA |
