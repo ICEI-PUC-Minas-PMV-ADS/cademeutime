@@ -128,7 +128,16 @@ A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualizaç
 
 A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
 
-oiiiii
+|ID        |DESCRIÇÃO DO REQUISITO           |PRIORIDADE         |REQUISITOS RELACIONADOS     |
+|----------|---------------------------------|-------------------|----------------------------|
+|RF-001    |Cadastro de Usuário              |ALTA               |-                           |
+|RF-002    |Autenticação e Autorização       |MÉDIA              |-                           |
+|RF-003    |Criação de Eventos Esportivos    |MÉDIA              |RF-006                      |
+|RF-004    |Visualização de Eventos          |MÉDIA              |RF-006                      |
+|RF-005    |Participação em Eventos          |MÉDIA              |-                           |
+|RF-006    |Integração em Eventos            |MÉDIA              |RF-003, RF-004              |
+|RF-007    |Notificação                      |MÉDIA              |-                           |
+|RF-008    |Avaliação e Comentários          |MÉDIA              |-                           |
 
 
 # Gerenciamento de Projeto
