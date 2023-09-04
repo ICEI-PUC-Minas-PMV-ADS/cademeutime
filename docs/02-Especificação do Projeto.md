@@ -29,6 +29,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Atleta profissional  | Encontrar um parceiro de esporte | Treinarmos na mesma intensidade  |
 |Adepto à esportes  | Formar uma rede de contatos | Praticar um esporte pouco difundido |
+|Adepto à esportes  | Visualizar eventos esportivos disponíveis | Participar ativamente da comunidade |
+|Esportista  | Ter praticidade na inscrição de eventos esportivos | Me manter ativo na comunidade e gerenciar o meu cronograma semanal|
+|Esportista  | Criar eventos esportivos para a comunidade | Manter uma comunidade ativa|
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
