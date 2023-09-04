@@ -137,18 +137,9 @@ Em resumo, a matriz de rastreabilidade é uma ferramenta poderosa para garantir 
 
 # Gerenciamento de Projeto
 
-Qualquer que seja o motivo que leve um projeto a ser realizado deve-se perguntar, bem no início do seu ciclo de vida: é viável realizá-lo? Que benefícios este projeto trará, e a que custo? A partir destas respostas nasce a construção de um projeto e com ele surge a necessidade de se fazer gestão.
+No início de um projeto, é crucial questionar sua viabilidade e benefícios versus custos. O Guia PMBoK v6 é um recurso valioso para a gestão de projetos, abrangendo 10 áreas fundamentais. A equipe optou por usar a metodologia ágil Scrum e o quadro Kanban com a ferramenta GitHub Projects para facilitar o gerenciamento do projeto, oferecendo uma visão organizada das etapas, datas de entrega e requisitos.
 
-Como documento norteador levaremos em consideração O Guia de Conhecimento em Gerenciamento de Projetos (PMBoK) na sua versão 6. O PMBoK é um documento extenso que contempla conhecimentos e práticas validadas para à gestão de projeto, sua atualização é periódica a cada 4 anos contemplando assim a evolução dos conhecimentos e tecnologias da área.
-
-Para o Guia PMBoK v6 gerenciamento de projeto é fazer a gestão integrada e multidisciplinar de 10 áreas pilares, sendo elas: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições e Partes Interessadas. Para que isto ocorra de forma plena sem gerar entraves no desenvolvimento do projeto, precisamos considerar que todos estes pilares são essenciais e estão diretamente relacionados.
-
-Desta forma para realizar esta etapa, a equipe optou por utilizar a metodologia ágil do tipo scrum e para acompanhar o andamento e gerenciamento do projeto optamos pela utilização do quadro Kanban, utilizando a ferramenta na área de projetos do próprio GitHub. 
-
-Com a ferramenta registramos as etapas do projeto, elucidando as datas de entrega e requisitos, a ferramenta por sua vez apresenta uma visão hierárquica de todo o projeto, proporcionando assim uma melhor compreensão e/ou organização.
-
-Já na concepção do projeto fora definido a seguinte estrutura de reuniões conforme a metodologia Scrum: A cada etapa (sprint) será realizada uma reunião de planejamento (Planning meeting), na sequência serão realizadas 3 dailys semanais (Segunda, quarta e sexta-feira no período noturno) ao final de cada sprint irá ocorrer uma reunião geral entre as equipes e o professor orientador para apresentação do andamento do projeto (quinta-feira seguinte a data de entrega da sprint), após este momento a equipe irá realizar um reunião retro, neste momento sem a presença do orientador, onde serão alinhados os pontos positivos e negativos da sprint antes de seguir para a nova sprint e recomeçar o ciclo. 
-
+Com a ferramenta registramos as etapas do projeto, elucidando as datas de entrega e requisitos, a ferramenta por sua vez apresenta uma visão hierárquica de todo o projeto, proporcionando assim uma melhor compreensão e/ou organização; Como pode ser observado pelo link: [Github-Projects](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/459).
 
 ![gerenciamentodequipe](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-pmv-ads-2023-2-e4-g4-t5/assets/103156976/b2edef59-9965-4cf5-bd2e-8981cff6529a)
 
@@ -158,10 +149,9 @@ A gestão de pessoas em projetos tem por objetivo fundamental tornar a relação
 
 Ter um controle adequado das tarefas e demandas de cada membro da equipe propicia uma visão mais ampla acerca do projeto, sendo também uma ferramenta útil de gestão, considerando que desta forma eventuais desvios do planejamento possam ser identificados pela equipe de forma mais rápida, alcançando assim uma solução imediata.
 
-Este gerenciamento permite que o projeto alcance altos níveis de produtividade. Para facilitar este processo de gestão de tarefas e tempo a equipe optou por utilizar a ferramenta Projects própria do Github. 
+Este gerenciamento permite que o projeto alcance altos níveis de produtividade. Para facilitar este processo de gestão de tarefas e tempo a equipe optou por utilizar também a ferramenta Projects própria do Github. 
 
 Com a ferramenta Projects, as tarefas podem ser rastreadas por status, bucket, prioridade e responsável, bem como seu estado de execução conforme exposto na tela abaixo:
-
 
 ![gerenciamento tempo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-pmv-ads-2023-2-e4-g4-t5/assets/103156976/d54b2c04-845d-4f6b-9d89-539f4ebea6e6)
 
