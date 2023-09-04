@@ -86,8 +86,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| Desempenho: A aplicação deve ter tempos de resposta rápidos ao carregar eventos e atualizar informações. A integração com uma API de geolocalização não deve causar atrasos visíveis na exibição do mapa. | MÉDIA | 
-|RNF-002| Compatibilidade com Dispositivos: A aplicação deve ser responsiva e funcionar bem em dispositivos móveis, tablets e desktops. |  BAIXA | 
+|RNF-001| Desempenho: A aplicação deve ter tempos de resposta de 5s ao carregar eventos e atualizar informações.| MÉDIA |
+|RNF-002| A integração com uma API de geolocalização não deve causar atrasos visíveis na exibição do mapa.| MÉDIA |
+|RNF-003| Compatibilidade com Dispositivos: A aplicação deve ser responsiva e funcionar bem em dispositivos móveis, tablets e desktops. |  BAIXA | 
  
 ## Restrições
 
