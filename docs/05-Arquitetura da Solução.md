@@ -1,19 +1,18 @@
 # Arquitetura da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
+Ilustração de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
-
-![Arquitetura da Solução](img/02-mob-arch.png)
+![2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/b2ddb8d0-7311-435c-8bc5-a315616f3614)
 
 ## Diagrama de Classes
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
+Neste diagrama de classes, temos duas principais classes: "Usuario" e "Evento". A classe "Usuario" representa os usuários da aplicação e possui métodos para cadastro, login, criação de eventos, inscrição em eventos e avaliação de eventos. A classe "Evento" representa os eventos esportivos e possui atributos como localização, data, horário, tipo de esporte e número de participantes.
 
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
+Além disso, há uma classe fictícia chamada "API de Geolocalizacao" que representa a integração com a API de geolocalização mencionada no requisito RF-006. Esta classe possui um método para exibir a localização dos eventos no mapa.
+
+![DIAGRAMADECLASSES](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/8a60d6d0-ac64-44b2-aa71-2e01e8b5458a)
 
 ## Modelo ER
 
