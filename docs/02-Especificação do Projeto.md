@@ -114,7 +114,8 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 Na linguagem de modelagem unificada (UML), o objetivo do diagrama de caso de uso é demonstrar as diferentes maneiras que o usuário pode interagir com um sistema. O caso de uso abaixo apresenta as possibilidades de interação do usuário com o aplicativo CADÊ MEU TIME?
 
-![CASOSDEUSO drawio](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-pmv-ads-2023-2-e4-g4-t5/assets/103156976/a37f21d4-3288-4e5e-93cd-2e4e58f5674e)
+![diagramacasodeuso (1)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/4bb1ce71-58ad-46d1-b914-580c798afa32)
+
 
 
 # Matriz de Rastreabilidade
