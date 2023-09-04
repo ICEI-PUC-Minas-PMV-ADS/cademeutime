@@ -3,18 +3,49 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+A metodologia contempla as definições de ferramentas utilizadas pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
 
 ## Relação de Ambientes de Trabalho
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito deverá ser apresentada em uma tabela que especifica que detalha Ambiente, Plataforma e Link de Acesso. 
-Nota: Vide documento modelo do estudo de caso "Portal de Notícias" e defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+
+| Ambiente | Plataforma | 
+--------- | ---------- |  
+| Repositório de código fonte|[GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime)|  
+| Ferramenta para controle de versão| [Git](https://git-scm.com/) |  
+| Documentos do projeto | [GitHub-DOCS](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/tree/main/docs) |
+| Gerenciamento de Projeto | [Github-Projects](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/459) |
+| Projeto de interface e wireframes | [Figma](https://www.figma.com/) |
+| Editor de código | [Visual Studio Code](https://portal.azure.com/?Microsoft_Azure_Education_correlationId=482c7b3fd428421ebc975fb5a28dcb48#view/Microsoft_Azure_Education/EducationMenuBlade/~/software) |
+| Banco de Dados | A definir |
+| Ferramenta para simulação mobile | A definir|
 
 ## Controle de Versão
 
-A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
+A ferramenta de controle de versão adotada no projeto foi o [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
 foi utilizado para hospedagem do repositório.
+
+Essa escolha foi feita devido à arquitetura descentralizada do Git, que oferece um excelente controle de versão, registrando as mudanças no código-fonte do projeto. Isso permite que várias pessoas modifiquem os arquivos simultaneamente, sem o risco de sobrescreverem uns aos outros.
+
+Graças a essa funcionalidade, se ocorrer algum problema com uma alteração no código-fonte, é fácil e rápido restaurar a versão anterior. Em cada repositório, incluindo o da máquina de cada colaborador, existe uma cópia completa e funcional, o que permite que as operações sejam realizadas mesmo offline.
+
+Dado que os projetos estão em constante evolução, é comum que ocorram alterações que possam causar problemas em seu funcionamento. O Git facilita a reversão dessas alterações de maneira simples e rápida, retornando à versão anterior do projeto.
+
+Para controlar o versionamento do código-fonte, estabelecemos o seguinte fluxo:
+
+![1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/012747bc-47d9-40a1-8e5d-f3e6b18e3c63)
+
+- `Clone do projeto`: Cada membro da equipe criou uma cópia do projeto em sua própria máquina.
+
+- `Criação de uma Branch`: Isso cria uma ramificação independente que permite a modificação de arquivos sem afetar a versão original.
+
+- `Commits`: Cada alteração é acompanhada de uma descrição objetiva, explicando a funcionalidade implementada.
+
+- `Pull`: Usado para buscar e trazer as mudanças do repositório remoto para o repositório local, combinando o conteúdo dos arquivos alterados. Em alguns casos, pode ser necessária intervenção manual para realizar essa operação.
+
+- `Push`: Após a conclusão da funcionalidade, enviamos nossa ramificação com as alterações para o repositório remoto, permitindo que outros membros da equipe visualizem e, se necessário, façam alterações.
+
+- `Merge`: Consiste na mesclagem das modificações das ramificações com os arquivos originais do projeto na Branch principal, tornando as alterações disponíveis para os demais colaboradores
 
 O projeto segue a seguinte convenção para o nome de branches:
 
@@ -31,57 +62,47 @@ etiquetas:
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
-
-> **Links Úteis**:
-> - [Microfundamento: Gerência de Configuração](https://pucminas.instructure.com/courses/87878/)
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
-
 ## Gerenciamento de Projeto
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+A equipe fará uso da metodologia ágil Scrum como base para definição de todo o processo de desenvolvimento. 
 
-Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
-- Scrum Master: Felipe Domingos;
-- Product Owner: Rommel Carneiro;
-- Equipe de Desenvolvimento: Pedro Penna, Pedro Ivo, Rodrigo Richard;
-- Equipe de Design: Simone Nogueira.
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-> - [Os papéis do Scrum e a verdade sobre cargos nessa técnica](https://www.atlassian.com/br/agile/scrum/roles)
+Portanto, a equipe está organizada da seguinte maneira: 
+- `Scrum Master:` Paola Marsura Verreschi De Oliveira
+- `Product Owner:` Fernanda Araujo Macieira
+- `Equipe de Desenvolvimento:`Katryn Ribeiro de Jesus Oliveira,  Gabriela França Alves Miranda e Ríder Rocha Cantuária
+- `Equipe de Design:` Ayrles Alves de Lima Sales
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Planejamento e Gestáo Ágil de Projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando a equipe utiliza o recurso gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução, como pode ser observado pelo link [Github-Projects](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/459).
 
+Já na concepção do projeto fora definido a seguinte estrutura de reuniões conforme a metodologia Scrum: A cada etapa (sprint) será realizada uma reunião de planejamento (Planning meeting), na sequência serão realizadas 3 dailys semanais (Segunda, quarta e sexta-feira no período noturno) ao final de cada sprint irá ocorrer uma reunião geral entre as equipes e o professor orientador para apresentação do andamento do projeto (quinta-feira seguinte a data de entrega da sprint), após este momento a equipe irá realizar um reunião retro, neste momento sem a presença do orientador, onde serão alinhados os pontos positivos e negativos da sprint antes de seguir para a nova sprint e recomeçar o ciclo.
+
+- `Backlog:` esta lista contém as tarefas de todas as etapas do nosso projeto que ainda não estão em andamento. Em cada uma das tarefas é possível colocar anexos, anotações, nível de prioridade, data de início e fim, entre outras ferramentas disponibilizadas;
+
+- `Backlog:` esta lista contém as tarefas pendentes da sprint atual.
+
+- `Doing:` esta lista contém as tarefas que devem ser concluídas no momento atual. Utilizamos dos cards para fazer a divisão entre o grupo, atribuindo cada tarefa a um membro. No card colocamos os detalhes das tarefas, prazo final e etiquetamos de acordo com a etapa (1, 2, 3, 4 ou 5); 
+
+- `Done:` Conclusão: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontas para serem entregues ao usuário. Não há mais edições ou revisões necessárias, elas estão agendadas e prontas para a ação. 
+
+ 
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+- Editor de código: Visual Studio Code 
+
+- Ferramentas de comunicação: WhatsApp e Teams. 
+
+- Ferramentas de desenho de tela: [Figma](https://www.figma.com/). 
 
 O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
 
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
+As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. 
+
+Por fim, para criar os desenhos de tela utilizamos essa ferramenta por melhor captar as necessidades da nossa solução e pela familiaridade da equipe com a ferramenta. 
+
  
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
