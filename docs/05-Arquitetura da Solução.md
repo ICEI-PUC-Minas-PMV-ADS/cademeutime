@@ -8,11 +8,12 @@ Ilustração de como o software é estruturado em termos dos componentes que faz
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-Neste diagrama de classes, temos duas principais classes: "Usuario" e "Evento". A classe "Usuario" representa os usuários da aplicação e possui métodos para cadastro, login, criação de eventos, inscrição em eventos e avaliação de eventos. A classe "Evento" representa os eventos esportivos e possui atributos como localização, data, horário, tipo de esporte e número de participantes.
+Neste diagrama de classes, temos três principais classes: "Usuario", "Esporte" e "Evento", sendo elas classes do tipo entity. A classe "Usuario" representa os usuários da aplicação e possui métodos para cadastro, login, criação de eventos, inscrição em eventos e avaliação de eventos. A classe esporte representa os esportes da aplicação e possui método para cadastrar esporte, definir quantidade de pessoas participantes e tipo de local em que o esporte é praticado, e por fim a classe "Evento" representa os eventos esportivos e possui atributos como localização, data, horário, tipo de esporte e número de participantes.
 
-Além disso, há uma classe fictícia chamada "API de Geolocalizacao" que representa a integração com a API de geolocalização mencionada no requisito RF-006. Esta classe possui um método para exibir a localização dos eventos no mapa.
+Além disso, há uma classe do tipo boundary "API de Geolocalizacao" que representa a integração com a API de geolocalização mencionada no requisito RF-006. Esta classe possui um método para exibir a localização dos eventos no mapa.
 
-![DIAGRAMADECLASSES](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/8a60d6d0-ac64-44b2-aa71-2e01e8b5458a)
+![diagramadeclasses](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/992f99cc-d6bc-43eb-8d6e-445747631095)
+
 
 ## Modelo ER
 
