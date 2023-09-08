@@ -3,8 +3,6 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-A metodologia contempla as definições de ferramentas utilizadas pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
-
 ## Relação de Ambientes de Trabalho
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito deverá ser apresentada em uma tabela que especifica que detalha Ambiente, Plataforma e Link de Acesso. 
@@ -28,8 +26,6 @@ foi utilizado para hospedagem do repositório.
 Essa escolha foi feita devido à arquitetura descentralizada do Git, que oferece um excelente controle de versão, registrando as mudanças no código-fonte do projeto. Isso permite que várias pessoas modifiquem os arquivos simultaneamente, sem o risco de sobrescreverem uns aos outros.
 
 Graças a essa funcionalidade, se ocorrer algum problema com uma alteração no código-fonte, é fácil e rápido restaurar a versão anterior. Em cada repositório, incluindo o da máquina de cada colaborador, existe uma cópia completa e funcional, o que permite que as operações sejam realizadas mesmo offline.
-
-Dado que os projetos estão em constante evolução, é comum que ocorram alterações que possam causar problemas em seu funcionamento. O Git facilita a reversão dessas alterações de maneira simples e rápida, retornando à versão anterior do projeto.
 
 Para controlar o versionamento do código-fonte, estabelecemos o seguinte fluxo:
 
@@ -97,12 +93,7 @@ As ferramentas empregadas no projeto são:
 
 - Ferramentas de comunicação: WhatsApp e Teams. 
 
-- Ferramentas de desenho de tela: [Figma](https://www.figma.com/). 
-
-O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
-
-As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. 
-
-Por fim, para criar os desenhos de tela utilizamos essa ferramenta por melhor captar as necessidades da nossa solução e pela familiaridade da equipe com a ferramenta. 
-
+- Ferramentas de desenho de tela: [Figma](https://www.figma.com/).
+  
+- Ferramenta de diagramação: [Draw.io](https://app.diagrams.net/#G1qxauHFqWFjbDM2czuIulcRwPj9xm1us7).
  
