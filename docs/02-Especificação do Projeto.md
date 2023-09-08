@@ -21,13 +21,15 @@ A seguir, passamos à análise detalhada das personas e suas respectivas histór
 
 ## Histórias de Usuários
 
+Visualizar eventos e grupos de pessoas interessadas próximas a mim
+
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`        |
 |--------------------|------------------------------------|----------------------------------------|
 |Atleta amador  | Encontrar um parceiro de esporte | Treinarmos na mesma intensidade  |
 |Adepto à esportes  | Formar uma rede de contatos | Praticar um esporte pouco difundido |
-|Adepto à esportes  | Visualizar eventos esportivos disponíveis | Participar ativamente da comunidade |
+|Adepto à esportes  | Visualizar eventos e grupos esportivos disponíveis | Participar ativamente da comunidade |
 |Esportista  | Ter praticidade na inscrição de eventos esportivos | Me manter ativo na comunidade e gerenciar o meu cronograma semanal|
 |Esportista  | Criar eventos esportivos para a comunidade | Manter uma comunidade ativa|
 
