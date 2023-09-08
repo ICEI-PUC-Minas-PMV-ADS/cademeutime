@@ -8,7 +8,7 @@ Aqui oferecemos uma síntese das áreas que serão abordadas nesta seção do do
 
 Desta forma, constatou-se que o presente projeto possui 2 principais personas:
 
-•	Esportistas 
+•	Atletas amadores
 
 •	Pessoas que buscam uma rede de contatos para determinado esporte
 
@@ -16,7 +16,7 @@ A seguir, passamos à análise detalhada das personas e suas respectivas histór
 
 |NOME  | PERFIL  |HISTÓRIA  | MOTIVAÇÕES | FRUSTRAÇÃO | 
 | ------------ | -------------- |------------ | ------------ | -------- | 
-| *Murilo Gonçalves*  ![BikeRegistradasegurodebicicletabaratoecompleto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-pmv-ads-2023-2-e4-g4-t5/assets/103230282/70c3191e-fd11-43f4-9379-43593f1fbb3d)  | Idade: 35 anos Ocupação: Competidor internacional   |  Murilo sempre foi uma pessoa muito ativa e tem o ciclismo como paixão. Com sua intensa rotina de treinos para as competições, busca uma rede de contatos dentro nicho ao qual possa fazer parte, principalmente para o acompanhar nas longas horas de treino.| Conversar sobre o esporte ao qual dedica a maior parte do seu tempo com pessoas que realmente o entendem os seus anseios e conquistas. Murilo também sente que tem uma missão: Incentiva a nova geração às práticas esportivas. | Ele sente que, com exceção do futebol, nenhuma modalidade esportiva é incentivada no Brasil.|
+| *Murilo Gonçalves*  ![BikeRegistradasegurodebicicletabaratoecompleto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-pmv-ads-2023-2-e4-g4-t5/assets/103230282/70c3191e-fd11-43f4-9379-43593f1fbb3d)  | Idade: 35 anos Ocupação: Atleta amador |  Murilo sempre foi uma pessoa muito ativa e tem o ciclismo como paixão. Com sua intensa rotina de treinos para as competições, busca uma rede de contatos dentro nicho ao qual possa fazer parte, principalmente para o acompanhar nas longas horas de treino.| Conversar sobre o esporte ao qual dedica a maior parte do seu tempo com pessoas que realmente o entendem os seus anseios e conquistas. Murilo também sente que tem uma missão: Incentiva a nova geração às práticas esportivas. | Ele sente que, com exceção do futebol, nenhuma modalidade esportiva é incentivada no Brasil.|
 | *Alice Ferreira*  ![10-dicas-de-saude-mental-para-mulheres-1024x768](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-pmv-ads-2023-2-e4-g4-t5/assets/103230282/64061110-251d-446f-af81-6ef40958b09e) |  Idade: 27 anos  Ocupação: Psicologa.     |  Alice vive o sonho de trabalhar com o que ama. Após conhecer o yoga aos 19 anos, entendeu o poder que a mente equilibrada na vida pessoas decidiu seguir carreira. Com muitos pacientes hoje e a rotina bastante cheia, Alice procura formas que a fizessem aliviar as pressões do dia-a-dia e viu o tênis como uma uma excelente opção.|Com o intuito de manter sua constância na prática, Alice busca amigos tanto para a partida e quanto como uma forma de incentivo.| Seus amigos não são ligados aos esporte, preferindo ambientes fechados como a academia.  |
 
 ## Histórias de Usuários
@@ -25,7 +25,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`        |
 |--------------------|------------------------------------|----------------------------------------|
-|Atleta profissional  | Encontrar um parceiro de esporte | Treinarmos na mesma intensidade  |
+|Atleta amador  | Encontrar um parceiro de esporte | Treinarmos na mesma intensidade  |
 |Adepto à esportes  | Formar uma rede de contatos | Praticar um esporte pouco difundido |
 |Adepto à esportes  | Visualizar eventos esportivos disponíveis | Participar ativamente da comunidade |
 |Esportista  | Ter praticidade na inscrição de eventos esportivos | Me manter ativo na comunidade e gerenciar o meu cronograma semanal|
