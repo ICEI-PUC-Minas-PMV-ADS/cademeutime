@@ -30,8 +30,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Atleta amador  | Encontrar um parceiro de esporte | Treinarmos na mesma intensidade  |
 |Adepto à esportes  | Formar uma rede de contatos | Praticar um esporte pouco difundido |
 |Adepto à esportes  | Visualizar eventos e grupos esportivos disponíveis | Participar ativamente da comunidade |
+|Adepto à esportes  | Ser notificado de eventos que confirmei presença | Gerenciar e lembrar dos meus compromissos |
 |Esportista  | Ter praticidade na inscrição de eventos esportivos | Me manter ativo na comunidade e gerenciar o meu cronograma semanal|
 |Esportista  | Criar eventos esportivos para a comunidade | Manter uma comunidade ativa|
+|Esportista  | Ter feedback dos meus eventos criados | Melhorar a experiência dos participantes|
 
 ## Modelagem do Processo de Negócio 
 
