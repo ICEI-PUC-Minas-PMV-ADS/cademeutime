@@ -12,7 +12,7 @@ Neste diagrama de classes, temos três principais classes: "Usuario", "Esporte" 
 
 Além disso, há uma classe do tipo boundary "API de Geolocalizacao" que representa a integração com a API de geolocalização mencionada no requisito RF-006. Esta classe possui um método para exibir a localização dos eventos no mapa.
 
-![diagramaclassesapósfeedback](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/fd389149-f966-48c3-a040-5e8eb7e49bd6)
+![diagramadeclassesfeedback1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/c97c6b45-acf2-43f6-a8c3-e846c3abe52a)
 
 
 ## Modelo ER
