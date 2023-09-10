@@ -101,12 +101,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |01| O projeto deverá ser entregue até o dia 10/12/2023. |
 |02| Não pode contratar terceiros para a implementação do projeto.        |
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
-
 ## Diagrama de Casos de Uso
 
 Na linguagem de modelagem unificada (UML), o objetivo do diagrama de caso de uso é demonstrar as diferentes maneiras que o usuário pode interagir com um sistema. O caso de uso abaixo apresenta as possibilidades de interação do usuário com o aplicativo CADÊ MEU TIME?
@@ -124,10 +118,10 @@ Em resumo, a matriz de rastreabilidade é uma ferramenta poderosa para garantir 
 |ID        |DESCRIÇÃO DO REQUISITO           |PRIORIDADE         |REQUISITOS RELACIONADOS     |
 |----------|---------------------------------|-------------------|----------------------------|
 |RF-001    |Cadastro de Usuário              |ALTA               |-                           |
-|RF-002    |Autenticação e Autorização       |MÉDIA              |-                           |
+|RF-002    |Autenticação e Autorização       |MÉDIA              |RF-001                      |
 |RF-003    |Criação de Eventos Esportivos    |MÉDIA              |RF-006                      |
-|RF-004    |Visualização de Eventos          |MÉDIA              |RF-006                      |
-|RF-005    |Participação em Eventos          |MÉDIA              |-                           |
+|RF-004    |Visualização de Eventos          |MÉDIA              |RF-006, RF-003              |
+|RF-005    |Participação em Eventos          |MÉDIA              |RF-003                       
 |RF-006    |Integração em Eventos            |MÉDIA              |RF-003, RF-004              |
 |RF-007    |Notificação                      |MÉDIA              |-                           |
 |RF-008    |Avaliação e Comentários          |MÉDIA              |-                           |
