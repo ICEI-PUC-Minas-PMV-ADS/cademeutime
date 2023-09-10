@@ -98,7 +98,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
+|01| O projeto deverá ser entregue até o dia 10/12/2023. |
 |02| Não pode contratar terceiros para a implementação do projeto.        |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
