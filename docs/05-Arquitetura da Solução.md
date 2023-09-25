@@ -37,6 +37,8 @@ A seguir apresenta-se um link para o arquivo banco.sql, contendo os scripts de c
 
 [BANCO.sql](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/blob/main/src/bd/banco.sql)
 
+Scripts  DML
+O Scripts foram desenvolovidos pela ferramenta PRISMA Studio, o script pode ser visualizado neste repositório pelo caminho [Schema - Prisma](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/blob/main/src/backEnd/prisma/schema.prisma)
 
 ## Tecnologias Utilizadas
 
@@ -58,6 +60,17 @@ A seguir apresenta-se um link para o arquivo banco.sql, contendo os scripts de c
 | Fastify  | [Fastify](https://fastify.dev/) - Framework web altamente focado em fornecer a melhor experiência de desenvolvedor com o mínimo de sobrecarga e uma poderosa arquitetura de plug-in.  |
 | TypeScript   | [TypeScript](https://www.typescriptlang.org/) - TypeScript é uma linguagem de programação fortemente tipada baseada em JavaScript, oferecendo melhores ferramentas em qualquer escala.  |
 | TailwindCSS   | [TailwindCSS](https://tailwindcss.com/) - Framework CSS de primeiro uso para criação rápida de sites modernos sem sair do HTML, é uma estrutura CSS utilitária repleta de classes que podem ser compostas para construir qualquer design, diretamente em sua marcação, sem sair do HTML. |
+
+## Estilo arquitetural do projeto
+
+
+
+Para o desenvolvimento do nosso projeto, seguimos o padrão arquitetural Domain Driven Design - DDD. Escolhemos o DDD, pois este estilo combina práticas de design e desenvolvimento. Oferecendo ferramentas de modelagem estratégica e tática para entregar um software de alta qualidade. Por definição em seus princípios, DDD é sobre discussão, escuta e compreensão. Todo um esforço para centralizar o conhecimento. 
+
+O DDD foi desenvolvido por Eric Evans em seu livro "Domain-Driven Design: Tackling Complexity in the Heart of Software" e destina-se a ajudar a criar sistemas de software mais alinhados com a lógica de negócios e os processos do mundo real. Ele fornece diretrizes para a criação de modelos de domínio ricos, a colaboração entre especialistas de domínio e desenvolvedores, e a organização de código em torno desses modelos.
+
+Escolhemos utilizar o DDD, pois em teoria significa aproximar os especialistas do domínio (Domain experts) do time de desenvolvimento. Criando uma linguagem única. Uma comunicação sem ruídos, limpa, que é o que prezamos para o nosso time.
+
 
 ## Hospedagem
 
