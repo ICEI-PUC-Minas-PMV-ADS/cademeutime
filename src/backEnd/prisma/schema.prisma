@@ -15,6 +15,7 @@ model Usuario {
   nome String
   email String @unique
   senha String
+  eventosUsuario Evento[]
 }
 
 model Esporte {
@@ -22,13 +23,18 @@ model Esporte {
   modalidade String
   qtdPessoas Int
   local String
+  eventosPorEsporte Evento[] 
 }
 
 model Evento {
-id String @id @default(auto()) @map("_id") @db.ObjectId
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  modalidade   Esporte   @relation(fields: [esporteId], references: [id])
+  esporteId String @unique @db.ObjectId 
   nome String
   data DateTime
   horario DateTime
   local String
-  tipoEsporte String
+  autorEvento Usuario @relation(fields: [autorEvento], references: [id])
+  autorEvento String @unique @db.ObjectId 
 }
+
