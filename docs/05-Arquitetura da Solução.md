@@ -63,6 +63,7 @@ O Scripts foram desenvolovidos pela ferramenta PRISMA Studio, o script pode ser 
 
 ## Estilo arquitetural do projeto
 
+![DDD – Domain Driven Design (1)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/f6290220-4d01-4312-8a25-edf86a47337a)
 
 
 Para o desenvolvimento do nosso projeto, seguimos o padrão arquitetural Domain Driven Design - DDD. Escolhemos o DDD, pois este estilo combina práticas de design e desenvolvimento. Oferecendo ferramentas de modelagem estratégica e tática para entregar um software de alta qualidade. Por definição em seus princípios, DDD é sobre discussão, escuta e compreensão. Todo um esforço para centralizar o conhecimento. 
