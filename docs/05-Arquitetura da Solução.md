@@ -40,9 +40,24 @@ A seguir apresenta-se um link para o arquivo banco.sql, contendo os scripts de c
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+| Tecnologia  | Descrição |
+| ------------ | ------------ |
+| GitHub   |  [GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime) - Repositório de código fonte |
+| Git | [Git](https://git-scm.com/) - Ferramenta para controle de versão  |
+| GitHub - DOCS  |  [GitHub-DOCS](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/tree/main/docs) - Documentos do projeto |
+| GitHub - Projects  |  [Github-Projects](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/459) - Gerenciamento do projeto  |
+| Figma  |  [Figma](https://www.figma.com/) - Projeto de interface e wireframes  |
+| VSCode  |  [Visual Studio Code](https://portal.azure.com/?Microsoft_Azure_Education_correlationId=482c7b3fd428421ebc975fb5a28dcb48#view/Microsoft_Azure_Education/EducationMenuBlade/~/software) - Editor de código / IDE.  |
+| MongoDB  |  [MongoDB](https://www.mongodb.com/pt-br) - BancoNoSQL que permite gerenciamento em nuvem, multiplataforma.  |
+| MongoCompass  | [MongoCompass](https://www.mongodb.com/products/tools/compass) - Compass é uma ferramenta interativa gratuita para consultar, otimizar e analisar os dados MongoDB. |
+| Node.js  |  [Node.js](https://nodejs.org/en) - Runtime JavaScript desenvolvido com o interpretador V8 do Google que executa códigos fora de um navegador web, arquitetura assíncrona e orientada por eventos.  |
+| Yarn | [Yarn](https://yarnpkg.com/) - Gerenciador de pacotes para aplicar comandos prontos ao código de uma aplicação, uso mais dinâmico e facilitado.    |
+| Draw.io | [Draw.io](https://app.diagrams.net/) - Ferramenta online para desenho de diagrama padrão UML.  |
+| Vite  | [Vite](https://vitejs.dev/guide/) - Ferramenta de construção front-end de última geração com código fonte em ESM nativo. |
+| Prisma  | [Prisma.io](https://www.prisma.io/) - Node.js e TypeScript ORM de última geração, trabalha de forma intuitiva com bancos de dados com migrações automatizadas e seguras.  |
+| Fastify  | [Fastify](https://fastify.dev/) - Framework web altamente focado em fornecer a melhor experiência de desenvolvedor com o mínimo de sobrecarga e uma poderosa arquitetura de plug-in.  |
+| TypeScript   | [TypeScript](https://www.typescriptlang.org/) - TypeScript é uma linguagem de programação fortemente tipada baseada em JavaScript, oferecendo melhores ferramentas em qualquer escala.  |
+| TailwindCSS   | [TailwindCSS](https://tailwindcss.com/) - Framework CSS de primeiro uso para criação rápida de sites modernos sem sair do HTML, é uma estrutura CSS utilitária repleta de classes que podem ser compostas para construir qualquer design, diretamente em sua marcação, sem sair do HTML. |
 
 ## Hospedagem
 
