@@ -23,4 +23,6 @@ tipoEsporte varchar(50),
 data DATE,
 horario TIME,
 local varchar(100),
-PRIMARY KEY (id_evento));
+PRIMARY KEY (id_evento),
+CONSTRAINT fk_EsporteEvento FOREIGN KEY (id_esporte) REFERENCES Esporte (id_esporte),
+CONSTRAINT fk_AutorEvento FOREIGN KEY (id_usuario) REFERENCES Usuario (id_usuario));
