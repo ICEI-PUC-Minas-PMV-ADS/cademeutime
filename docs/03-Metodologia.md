@@ -15,7 +15,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | Gerenciamento de Projeto | [Github-Projects](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/459) |
 | Projeto de interface e wireframes | [Figma](https://www.figma.com/) |
 | Editor de código | [Visual Studio Code](https://portal.azure.com/?Microsoft_Azure_Education_correlationId=482c7b3fd428421ebc975fb5a28dcb48#view/Microsoft_Azure_Education/EducationMenuBlade/~/software) |
-| Banco de Dados | A definir |
+| Banco de Dados | [MongoDB](https://www.mongodb.com/pt-br) - BancoNoSQL |
 | Ferramenta para simulação mobile | A definir|
 
 ## Controle de Versão
