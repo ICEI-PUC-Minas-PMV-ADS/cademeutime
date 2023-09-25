@@ -74,6 +74,33 @@ O DDD foi desenvolvido por Eric Evans em seu livro "Domain-Driven Design: Tackli
 Escolhemos utilizar o DDD, pois em teoria significa aproximar os especialistas do domínio (Domain experts) do time de desenvolvimento. Criando uma linguagem única. Uma comunicação sem ruídos, limpa, que é o que prezamos para o nosso time.
 
 
+O Domain-Driven Design (DDD) é uma abordagem arquitetural que se concentra na modelagem do domínio de uma aplicação para criar um sistema altamente coeso e com baixo acoplamento. Para criar o diagrama de componentes WEB API - BACK END utilizamos uma estrutura típica em camadas, conforme imagem abaixo:
+
+![DDD – Domain Driven Design (1)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/5b9263fd-4b23-43db-bafc-8741f8309595)
+
+Para melhor entendimento, segue explicação das camadas representadas:
+
+1. Application Layer:
+
+- `Controllers` Esta camada lida com as solicitações HTTP e envia comandos para a camada de domínio. Eles são responsáveis por receber e validar os dados de entrada, chamando os serviços apropriados e retornando as respostas HTTP.
+- `DTOs` (Data Transfer Objects): São objetos que transportam dados entre a camada de aplicação e a camada de domínio. Eles podem ser usados para serializar dados em respostas HTTP.
+- `Services` Aqui, os serviços de aplicação coordenam a lógica de negócios. Eles orquestram chamadas para a camada de domínio e podem envolver várias entidades ou agregados.
+
+2. Domain Layer:
+
+- `Entities` Representam objetos de negócios com identidades únicas. Neste caso, são entidades como Usuário (User), Evento (Event), e Esporte (Sport).
+- `Aggregates` São grupos de entidades relacionadas e suas operações associadas. Por exemplo, um agregado de Event pode incluir várias entidades de User.
+- `Value Objects` São objetos imutáveis que não têm identidade própria, geralmente usados para representar informações que pertencem a uma entidade ou agregado.
+- `Repositories` Fornecem métodos para acessar e persistir entidades no banco de dados.
+- `Domain Services` São serviços que encapsulam a lógica de domínio que não pertence a uma entidade ou agregado específico.
+
+3. Infrastructure Layer:
+
+- `Database Context` Fornece acesso ao banco de dados e mapeia entidades para tabelas do banco de dados.
+- `Database Migrations` Gerencia as migrações do banco de dados para manter a consistência do esquema.
+- Repositories: Implementações concretas dos repositórios definidos na camada de domínio.
+- `External Services` Integrações com serviços externos, como serviços de autenticação, armazenamento em nuvem, etc.
+
 ## Hospedagem
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.
