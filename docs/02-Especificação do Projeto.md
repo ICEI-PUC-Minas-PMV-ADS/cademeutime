@@ -39,23 +39,21 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Proposta de uma aplicação voltada para o encontro! Encontrar parceiros que compartilham do mesmo interesse pelo seu esporte preferido, seja ele qual for! Encontre o seu time, a sua dupla, organize o seu evento e pratique o seu esporte favorito de forma simples e dinâmica!  
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+O aplicativo tem como fundamento norteador ser um facilitador para a prática de esporte ao usuário, propiciando ao mesmo uma ferramenta dinâmica para organização de eventos esportivos, otimizando assim também o seu tempo. Optou-se por uma interface simples e intuitiva, que propicie ao usuário um acesso rápido sem exigir uma demanda alta de tempo para usufruir da aplicação.  
 
-### Processo 1 – NOME DO PROCESSO
+Como mecanismo de escolha, a aplicação irá apresentar os eventos existentes para o usuário; Eventos estes que podem ser personalizadas e ou criados conforme a rotina do mesmo. 
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
+### Processo 1 – LOGIN 
+### Processo 2 – Controle de eventos
 
-![Processo 1](img/02-bpmn-proc1.png)
+Os processos são ilustrados abaixo de acordo com o padrão BPMN. 
 
-### Processo 2 – NOME DO PROCESSO
+![MODELAGEM DE PROCESSO DE NEGOCIO](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/ab5b2464-c6fa-4959-8f2a-d16e5aaf75ed)
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
-
-![Processo 2](img/02-bpmn-proc2.png)
 
 ## Indicadores de Desempenho
 
