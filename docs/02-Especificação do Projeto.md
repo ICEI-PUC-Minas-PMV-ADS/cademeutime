@@ -57,12 +57,15 @@ Os processos são ilustrados abaixo de acordo com o padrão BPMN.
 
 ## Indicadores de Desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
+Com os indicadores de desempenho constituímos o conjunto de indicadores da empresa, onde avaliamos a performance ao longo do tempo e qualidade do softaware.
 
-Usar o seguinte modelo: 
-
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
+| Indicador  | Objetivos   |  Descrição   | Cálculo  | Fonte da dados  | Perspectiva  |
+| ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+| Total de cadastros realizados    |  Quantificar os usuários da aplicação  |  Total de cadastros em relação a aplicação  |  Cadastros mensais  |  Contador na aplicação  | Evolução e análise de público-alvo   |
+| Total de acesso a plataforma   |  Mensurar o acesso do usuário a plataforma  | Verificar a média do acesso do usuário, definir padrões de uso   |  Calcular média de acessos diários  | Contador na aplicação    |  Avaliar a eficácia da aplicação   |
+|  Total de eventos criados  | Avaliar o consumo efetivo da aplicação por meio do usuário     |  Verificar o perfil dos eventos criadospelo usuário.  | Quantificar e qualificar os eventos gerados   |  Contador na aplicação e análise qualitativa  | Analisar o engajamento e uso efetivo da aplicação dada sua finalidade   |
+|  Total de reclamações reportadas  | Avaliar a quantidade de reclamações do usuário   | Total de reclamações em relação a quantidade de cadastros mensais   | Cadastros x reclamações  | Planilha para registro de reclamações   | Melhorar a performance da aplicação   |
+|  Total de requisições abertas  | Melhorar a entrega da aplicação avaliando a porcentagem de requisições    | Mensurar o total de requisições abertas, atendidas, solucionadas e pendentes   |  Analisar base de requisições   | Planilha para controle de requisições   |  Melhoria de processos internos e performance da aplicação  |
 
 ## Requisitos
 
