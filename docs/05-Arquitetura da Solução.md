@@ -16,12 +16,14 @@ Além disso, há uma classe do tipo boundary "API de Geolocalizacao" que represe
 
 
 ## Modelo ER
+O Diagrama Entidade-Relacionamento (ER) é uma ferramenta de modelagem de dados que descreve as entidades - coisas, objetos - em um sistema e como elas se relacionam entre si. É amplamente utilizado em projetos de banco de dados, pois permite visualizar de forma clara e concisa a estrutura do sistema.
 
-O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
+O diagrama ER é composto por entidades, atributos e relacionamentos. As entidades representam os objetos do mundo real que são relevantes para o sistema, como usuários, produtos ou atividades. Os atributos são as características dessas entidades, como nome, id ou data de criação. Os relacionamentos indicam como as entidades se conectam entre si, por exemplo, um usuário pode fazer rastrear varias atividades e uma atividade pode ser rastreada por apenas um usuário.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
+Em um modelo ER as entidades são representadas por retângulos, os atributos por elipses e os relacionamentos por losangos. As conexões entre as entidades são indicadas por linhas, que podem ser simples ou duplas, dependendo da natureza do relacionamento.
 
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/90113699/660ff981-ea4e-4076-afdb-63c0b728a8d0)
+
 
 ## Esquema Relacional
 
