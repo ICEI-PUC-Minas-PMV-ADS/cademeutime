@@ -1,8 +1,8 @@
 import { FastifyInstance } from "fastify";
-import { ERotas } from "./constantes.rota";
-import { usuarioModelo, usuarioSchema } from "../modelos/usuario.schema";
-import { error404 } from "./util.rota";
-import { usuarioController } from "../controladoras/usuario.controller";
+import { ERotas } from "./constantes.rota.js";
+import { usuarioModelo, usuarioSchema } from "../modelos/usuario.schema.js";
+import { error404 } from "./util.rota.js";
+import { usuarioController } from "../controladoras/usuario.controller.js";
 
 export default async function usuarioRota(
     server: FastifyInstance,
