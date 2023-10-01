@@ -52,4 +52,5 @@ async function ligarServidor(): Promise<FastifyInstance> {
   return server;
 }
 
+
 export default ligarServidor;
