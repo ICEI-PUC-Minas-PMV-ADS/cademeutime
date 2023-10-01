@@ -28,11 +28,11 @@ async function ligarServidor(): Promise<FastifyInstance> {
     prefix: '/docs',
     swagger: {
       info: {
-        title: 'EntryPoint API Swagger',
-        description: 'Testing the Fastify swagger EntryPoint API',
+        title: 'Documentação da API',
+        description: 'Testando api via fastfy',
         version: '0.1.0',
       },
-      host: 'localhost:4000',
+      host: 'localhost:3000/docs',
       schemes: ['http'],
       consumes: ['application/json'],
       produces: ['application/json'],
