@@ -1,6 +1,6 @@
 import { FastifyInstance } from "fastify";
 import { ERotas } from "./constantes.rota.js";
-import { usuarioModelo, usuarioSchema } from "../modelos/usuario.schema.js";
+import { usuarioModelo, usuarioSchema } from "../modelos/usuario.modelo.js";
 import { error404 } from "./util.rota.js";
 import { usuarioController } from "../controladoras/usuario.controller.js";
 

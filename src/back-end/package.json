@@ -1,23 +1,24 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "type":"module",
+  "type": "module",
   "description": "",
   "main": "dist/app.js",
   "scripts": {
-    "cli:run" : "nodemon --exec node --loader ts-node/esm src/app.ts",
+    "cli:run": "nodemon --exec node --loader ts-node/esm src/app.ts",
     "dev": "set API_ENVIRONMENT=DEV && npm run cli:run",
-    "qa": "set API_ENVIRONMENT=QA && npm run cli:run",    
+    "qa": "set API_ENVIRONMENT=QA && npm run cli:run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fastify": "^4.23.0",
     "@fastify/cors": "^8.2.1",
     "@fastify/swagger": "^8.4.0",
     "@fastify/swagger-ui": "^1.8.1",
+    "@prisma/client": "^5.3.1",
+    "fastify": "^4.23.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-themes": "^1.2.28"
   },

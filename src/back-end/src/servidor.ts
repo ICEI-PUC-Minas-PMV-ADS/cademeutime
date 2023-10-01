@@ -4,15 +4,16 @@ import swagger from '@fastify/swagger';
 import swaggerUi from '@fastify/swagger-ui';
 import { SwaggerTheme } from 'swagger-themes';
 import usuarioRota from './rotas/usuario.rota.js';
+import prismaPlugin from './plugins/prisma.js';
 
 async function ligarServidor(): Promise<FastifyInstance> {
-  const server: FastifyInstance = Fastify({ logger: true });
+  const app: FastifyInstance = Fastify({ logger: true });
   const theme = new SwaggerTheme('v3');
   const optionDark = theme.getBuffer('dark');
   const apiPrefix = 'api/v1/';
 
   async function registerCors(): Promise<void> {
-    await server.register(cors, {
+    await app.register(cors, {
       origin: ['*'],
       methods: ['GET', 'POST', 'OPTIONS'],
     });
@@ -20,11 +21,11 @@ async function ligarServidor(): Promise<FastifyInstance> {
 
   await registerCors();
 
-  server.get('/healthcheck', async function () {
+  app.get('/healthcheck', async function () {
     return { status: 'OK' };
   });
 
-  await server.register(swagger, {
+  await app.register(swagger, {
     prefix: '/docs',
     swagger: {
       info: {
@@ -39,17 +40,20 @@ async function ligarServidor(): Promise<FastifyInstance> {
     },
   });
 
-  // Register Swagger UI plugin
-  await server.register(swaggerUi, {
+  // Swagger UI plugin
+  await app.register(swaggerUi, {
     theme: {
       css: [{ filename: 'theme.css', content: optionDark }],
     },
     routePrefix: '/docs',
   });
-  
-  await server.register(usuarioRota, { prefix: apiPrefix });
 
-  return server;
+  // Prisma UI plugin
+  await app.register(prismaPlugin);
+  
+  await app.register(usuarioRota, { prefix: apiPrefix });
+  
+  return app;
 }
 
 
