@@ -1,18 +1,18 @@
 import { FastifyReply, FastifyRequest } from "fastify";
 import { PrismaClient } from '@prisma/client'
-import { IUsuario } from "../modelos/usuario/usuario.interface.js";
+import { IEvento } from "../modelos/evento/evento.interface.js";
 
 const prisma = new PrismaClient();
 
 async function cadastrar(
-    requisicao: FastifyRequest<{Body: IUsuario}>,
+    requisicao: FastifyRequest<{Body: IEvento}>,
     resposta: FastifyReply,
 ): Promise<void> {
     try {
-        const usuario = await prisma.Usuario.create({
+        const evento = await prisma.Evento.create({
             data: requisicao.body,
         });
-        await resposta.code(200).send(usuario);
+        await resposta.code(200).send(evento);
     } catch (e) {
         await resposta.code(500).send(e);
     } finally {
@@ -21,22 +21,22 @@ async function cadastrar(
 }
 
 async function atualizar(
-    requisicao: FastifyRequest<{Body: IUsuario}>,
+    requisicao: FastifyRequest<{Body: IEvento}>,
     resposta: FastifyReply,
 ): Promise<void> {
     try {
-        const { email } = requisicao.body;
-        
-        //evitar atualizacao indevida de credenciais
-        delete requisicao.body.email;
-        delete requisicao.body.senha;
 
-        const usuario = await prisma.Usuario.update({
-            where: { email },
+        const { id } = requisicao.body;
+        
+        //remove id para não atualizar o id
+        delete requisicao.body.id;
+
+        const evento = await prisma.Evento.update({
+            where: { id },
             data:  { ...requisicao.body },
         });
 
-        await resposta.code(200).send(usuario);
+        await resposta.code(200).send(evento);
     } catch (e) {
         await resposta.code(500).send(e);
     } finally {
@@ -49,8 +49,8 @@ async function listar(
     resposta: FastifyReply,
 ): Promise<void> {
     try {
-        const usuario = await prisma.Usuario.findMany();
-        await resposta.code(200).send(usuario);
+        const evento = await prisma.Evento.findMany();
+        await resposta.code(200).send(evento);
     } catch (e) {
         await resposta.code(500).send(e);
     } finally {
@@ -59,13 +59,13 @@ async function listar(
 }
 
 async function deletar(
-    requisicao: FastifyRequest<{Body: { email: string }}>,
+    requisicao: FastifyRequest<{Body: IEvento}>,
     resposta: FastifyReply,
 ): Promise<void> {
     try {
-        const { email } = requisicao.body;
-        const usuario = await prisma.Usuario.delete({where: { email }});
-        await resposta.code(200).send(usuario);
+        const { id } = requisicao.body;
+        const evento = await prisma.Evento.delete({where: { id }});
+        await resposta.code(200).send(evento);
     } catch (e) {
         await resposta.code(500).send(e);
     } finally {

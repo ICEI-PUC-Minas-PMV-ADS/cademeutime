@@ -2,11 +2,11 @@ import { FastifyInstance } from "fastify";
 import { ERotas } from "./constantes.rota.js";
 import { error404 } from "./util.rota.js";
 import { usuarioController } from "../controladoras/usuario.controller.js";
-import { usuarioModelo, usuarioSchema } from "../modelos/usuario/usuario.schema.js";
+import { eventoModelo, eventoSchema } from "../modelos/evento/evento.schema.js";
 
-const recurso = 'Usuário';
+const recurso = 'Evento';
 
-export default async function usuarioRota(
+export default async function eventoRota(
     app: FastifyInstance,
   ): Promise<void> {
     app.post(
@@ -15,11 +15,11 @@ export default async function usuarioRota(
         schema: {
           body: {
             type: 'object',
-            properties: usuarioModelo,
-            required: ['nome', 'email', 'senha'],
+            properties: eventoModelo,
+            required: ['modalidade', 'nome', 'data', 'local', 'autorEvento'],
           },
           response: {
-            200: usuarioSchema,
+            200: eventoSchema,
             404: error404(recurso),
           },
         },
@@ -33,11 +33,11 @@ export default async function usuarioRota(
         schema: {
           body: {
             type: 'object',
-            properties: usuarioModelo,
-            required: ['nome', 'email'],
+            properties: eventoModelo,
+            required: ['id'],
           },
           response: {
-            200: usuarioSchema,
+            200: eventoSchema,
             404: error404(recurso),
           },
         },
@@ -51,11 +51,11 @@ export default async function usuarioRota(
         schema: {
           body: {
             type: 'object',
-            properties: usuarioModelo,
+            properties: eventoModelo,
             required: ['id'],
           },
           response: {
-            200: usuarioSchema,
+            200: eventoSchema,
             404: error404(recurso),
           },
         },
@@ -69,10 +69,10 @@ export default async function usuarioRota(
         schema: {
           body: {
             type: 'object',
-            properties: usuarioModelo
+            properties: eventoModelo
           },
           response: {
-            200: usuarioSchema,
+            200: eventoSchema,
             404: error404(recurso),
           },
         },
