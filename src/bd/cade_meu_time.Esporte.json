@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "6519e5dc98931ececd7bf465"
+  },
+  "modalidade": "futvolei",
+  "qtdPessoa": 4,
+  "local": "clube",
+  "eventosporEsporte": "Jogo"
+},
+{
+  "_id": {
+    "$oid": "6519e8d998931ececd7bf473"
+  },
+  "modalidade": "String",
+  "qtdPessoas": "Int",
+  "local": "String",
+  "eventosPorEsporte": "Evento"
+}]
