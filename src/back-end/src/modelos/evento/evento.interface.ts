@@ -5,7 +5,8 @@ export interface IEvento {
     id?: string;
     modalidade: IEsporte;
     nome: string;
-    data: Date;
+    data: number;
     local: string;
     autorEvento: IUsuario;
+    googleMaps: string;
 }

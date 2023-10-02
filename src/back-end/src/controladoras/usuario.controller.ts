@@ -9,8 +9,8 @@ async function cadastrar(
     resposta: FastifyReply,
 ): Promise<void> {
     try {
-        const usuario = await prisma.Usuario.create({
-            data: requisicao.body,
+        const usuario = await prisma.usuario.create({
+            data: requisicao.body as any
         });
         await resposta.code(200).send(usuario);
     } catch (e) {
@@ -31,7 +31,7 @@ async function atualizar(
         delete requisicao.body.email;
         delete requisicao.body.senha;
 
-        const usuario = await prisma.Usuario.update({
+        const usuario = await prisma.usuario.update({
             where: { email },
             data:  { ...requisicao.body },
         });
@@ -49,7 +49,7 @@ async function listar(
     resposta: FastifyReply,
 ): Promise<void> {
     try {
-        const usuario = await prisma.Usuario.findMany();
+        const usuario = await prisma.usuario.findMany();
         await resposta.code(200).send(usuario);
     } catch (e) {
         await resposta.code(500).send(e);
@@ -64,7 +64,7 @@ async function deletar(
 ): Promise<void> {
     try {
         const { email } = requisicao.body;
-        const usuario = await prisma.Usuario.delete({where: { email }});
+        const usuario = await prisma.usuario.delete({where: { email }});
         await resposta.code(200).send(usuario);
     } catch (e) {
         await resposta.code(500).send(e);

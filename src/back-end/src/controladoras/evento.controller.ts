@@ -9,9 +9,7 @@ async function cadastrar(
     resposta: FastifyReply,
 ): Promise<void> {
     try {
-        const evento = await prisma.Evento.create({
-            data: requisicao.body,
-        });
+        const evento = await prisma.evento.create({data: requisicao.body as any });
         await resposta.code(200).send(evento);
     } catch (e) {
         await resposta.code(500).send(e);
@@ -31,9 +29,9 @@ async function atualizar(
         //remove id para não atualizar o id
         delete requisicao.body.id;
 
-        const evento = await prisma.Evento.update({
+        const evento = await prisma.evento.update({
             where: { id },
-            data:  { ...requisicao.body },
+            data: requisicao.body as any
         });
 
         await resposta.code(200).send(evento);
@@ -49,7 +47,7 @@ async function listar(
     resposta: FastifyReply,
 ): Promise<void> {
     try {
-        const evento = await prisma.Evento.findMany();
+        const evento = await prisma.evento.findMany();
         await resposta.code(200).send(evento);
     } catch (e) {
         await resposta.code(500).send(e);
@@ -64,7 +62,7 @@ async function deletar(
 ): Promise<void> {
     try {
         const { id } = requisicao.body;
-        const evento = await prisma.Evento.delete({where: { id }});
+        const evento = await prisma.evento.delete({where: { id }});
         await resposta.code(200).send(evento);
     } catch (e) {
         await resposta.code(500).send(e);
