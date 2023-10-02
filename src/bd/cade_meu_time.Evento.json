@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "6519e66798931ececd7bf467"
+  },
+  "modalidade:": "futvolei",
+  "esporteId": "atividade física",
+  "nome": "Lucas",
+  "data": "10/10/2023",
+  "horario": "19:30",
+  "local": "Clube",
+  "autorEvento": "diretoria do clube",
+  "usuarioId": "Lucas.pucminas"
+},
+{
+  "_id": {
+    "$oid": "6519ed4e98931ececd7bf476"
+  },
+  "modalidade": "Esporte",
+  "esporteId": "String",
+  "nome": "String",
+  "data": "DateTime",
+  "horario": "DateTime",
+  "local": "String",
+  "autorEvento": "Usuario",
+  "usuarioId": "String"
+}]

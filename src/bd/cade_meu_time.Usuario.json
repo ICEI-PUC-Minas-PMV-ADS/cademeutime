@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "6519e7a998931ececd7bf469"
+  },
+  "Nome": "Lucas",
+  "email": "Lucas.pucminas",
+  "senha": 123456789,
+  "eventosPorUsuario": "ilimitado"
+},
+{
+  "_id": {
+    "$oid": "6519ee2398931ececd7bf478"
+  },
+  "nome": "String",
+  "email": "String",
+  "senha": "String",
+  "eventosPorUsuario": "Evento"
+}]
