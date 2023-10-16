@@ -2,7 +2,7 @@ import { FastifyInstance } from "fastify";
 import { ERotas } from "./constantes.rota.js";
 import { error404 } from "./util.rota.js";
 import { usuarioController } from "../controladoras/usuario.controller.js";
-import { usuarioModelo, usuarioSchema } from "../modelos/usuario/usuario.schema.js";
+import { usuarioListaSchema, usuarioModelo, usuarioSchema } from "../modelos/usuario/usuario.schema.js";
 
 const recurso = 'Usuário';
 
@@ -27,7 +27,7 @@ export default async function usuarioRota(
       usuarioController.cadastrar,
     );
 
-    app.put(
+   app.put(
       ERotas.usuario,
       {
         schema: {
@@ -49,10 +49,10 @@ export default async function usuarioRota(
       ERotas.usuario,
       {
         schema: {
-          body: {
+          querystring: {
             type: 'object',
             properties: usuarioModelo,
-            required: ['id'],
+            required: ['email'],
           },
           response: {
             200: usuarioSchema,
@@ -67,12 +67,12 @@ export default async function usuarioRota(
       ERotas.usuario,
       {
         schema: {
-          body: {
+          querystring: {
             type: 'object',
-            properties: usuarioModelo
+            properties: {}            
           },
           response: {
-            200: usuarioSchema,
+            200: usuarioListaSchema,
             404: error404(recurso),
           },
         },
