@@ -104,7 +104,7 @@ Para melhor entendimento, segue explicação das camadas representadas:
 - `External Services` Integrações com serviços externos, como serviços de autenticação, armazenamento em nuvem, etc.
 
 - ## Documentação Swagger
-- 
+ 
 ![swagger 1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/940269cd-1223-43bd-8c4a-5eaa1142b737)
 
 ![swaggeer 2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/64c1004d-9183-4dad-aae6-fc5b1b40b4ed)
