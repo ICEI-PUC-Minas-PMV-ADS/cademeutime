@@ -37,7 +37,7 @@ export function Login() {
             type="text"
             name="email"
             id="email"
-            placeholder="johndoe@gmail.com"
+            placeholder="Digite seu email"
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
@@ -48,7 +48,7 @@ export function Login() {
             type="password"
             name="password"
             id="password"
-            placeholder="********************"
+            placeholder="Digite sua senha"
             onChange={(e) => setPassword(e.target.value)}
           />
           <a id="esquecerSenha" href="#">Esqueceu sua senha?</a>

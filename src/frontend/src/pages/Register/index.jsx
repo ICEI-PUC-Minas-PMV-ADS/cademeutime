@@ -46,7 +46,7 @@ export function Register() {
             type="text"
             name="email"
             id="email"
-            placeholder="Ex: johndoe@gmail.com"
+            placeholder="Digite seu email"
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
@@ -57,7 +57,7 @@ export function Register() {
             type="password"
             name="password"
             id="password"
-            placeholder="********************"
+            placeholder="Digite sua nova senha"
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
