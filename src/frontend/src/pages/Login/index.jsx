@@ -54,8 +54,6 @@ export function Login() {
           <a id="esquecerSenha" href="#">Esqueceu sua senha?</a>
         </div>
 
-        
-
         <button className="button" onClick={handleSignIn}>
           Entrar <img src={arrowImg} alt="->" />
         </button>
