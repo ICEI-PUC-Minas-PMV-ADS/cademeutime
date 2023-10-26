@@ -103,6 +103,16 @@ Para melhor entendimento, segue explicação das camadas representadas:
 - Repositories: Implementações concretas dos repositórios definidos na camada de domínio.
 - `External Services` Integrações com serviços externos, como serviços de autenticação, armazenamento em nuvem, etc.
 
+## Padrões de Projeto de Codificação
+
+Design Patterns ou padrões de projetos são soluções generalistas para problemas recorrentes durante o desenvolvimento de um software. Não se trata de um framework ou um código pronto, mas de uma definição de alto nível de como um problema comum pode ser solucionado.
+
+O benefício de usar Design Patterns é pelo fato de serem são modelos que já foram utilizados e testados anteriormente, portanto podem representar um bom ganho de produtividade para os desenvolvedores.
+
+Seu uso também contribui para a organização e manutenção de projetos, já que esses padrões se baseiam em baixo acoplamento entre as classes e padronização do código.
+
+Para o desenvolvimento do nosso projeto, seguimos o padrão Behavioral Patterns (Comportamental) mas especificamente o Command e de padrão arquitetural seguimos o padrão Model View Controler (MVC).
+
 - ## Documentação Swagger
  
 ![swagger 1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/940269cd-1223-43bd-8c4a-5eaa1142b737)
