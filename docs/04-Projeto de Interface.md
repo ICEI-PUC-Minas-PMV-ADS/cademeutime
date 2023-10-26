@@ -11,7 +11,9 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo da aplicação. 
 
-![DIAGRAMA DE FLUXO](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/b1fc4234-544f-416b-a5d9-b5562d5b06c2)
+
+![DDD – Domain Driven Design](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/1e1b2e38-0c34-4dd6-9190-6d9130024994)
+
 
 ## Wireframes
 
