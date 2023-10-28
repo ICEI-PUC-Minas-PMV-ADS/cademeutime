@@ -35,20 +35,11 @@ export function Home (){
           </div>
           <img src={imageHome} alt="home" />
         </div>
-        <div className="containerHome">
-          <div>
-            <h1>Encotre seu time!</h1>
-          </div>
 
-          
-        </div>
-
-        <div className="containerHome">
-          <div>
-            <h1>Experimente agora!</h1>
-          </div>
-          
-        </div>
+        <footer className="footerHome" text="© 2023 Todos os direitos reservados">
+          <p>© 2023 Todos os direitos reservados</p>
+        </footer>
+        
       </div>
        
   )

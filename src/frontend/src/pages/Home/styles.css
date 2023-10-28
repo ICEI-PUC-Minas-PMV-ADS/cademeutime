@@ -3,16 +3,15 @@
   padding-left: 120px;
   padding:1.5rem 7.5rem 2rem;
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 800px 3fr;
-  gap: 30rem;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .buttonHeader .cadastro {
   width: 12rem;
   margin-top: 2rem;
-  padding-left: 120px;
-  padding: 1.02rem 1.02rem 1.02rem;
+  margin-left:2rem;
+  padding: 0.75rem 0.75rem 0.755rem;
   font-size: 1rem;
   background: #FAC372;
   color:#1C1B1F;
@@ -20,11 +19,10 @@
   text-align: center;
   font-weight:500;
 }
+
 .buttonHeader .entrar{
   width: 12rem;
   margin-top: 2rem;
-  padding-left: 120px;
-  padding: 1.02rem 1.02rem 1.02rem;
   font-size: 1rem;
   color:#1C1B1F;
   text-align: center;
@@ -33,10 +31,11 @@
 
 .containerHome{
   margin: 4rem auto;
-  padding-left: 120px;
+  padding-left: 115px;
+  padding-right: 115px;
   display: grid;
   grid-template-columns: 800px 3fr;
-  gap: 10rem;
+  gap: 2.5rem;
 }
 
 .containerHome h1 {
@@ -47,22 +46,35 @@
 
 .containerHome p {
   color:#848993;
-  margin-top: 1.05rem;
+  margin-top: 1.25rem;
+  margin-bottom:80px;
   font-family: 'Roboto';
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight:100;
+}
+.containerHome img {
+  width: 500px;
+  height: 500px;
 }
 
 .buttonHome {
-  width: 26rem;
-  margin-top: 2rem;
+  width: 20rem;
   padding: 1.5rem 2rem 2rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   background: #FAC372;
   color:#1C1B1F;
   border-radius: 10px;
   text-align: center;
   font-weight:500;
 }
+.footerHome {
+  padding: 1rem 1rem 1rem;
+  background: #68645c;
+  color:#9c9c8d;
+}
+.footerHome p{
+  text-align: center;
+}
+
 
  
