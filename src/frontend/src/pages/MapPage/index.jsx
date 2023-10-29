@@ -29,7 +29,7 @@ export function MapPage () {
             </p>
         </div>
         <div className="map">
-        {isLoaded ? (
+          {isLoaded ? (
           <GoogleMap
             mapContainerStyle={{ width: '100%', height: '80%' }}
             center={position}
@@ -45,9 +45,12 @@ export function MapPage () {
               }}
             />
           </GoogleMap>
-        ) : (
-          <></>
-        )}
+          ) : (
+            <></>
+          )}
+          <div className="verMais">
+            <Link to="/event"> Ver mais eventos </Link>
+          </div>          
         </div>
         <footer className="footerHome" text="© 2023 Todos os direitos reservados">
           <p>© 2023 Todos os direitos reservados</p>
