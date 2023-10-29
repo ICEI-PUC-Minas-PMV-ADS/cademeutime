@@ -23,7 +23,7 @@ export function Home (){
         <div className="containerHome">
           <div>
             <h1>Praticar esportes com pessoas da sua região é mais divertido e seguro com o 
-            cadê meu time?
+            {''} <a>cadê meu time?</a>
             </h1>
             <p>
               É simples! Basta se cadastrar no aplicativo e escolher o esporte que você deseja praticar. Em seguida, você poderá ver todos os eventos que estão acontecendo perto de você. 

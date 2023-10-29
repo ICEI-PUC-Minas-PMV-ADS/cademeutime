@@ -17,10 +17,21 @@ export function MapPage () {
     };
   
     return (
-      <div className="map">
+      <div>
+        <header className="headerMap">
+          <img src={logoImg} alt="Cadê meu time?"/>
+        </header>
+        <div className="tituleMap">
+            <h1>Encontre um time perto de você!</h1>
+            <p>
+              Aqui, você poderá ver todos os eventos que estão acontecendo perto de você. 
+              Se você encontrar um evento que lhe interesse, basta se inscrever para participar.
+            </p>
+        </div>
+        <div className="map">
         {isLoaded ? (
           <GoogleMap
-            mapContainerStyle={{ width: '100%', height: '100%' }}
+            mapContainerStyle={{ width: '100%', height: '80%' }}
             center={position}
             zoom={15}
           >
@@ -37,6 +48,10 @@ export function MapPage () {
         ) : (
           <></>
         )}
+        </div>
+        <footer className="footerHome" text="© 2023 Todos os direitos reservados">
+          <p>© 2023 Todos os direitos reservados</p>
+        </footer>
       </div>
     );
   };
