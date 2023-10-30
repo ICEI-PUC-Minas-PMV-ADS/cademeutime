@@ -1,13 +1,24 @@
-import Fastify, { type FastifyInstance } from 'fastify';
+import Fastify, { preHandlerHookHandler, type FastifyInstance } from 'fastify';
 import cors from '@fastify/cors';
 import swagger from '@fastify/swagger';
 import swaggerUi from '@fastify/swagger-ui';
 import { SwaggerTheme } from 'swagger-themes';
 import usuarioRota from './rotas/usuario.rota.js';
 import prismaPlugin from './plugins/prisma.js';
+import { createRequire } from "module";
+import { JWT } from 'fastify-jwt-deprecated';
+
+
+interface IFastfyInstance extends FastifyInstance {
+  jwt: JWT;
+  authenticate?: preHandlerHookHandler<any>
+}
+const require = createRequire(import.meta.url);
+const fastfyJWT = require('fastify-jwt');
 
 async function ligarServidor(): Promise<FastifyInstance> {
-  const app: FastifyInstance = Fastify({ logger: true });
+  const app : IFastfyInstance = Fastify({ logger: true });
+  
   const theme = new SwaggerTheme('v3');
   const optionDark = theme.getBuffer('dark');
   const apiPrefix = 'api/v1/';
@@ -21,8 +32,29 @@ async function ligarServidor(): Promise<FastifyInstance> {
 
   await registerCors();
 
-  app.get('/healthcheck', async function () {
-    return { status: 'OK' };
+  app.decorate("authenticate", async (req: any, reply : any) => {
+    try {
+      await req.jwtVerify()
+    } catch (err) {
+      reply.send(err)
+    }
+  })
+
+  app.after(() => {
+    if(!app.authenticate) return;
+    
+    app.route({
+      method: 'GET',
+      url: '/secret',
+      preHandler: [app.authenticate],
+      handler: (req, reply) => {
+        reply.send('Logado')
+      }
+    })
+  })
+
+  app.register(fastfyJWT, {
+    secret: 'strongpasswordsecret'
   });
 
   await app.register(swagger, {
@@ -53,6 +85,21 @@ async function ligarServidor(): Promise<FastifyInstance> {
   
   await app.register(usuarioRota, { prefix: apiPrefix });
   
+  app.post('/signup', (req, reply) => {
+    const body : any = req.body;
+
+    if(body.login === 'rider@gmail.com' && body.senha === 'testedelogin'){
+      const token = app.jwt.sign({result: 'ok'})
+      reply.send({token})
+    }
+    
+    reply.status(401).send({feedback: 'Login inválido'})
+    
+  });
+  
+  app.get('/healthcheck', async function () {
+    return { status: 'OK' };
+  });
   return app;
 }
 

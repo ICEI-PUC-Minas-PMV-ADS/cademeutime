@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = env("mongodb://cademeutime:ONline89@#@localhost:27017/cademeutime")
+  url      = "mongodb://rs1:27017,rs2:27018,rs3:27019/cademeutime?replicaSet=replica-set"
 }
 
 model Usuario {

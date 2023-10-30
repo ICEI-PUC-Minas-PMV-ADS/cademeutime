@@ -49,8 +49,9 @@ async function listar(
     resposta: FastifyReply,
 ): Promise<void> {
     try {
-        const usuario = await prisma.usuario.findMany();
-        await resposta.code(200).send(usuario);
+        const usuarios = await prisma.usuario.findMany();
+        console.log(usuarios);
+        await resposta.code(200).send(usuarios);
     } catch (e) {
         await resposta.code(500).send(e);
     } finally {
@@ -59,11 +60,11 @@ async function listar(
 }
 
 async function deletar(
-    requisicao: FastifyRequest<{Body: { email: string }}>,
+    requisicao: FastifyRequest<{Querystring: { email: string }}>,
     resposta: FastifyReply,
 ): Promise<void> {
     try {
-        const { email } = requisicao.body;
+        const { email } = requisicao.query;
         const usuario = await prisma.usuario.delete({where: { email }});
         await resposta.code(200).send(usuario);
     } catch (e) {
