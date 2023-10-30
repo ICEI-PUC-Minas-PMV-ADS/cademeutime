@@ -5,3 +5,4 @@
 
 <li><a href="https://youtu.be/CbYQugc48Ig"> Apresentação da solução - etapa 2 - API - vídeo rotas / teste
 <li><a href="https://youtu.be/t4aR77RmVXk"> Apresentação do frontend - etapa 3  
+<li><a href="https://youtu.be/xwnlbh4VDk0"> Apresentação do CRUD - LOGIN - etapa 3  
