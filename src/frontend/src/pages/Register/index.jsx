@@ -7,6 +7,7 @@ import { auth } from "../../services/firebaseConfig";
 import "./styles.css";
 
 export function Register() {
+  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -21,6 +22,40 @@ export function Register() {
   if (loading) {
     return <p>carregando...</p>;
   }
+
+  const [formData, setFormData] = useState ({
+    nome: '',
+    email: '',
+    senha: '',
+  })
+  
+  const handleFormEdit = (event, name) => {
+    setFormData({
+      ...formData,
+      [name]: event.target.value
+    })
+  }
+
+  const handleForm = async (event) => {
+    try {
+      event.preventDefault()
+      const response = await fetch('http://localhost:3000/api/v1/usuario', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+    
+    const json = await response.json()
+    console.log(response.status)
+    console.log(json)
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+
   return (
     <div className="container">
       <header className="header">
@@ -28,15 +63,17 @@ export function Register() {
         <span id="subTitulo"> Faça seu cadastro e encontre seu time hoje mesmo!</span>
       </header>
 
-      <form>
+      <form onSubmit={handleForm}> 
       <div className="inputContainer">
           <label htmlFor="name">Nome</label>
           <input
             type="text"
-            name="name"
+            name="nome"
             id="name"
             placeholder="Nome Completo"
-            onChange={(e) => setNome(e.target.value)}
+            required
+            value={formData.nome}
+            onChange={(e) => {handleFormEdit(e, "nome")}}
           />
         </div>
 
@@ -47,7 +84,9 @@ export function Register() {
             name="email"
             id="email"
             placeholder="Digite seu email"
-            onChange={(e) => setEmail(e.target.value)}
+            required
+            value={formData.email}
+            onChange={(e) => {handleFormEdit(e, "email")}}
           />
         </div>
 
@@ -55,14 +94,16 @@ export function Register() {
           <label htmlFor="password">Senha</label>
           <input
             type="password"
-            name="password"
+            name="senha"
             id="password"
             placeholder="Digite sua nova senha"
-            onChange={(e) => setPassword(e.target.value)}
+            required
+            value={formData.senha}
+            onChange={(e) => {handleFormEdit(e, "senha")}}
           />
         </div>
 
-        <button onClick={handleSignOut} className="button">
+        <button type="submit" className="button">
           Cadastrar <img src={arrowImg} alt="->" />
         </button>
         <div className="footer">
