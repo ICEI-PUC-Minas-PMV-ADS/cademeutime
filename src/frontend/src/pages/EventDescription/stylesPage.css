@@ -1,0 +1,262 @@
+.containerDescription {
+    width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .containerDescription .header {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 10%;
+  }
+  
+  .containerDescription .header span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 6%;
+    padding-top: 15%;
+  }
+
+  .containerDescription .return {
+    display: flex;
+    align-items: flex-start;
+    border: 0 none;
+    background: none;
+  }
+  .containerDescription .return:hover {
+    cursor: pointer;
+  }
+  
+  .containerDescription form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .containerDescription form  .inputContainer {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 5%;
+    flex-direction: column;
+  }
+  
+  .containerDescription form  .linha {
+    display: flex;
+    align-items: flex-start;
+    border: 0.5px solid #848993;
+    width: 100%;
+  }
+  
+  .containerDescription form  .inputContainer img {
+    padding-right: 1em;
+  }
+
+  .containerDescription form  .inputContainer .options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2em 0 0 0;
+    width: 100%;
+    height: 3em;
+  }
+
+  .containerDescription form  .inputContainer .participante {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 8% 0 8% 0;
+    width: 100%;
+    height: 1em;
+  }
+
+  .containerDescription form  .inputContainer .optionsP {
+    width: 100%;
+    border: none;
+    padding: 0 200px 0 0;
+  }
+
+  .containerDescription form #inputContainerComentario {
+    width: 20em;
+    height: 12em;
+    padding: 4% 0 4% 0;
+  }
+
+  .containerDescription form  .inputContainer label {
+    padding-bottom: 4%;
+
+  }
+
+  .containerDescription form  .inputContainer .comentario {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1em;
+    width: 90%;
+    height: 100%;
+    border: 1px solid #0a0a0a;
+    border-radius: 12px;
+    margin-left: 2em;
+  }
+
+  .containerDescription form .button {
+    margin-top: 10%;
+    width: 100%;
+    height: 3em;
+    background: #4B92D4;
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 6%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerDescription form .button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  .containerDescription form .recusa {
+    padding: 5% 0 0 33%;
+  }
+  
+  .containerDescription form .recusa a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1em;
+    text-decoration-line: underline;
+    color: #e44747;
+  }
+  
+  .containerDescription .footer {
+    padding-top: 15%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    text-align: center;
+  }
+
+  .containerDescription .footer button{
+    width: auto;
+    border: 0 none;
+    background: none;
+  }
+  .containerDescription .footer button:hover {
+    cursor: pointer;
+  }
+
+@media screen and (min-width: 1024px){
+  .containerDescription {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .containerDescription .header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  
+  .containerDescription .header span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 5px;
+  }
+  
+  .containerDescription form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .containerDescription form  .inputContainerDescription {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .containerDescription form  .inputContainerDescription label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
+  }
+  
+  .containerDescription form  .inputContainerDescription input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    width: 520px;
+    height: 49px;
+    border: 1px solid #4B92D4;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  
+  }
+  
+  #password {
+  margin-bottom:20px;
+  }
+  
+  .containerDescription form .button {
+    width: 520px;
+    height: 48px;
+    background: #4B92D4;
+    border-radius: 12px;
+    color: #fff;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .containerDescription form .button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .containerDescription form .footer {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+  }
+  
+  .containerDescription form .footer p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+  }
+  
+  .containerDescription form .footer a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #4763E4;
+  }
+  
+  
+}
