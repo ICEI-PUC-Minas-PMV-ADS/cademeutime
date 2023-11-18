@@ -1,262 +1,253 @@
 .containerDescription {
-    width: 375px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .containerDescription .header {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-bottom: 10%;
-  }
-  
-  .containerDescription .header span {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 6%;
-    padding-top: 15%;
-  }
+  width: 375px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
-  .containerDescription .return {
-    display: flex;
-    align-items: flex-start;
-    border: 0 none;
-    background: none;
-  }
-  .containerDescription .return:hover {
-    cursor: pointer;
-  }
-  
-  .containerDescription form {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  
-  .containerDescription form  .inputContainer {
-    display: flex;
-    align-items: flex-start;
-    padding-bottom: 5%;
-    flex-direction: column;
-  }
-  
-  .containerDescription form  .linha {
-    display: flex;
-    align-items: flex-start;
-    border: 0.5px solid #848993;
-    width: 100%;
-  }
-  
-  .containerDescription form  .inputContainer img {
-    padding-right: 1em;
-  }
+.containerDescription .logo,
+.containerDescription .topicos #optionsDesktopLinha,
+.containerDescription .topicos .Container #optionsDesktop,
+.containerDescription .topicos h1 {
+  display: none;
+}
 
-  .containerDescription form  .inputContainer .options {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 2em 0 0 0;
-    width: 100%;
-    height: 3em;
-  }
+.containerDescription .header {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
 
-  .containerDescription form  .inputContainer .participante {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    padding: 8% 0 8% 0;
-    width: 100%;
-    height: 1em;
-  }
+.containerDescription .header span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 6%;
+  padding-top: 15%;
+}
 
-  .containerDescription form  .inputContainer .optionsP {
-    width: 100%;
-    border: none;
-    padding: 0 200px 0 0;
-  }
+.containerDescription .return {
+  display: flex;
+  align-items: flex-start;
+  border: 0 none;
+  background: none;
+}
 
-  .containerDescription form #inputContainerComentario {
-    width: 20em;
-    height: 12em;
-    padding: 4% 0 4% 0;
-  }
+.containerDescription .return:hover {
+  cursor: pointer;
+}
 
-  .containerDescription form  .inputContainer label {
-    padding-bottom: 4%;
+.containerDescription .topicos {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
 
-  }
+.containerDescription .topicos .Container {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 5%;
+  flex-direction: column;
+}
 
-  .containerDescription form  .inputContainer .comentario {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 1em;
-    width: 90%;
-    height: 100%;
-    border: 1px solid #0a0a0a;
-    border-radius: 12px;
-    margin-left: 2em;
-  }
+.containerDescription .topicos .linha {
+  display: flex;
+  align-items: flex-start;
+  border: 0.5px solid #848993;
+  width: 100%;
+}
 
-  .containerDescription form .button {
-    margin-top: 10%;
-    width: 100%;
-    height: 3em;
-    background: #4B92D4;
-    border-radius: 50px;
-    color: #fff;
-    border: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 6%;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .containerDescription form .button:hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
+.containerDescription .topicos .Container img {
+  padding-right: 1em;
+}
 
-  .containerDescription form .recusa {
-    padding: 5% 0 0 33%;
-  }
-  
-  .containerDescription form .recusa a {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1em;
-    text-decoration-line: underline;
-    color: #e44747;
-  }
-  
-  .containerDescription .footer {
-    padding-top: 15%;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    align-items: center;
-    text-align: center;
-  }
+.containerDescription .topicos .Container .options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2em 0 0 0;
+  width: 100%;
+  height: 3em;
+}
 
-  .containerDescription .footer button{
-    width: auto;
-    border: 0 none;
-    background: none;
-  }
-  .containerDescription .footer button:hover {
-    cursor: pointer;
-  }
+.containerDescription .topicos .Container .participante {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 8% 0 8% 0;
+  width: 100%;
+  height: 1em;
+}
 
-@media screen and (min-width: 1024px){
+.containerDescription .topicos .Container .optionsP {
+  width: 100%;
+  border: none;
+  padding: 0 200px 0 0;
+}
+
+.containerDescription .topicos #ContainerComentario {
+  width: 320px;
+  height: 200px;
+  padding: 4% 0 4% 0;
+}
+
+.containerDescription .topicos .Container label {
+  padding-bottom: 4%;
+
+}
+
+.containerDescription .topicos .Container .comentario {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1em;
+  width: 90%;
+  height: 100%;
+  border: 1px solid #0a0a0a;
+  border-radius: 12px;
+  margin-left: 2em;
+}
+
+.containerDescription .topicos .botao {
+  width: 100%;
+}
+
+.containerDescription .topicos .button {
+  margin-top: 10%;
+  width: 100%;
+  height: 3em;
+  background: #4B92D4;
+  border-radius: 50px;
+  color: #fff;
+  border: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 6%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerDescription .topicos .button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.containerDescription .topicos .recusa {
+  padding: 5% 0 0 33%;
+}
+
+.containerDescription .topicos .recusa a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1em;
+  text-decoration-line: underline;
+  color: #e44747;
+}
+
+.containerDescription .footer {
+  padding-top: 15%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  text-align: center;
+}
+
+.containerDescription .footer button {
+  width: 100%;
+  border: 0 none;
+  background: none;
+}
+
+.containerDescription .footer button:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
   .containerDescription {
     width: 100vw;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
   }
-  .containerDescription .header {
+
+  .containerDescription .logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-direction: column;
-    margin-bottom: 40px;
+    gap: 3em;
+    padding-top: 1em;
   }
-  
-  .containerDescription .header span {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    padding-top: 5px;
+
+  .containerDescription .logo img {
+    max-width: 100px;
+    height: auto;
   }
-  
-  .containerDescription form {
+
+  .containerDescription h1 {
+    font-size: x-large;
+  }
+
+  .containerDescription .topicos h1 {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    padding-bottom: 0.5em;
   }
-  
-  .containerDescription form  .inputContainerDescription {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  
-  .containerDescription form  .inputContainerDescription label {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    margin-bottom: 8px;
-  }
-  
-  .containerDescription form  .inputContainerDescription input {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 16px;
-    width: 520px;
-    height: 49px;
-    border: 1px solid #4B92D4;
+
+  .containerDescription .geralDesktop .escopo {
+    border: 1px solid #848993;
     border-radius: 12px;
-    margin-bottom: 12px;
-  
+    width: 450px;
+    padding: 2rem;
+    margin: 2em 0;
   }
-  
-  #password {
-  margin-bottom:20px;
-  }
-  
-  .containerDescription form .button {
-    width: 520px;
-    height: 48px;
-    background: #4B92D4;
-    border-radius: 12px;
-    color: #fff;
-    border: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-  
+
+  .containerDescription .topicos {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+    align-items: start;
   }
-  .containerDescription form .button:hover {
-    cursor: pointer;
-    opacity: 0.8;
+
+  .containerDescription .topicos #ContainerComentario {
+    width: 100%;
+    height: auto;
   }
-  
-  .containerDescription form .footer {
-    padding-top: 5px;
+
+  .containerDescription .topicos .Container .comentario {
+    width: 100%;
+    margin: 0;
+  }
+
+  .containerDescription .topicos .button {
+    width: 10em;
+    height: 38px;
+    background: #0a4f91;
+  }
+
+  .containerDescription .topicos .botao {
+    padding: 5% 0 0 25%;
+  }
+
+  .containerDescription .topicos .Container .comentario {
+    width: 100%;
+    height: auto;
+  }
+
+  .containerDescription .topicos .Container #optionsDesktop,
+  .containerDescription .topicos #optionsDesktopLinha {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px
   }
-  
-  .containerDescription form .footer p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    color: #000000;
+
+  .containerDescription .header,
+  .containerDescription .topicos #ContainerComentario label img,
+  .options img,
+  .participante img,
+  .containerDescription .footer,
+  .containerDescription .topicos .Container .options,
+  .containerDescription .topicos .Container .optionsP {
+    display: none;
   }
-  
-  .containerDescription form .footer a {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    text-decoration-line: underline;
-    color: #4763E4;
-  }
-  
-  
 }
