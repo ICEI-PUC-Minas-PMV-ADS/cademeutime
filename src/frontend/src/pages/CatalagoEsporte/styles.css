@@ -1,0 +1,68 @@
+.headerHome {
+  margin: 0;
+  padding-left: 120px;
+  padding:1.5rem 7.5rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonHeader .cadastro {
+  width: 12rem;
+  margin-top: 2rem;
+  margin-left:2rem;
+  padding: 0.75rem 0.75rem 0.75rem;
+  font-size: 1rem;
+  background: #FAC372;
+  color:#1C1B1F;
+  border-radius: 10px;
+  text-align: center;
+  font-weight:500;
+}
+.buttonHeader .entrar{
+  width: 12rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  color:#1C1B1F;
+  text-align: center;
+  font-weight:100;
+}
+
+
+.buttonHome {
+  width: 20rem;
+  padding: 1.5rem 2rem 2rem;
+  font-size: 1.25rem;
+  background: #FAC372;
+  color:#1C1B1F;
+  border-radius: 10px;
+  text-align: center;
+  font-weight:500;
+}
+.footerHome {
+  padding: 1rem 1rem 1rem;
+  background: #68645c;
+  color:#9c9c8d;
+}
+.footerHome p{
+  text-align: center;
+}
+
+.row-cols-1 > * {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.row-cols-sm-2 > * {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.row-cols-md-3 > * {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+
+ 
