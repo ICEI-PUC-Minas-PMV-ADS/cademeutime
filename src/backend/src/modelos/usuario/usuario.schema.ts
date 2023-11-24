@@ -19,7 +19,7 @@ const usuarioSchema = {
   properties: usuarioModelo,
 };
   
-export const usuarioListaSchema =  {
+const usuarioListaSchema =  {
   description: 'Retorna lista de Usuários',
   type: 'array',
   items: {
@@ -27,5 +27,5 @@ export const usuarioListaSchema =  {
   },
 };
 
-export {usuarioSchema, usuarioModelo};
+export {usuarioSchema, usuarioModelo, usuarioListaSchema};
   

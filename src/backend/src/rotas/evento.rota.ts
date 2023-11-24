@@ -2,7 +2,8 @@ import { FastifyInstance } from "fastify";
 import { ERotas } from "./constantes.rota.js";
 import { error404 } from "./util.rota.js";
 import { usuarioController } from "../controladoras/usuario.controller.js";
-import { eventoModelo, eventoSchema } from "../modelos/evento/evento.schema.js";
+import { eventoLocalizarSchema, eventoModelo, eventoSchema } from "../modelos/evento/evento.schema.js";
+import { eventoController } from "../controladoras/evento.controller.js";
 
 const recurso = 'Evento';
 
@@ -78,5 +79,26 @@ export default async function eventoRota(
         },
       },
       usuarioController.listar,
+    );
+  }
+
+  export async function eventoLocalizarRota(
+    app: FastifyInstance,
+  ): Promise<void> {
+ 
+    app.get(
+      ERotas.localizarEvento,
+      {
+        schema: {
+          querystring: {
+            latlng: { type: 'string' },            
+          },
+          response: {
+            200: eventoLocalizarSchema,
+            404: error404(recurso),
+          },
+        },
+      },
+      eventoController.encontrarMaisProximo,
     );
   }

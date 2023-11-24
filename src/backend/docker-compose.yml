@@ -12,6 +12,8 @@ services:
         max-size: "10m"
     restart: always
     command: mongod --replSet replica-set
+    volumes:
+      - './src/data/rs1:/data/db'
     ports:
       - "27017:27017"
     networks:
@@ -27,6 +29,8 @@ services:
         max-size: "10m"
     restart: always
     command: mongod --replSet replica-set
+    volumes:
+      - './src/data/rs2:/data/db'
     ports:
       - "27018:27017"
     networks:
@@ -42,6 +46,8 @@ services:
         max-size: "10m"
     restart: always
     command: mongod --replSet replica-set
+    volumes:
+      - './src/data/rs3:/data/db'
     ports:
       - "27019:27017"
     networks:
@@ -67,9 +73,9 @@ services:
         config = {
           "_id" : "replica-set",
           "members" : [
-            {"_id" : 0,"host" : "rs1:27017"},
-            {"_id" : 1,"host" : "rs2:27017"},
-            {"_id" : 2,"host" : "rs3:27017"}
+            {"_id" : 0, "priority" : 100, "host" : "rs1:27017"},
+            {"_id" : 1, "priority" : 10, "host" : "rs2:27017"},
+            {"_id" : 2, "priority" : 1, "host" : "rs3:27017"}
           ] 
         };
         rs.initiate(config);'

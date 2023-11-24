@@ -10,3 +10,13 @@ export interface IEvento {
     autorEvento: IUsuario;
     googleMaps: string;
 }
+
+export interface IEventoLocalizar {
+    id?: string;
+    nome: string;
+    latlng: string;    
+    distancia: {
+        texto : string;
+        valor: number;
+    };
+}
