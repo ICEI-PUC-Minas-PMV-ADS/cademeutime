@@ -1,37 +1,44 @@
+// index.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import logoImg from "../../assets/logo.svg";
-import EsporteItem from "./EsporteItem";
+import CatalogoEsportes from "../../components/CatalogoEsportes"; // Importa o componente
+
 import "./styles.css";
 
 export function CatalogoEsporte() {
-  const esportes = [
-    { descricao: "Descrição do Esporte 1", imagemSrc: "caminho/para/imagem-esporte1.jpg" },
-    { descricao: "Descrição do Esporte 2", imagemSrc: "caminho/para/imagem-esporte2.jpg" },
-    // Adicione mais esportes conforme necessário
-  ];
-
   return (
     <div>
-      <Header />
-      <div className="containerCatalogo">
+      <header className="headerHome">
+        <img src={logoImg} alt="Cadê meu time?" />
+        <div className="buttonHeader">
+          <Link className="entrar" to="/login">
+            Entrar
+          </Link>
+          <Link className="cadastro" to="/register">
+            Cadastrar-se
+          </Link>
+        </div>
+      </header>
+      <div className="containerHome">
         <div>
-          <h1>Descubra seu esporte favorito!</h1>
-          <p>Aqui está o catálogo de esportes:</p>
+          <h1>Conheça nossos esportes!</h1>
 
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            {esportes.map((esporte, index) => (
-              <EsporteItem key={index} {...esporte} />
-            ))}
-          </div>
+          {/* Renderize o componente de catálogo aqui */}
+          <CatalogoEsportes />
 
-          <div className="buttonHome">
-            <Link to="/register">Junte-se ao nosso time</Link>
-          </div>
         </div>
       </div>
-      <Footer />
+
+      <footer className="footerHome" text="© 2023 Todos os direitos reservados">
+        <p>© 2023 Todos os direitos reservados</p>
+      </footer>
     </div>
   );
 }
+
+
+
+      
+     
 
