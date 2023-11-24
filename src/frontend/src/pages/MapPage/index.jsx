@@ -1,9 +1,8 @@
-import { useState } from "react";
 import logoImg from "../../assets/logo.svg"
-import imageHome from "../../assets/imageHome.svg"
 import { Link } from "react-router-dom"
+import { useJsApiLoader, GoogleMap, Marker, StandaloneSearchBox } from '@react-google-maps/api';
+
 import "./styles.css"
-import { useJsApiLoader, GoogleMap, Marker } from '@react-google-maps/api';
 
 export function MapPage () {
     const { isLoaded } = useJsApiLoader({
@@ -15,6 +14,8 @@ export function MapPage () {
       lat: -27.590824,
       lng: -48.551262
     };
+
+
   
     return (
       <div>
@@ -31,7 +32,8 @@ export function MapPage () {
         <div className="map">
           {isLoaded ? (
           <GoogleMap
-            mapContainerStyle={{ width: '100%', height: '80%' }}
+            id='google-map-script'
+            mapContainerStyle={{ width: '100%', height: '100%' }}
             center={position}
             zoom={15}
           >
@@ -44,6 +46,13 @@ export function MapPage () {
                 },
               }}
             />
+            <StandaloneSearchBox>
+              <input
+                type='text'
+                placeholder='Customized your placeholder'
+                style={inputStyle}
+              />
+            </StandaloneSearchBox>
           </GoogleMap>
           ) : (
             <></>

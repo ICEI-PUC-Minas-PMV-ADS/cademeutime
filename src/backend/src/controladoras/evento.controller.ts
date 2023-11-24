@@ -2,7 +2,7 @@ import { FastifyReply, FastifyRequest } from "fastify";
 import { PrismaClient } from '@prisma/client'
 import { IEvento, IEventoLocalizar } from "../modelos/evento/evento.interface.js";
 import 'dotenv/config';
-import { Client, DistanceMatrixRow, DistanceMatrixRowElement, Language } from "@googlemaps/google-maps-services-js";
+import { Client, DistanceMatrixRowElement, Language } from "@googlemaps/google-maps-services-js";
 
 const prisma = new PrismaClient();
 
@@ -121,12 +121,13 @@ async function encontrarMaisProximo(
                 language: Language.pt_BR
             },
         });
-
+        
         const elementos = resultado?.data?.rows[0]?.elements;
         if(!elementos) throw new Error('Não foi possível determinar qual o evento mais próximo');
 
         const localizacoes : IEventoLocalizar[] = [];
         elementos.forEach((element : DistanceMatrixRowElement, key: number) => {
+            if(!element?.distance?.text) return; // pula se não encontra nada            
             localizacoes.push({
                 id: String(key + 1),
                 nome: eventos[key].nome,

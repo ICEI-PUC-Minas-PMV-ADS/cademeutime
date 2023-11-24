@@ -1,13 +1,29 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import arrowImg from "../../assets/arrow.svg";
-import logoImg from "../../assets/logo.svg";
-import { auth } from "../../services/firebaseConfig";
-import "./styles.css";
+import { Status, Wrapper } from "@googlemaps/react-wrapper";
+import { EventMap } from './map';
 
+import arrowImg from "../../assets/arrow.svg";
+import { localizarEventoProximo } from "../../endpoints/evento.endpoint";
+
+import '../../maps/autocomplete.map';
+import "./styles.css"
 
 export function RegisterEvent() {
   const [esporte, setEsporte] = useState("");
+
+  const apiKey = __ENV__.GOOGLE_API_KEY;
+
+  const position = {
+    lat: -27.590824,
+    lng: -48.551262
+  };
+  
+  const render = (status) => {
+    if (status === Status.LOADING) return <h3>{status} ..</h3>;
+    if (status === Status.FAILURE) return <h3>{status} ...</h3>;
+    return null;
+  };
 
   return (
     <div className="container">
@@ -34,9 +50,15 @@ export function RegisterEvent() {
             type="text"
             name="local"
             id="local"
-            placeholder="Digite o endereço do seu evento!"
-            onChange={(e) => setLocal(e.target.value)}
+            placeholder="Digite o endereço do seu evento!"           
           />
+          <Wrapper apiKey={apiKey} render={render} libraries={["places"]}>
+            <EventMap center={position} zoom={11} />
+          </Wrapper>
+            
+        </div>
+        <div className="inputContainer">
+          
         </div>
 
         <div className="inputContainer">
