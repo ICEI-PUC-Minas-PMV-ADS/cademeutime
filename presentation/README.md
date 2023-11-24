@@ -1,3 +1,8 @@
 # Apresentação da Solução
 
-Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.
+## A cada etapa foi gerado um artefato em vídeo que ilustra o trabalho da equipe de desenvolvimento do APP - Cadê meu time, estes links estão disponíveis abaixo 
+
+
+<li><a href="https://youtu.be/CbYQugc48Ig"> Apresentação da solução - etapa 2 - API - vídeo rotas / teste
+<li><a href="https://youtu.be/t4aR77RmVXk"> Apresentação do frontend - etapa 3  
+<li><a href="https://youtu.be/xwnlbh4VDk0"> Apresentação do CRUD - LOGIN - etapa 3  

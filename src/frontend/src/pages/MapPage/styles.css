@@ -1,0 +1,51 @@
+.map {
+  height: 100vh;
+  margin: 2rem auto;
+  padding-left: 115px;
+  padding-right: 115px;
+}
+
+.map-marker {
+  margin-top: -30px;
+}
+.headerMap{
+  margin: 0;
+  padding-left: 120px;
+  padding:1.5rem 7.5rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tituleMap{
+  margin: 1.5rem auto;
+  padding-left: 115px;
+  padding-right: 115px;
+}
+
+.tituleMap h1 {
+  color:#0F3353;
+  margin-top: 1.25rem;
+  margin-bottom:20px;
+  font-family: 'Roboto';
+  font-size: 2.75rem;
+}
+.tituleMap p {
+  color:#848993;
+  margin-top: 1.25rem;
+  margin-bottom:20px;
+  font-family: 'Roboto';
+  font-size: 1.6rem;
+  font-weight:100;
+}
+
+.verMais{
+  width: 12rem;
+  padding: 0.75rem 0.75rem 0.75rem;
+  margin-top: 1.05rem;
+  font-size: 1.05rem;
+  background: #FAC372;
+  color:#1C1B1F;
+  border-radius: 10px;
+  text-align: center;
+}
