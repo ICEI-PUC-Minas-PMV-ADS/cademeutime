@@ -2,7 +2,7 @@ import { FastifyInstance } from "fastify";
 import { ERotas } from "./constantes.rota.js";
 import { error404 } from "./util.rota.js";
 import { usuarioController } from "../controladoras/usuario.controller.js";
-import { eventoLocalizarSchema, eventoModelo, eventoSchema } from "../modelos/evento/evento.schema.js";
+import { eventoListaSchema, eventoLocalizarSchema, eventoModelo, eventoSchema } from "../modelos/evento/evento.schema.js";
 import { eventoController } from "../controladoras/evento.controller.js";
 
 const recurso = 'Evento';
@@ -26,6 +26,23 @@ export default async function eventoRota(
         },
       },
       eventoController.cadastrar,
+    );
+
+    app.get(
+      ERotas.evento,
+      {
+        schema: {
+          querystring: {
+            type: 'object',
+            properties: {}            
+          },
+          response: {
+            200: eventoListaSchema,
+            404: error404(recurso),
+          },
+        },
+      },
+      eventoController.listar,
     );
   }
 

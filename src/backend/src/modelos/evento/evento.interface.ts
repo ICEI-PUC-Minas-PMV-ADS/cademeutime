@@ -4,6 +4,7 @@ export interface IEvento {
     esporteId: string,
     data: string,
     hora: string,
+    local: string,
     latlng: string,
 }
 

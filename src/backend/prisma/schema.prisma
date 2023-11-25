@@ -27,6 +27,7 @@ model Evento {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   esporteId String @db.ObjectId 
   nome String
+  local String
   data DateTime
   latlng String  
 }

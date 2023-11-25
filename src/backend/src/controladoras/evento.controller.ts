@@ -11,7 +11,7 @@ async function cadastrar(
     resposta: FastifyReply,
 ): Promise<void> {
     try {
-        const { nome, esporteId, data, hora, latlng } = requisicao.body;
+        const { nome, esporteId, data, hora, latlng, local } = requisicao.body;
         
         const esporteBanco = await prisma.esporte.findUnique({
             where: {
@@ -27,6 +27,7 @@ async function cadastrar(
                     nome,
                     esporteId,
                     latlng,
+                    local,
                     data: new Date(data + " " + hora)
                 }
             }
@@ -38,6 +39,21 @@ async function cadastrar(
         await prisma.$disconnect()
     }
 }
+
+async function listar(
+    requisicao: FastifyRequest,
+    resposta: FastifyReply,
+): Promise<void> {
+    try {
+        const eventos = await prisma.evento.findMany();
+        await resposta.code(200).send(eventos);
+    } catch (e) {
+        await resposta.code(500).send(e);
+    } finally {
+        await prisma.$disconnect()
+    }
+}
+
 
 /* async function atualizar(
     requisicao: FastifyRequest<{Body: IEvento}>,
@@ -63,19 +79,6 @@ async function cadastrar(
     }
 }
 
-async function listar(
-    requisicao: FastifyRequest,
-    resposta: FastifyReply,
-): Promise<void> {
-    try {
-        const evento = await prisma.evento.findMany();
-        await resposta.code(200).send(evento);
-    } catch (e) {
-        await resposta.code(500).send(e);
-    } finally {
-        await prisma.$disconnect()
-    }
-}
 
 async function deletar(
     requisicao: FastifyRequest<{Body: IEvento}>,
@@ -169,5 +172,5 @@ async function encontrarMaisProximo(
 }
 
 export const eventoController = {
-    cadastrar, encontrarMaisProximo
+    cadastrar, listar, encontrarMaisProximo
 };
