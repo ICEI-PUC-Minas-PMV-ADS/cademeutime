@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
 
         webView = findViewById<WebView>(R.id.web) as WebView
 
-        webView.loadUrl("linkAquiDoProjeto")
+        webView.loadUrl("https://ICEI-PUC-Minas-PMV-ADS.github.io/cademeutime")
 
         webView.settings.javaScriptEnabled = true
 
