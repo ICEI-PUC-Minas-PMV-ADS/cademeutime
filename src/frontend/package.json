@@ -1,5 +1,5 @@
 {
-  "homepage":"https://ICEI-PUC-Minas-PMV-ADS.github.io/cademeutime",
+  "homepage": "https://ICEI-PUC-Minas-PMV-ADS.github.io/cademeutime",
   "name": "cademeutime",
   "private": true,
   "version": "0.0.0",
@@ -9,11 +9,12 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy":"gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@react-google-maps/api": "^2.19.2",
     "firebase": "^9.10.0",
+    "fs-extra": "^11.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-firebase-hooks": "^5.0.3",
