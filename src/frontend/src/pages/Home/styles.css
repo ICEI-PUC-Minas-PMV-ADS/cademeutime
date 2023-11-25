@@ -75,17 +75,27 @@
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .headerHome {
-    width: 100%;
+    width: 350px;
     flex-direction: column;
+    padding-left: 10px;
+  }
+  
+  .containerHome{
+    padding-left: 20px;
+    grid-template-columns: none;
+  }
+  .containerHome img {
+    width: 250px;
+    height: 250px;
   }
   .containerHome h1 {
-    width: 400px;
+    width: 350px;
     text-align: justify;
   }
   .containerHome p {
-    width: 400px;
+    width: 350px;
     text-align: justify;
   }
   .buttonHeader{

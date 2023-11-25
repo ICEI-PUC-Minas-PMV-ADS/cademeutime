@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logoImg from "../../assets/logo.svg";
-import "./styles.css";
+import "../Esportes/styles.css";
+
 
 export function Esportes() {
   return (
@@ -29,5 +30,6 @@ export function Esportes() {
         <p>© 2023 Todos os direitos reservados</p>
       </footer>
     </div>
-  );
+  )
 }
+
