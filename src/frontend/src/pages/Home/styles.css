@@ -75,5 +75,21 @@
   text-align: center;
 }
 
-
+@media screen and (max-width: 768px) {
+  .headerHome {
+    width: 100%;
+    flex-direction: column;
+  }
+  .containerHome h1 {
+    width: 400px;
+    text-align: justify;
+  }
+  .containerHome p {
+    width: 400px;
+    text-align: justify;
+  }
+  .buttonHeader{
+    margin-top: 50px;
+  }
+}
  
