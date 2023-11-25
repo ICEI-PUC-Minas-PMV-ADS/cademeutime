@@ -33,7 +33,7 @@ export function Home (){
               <Link to="/register">Junte-se ao nosso time</Link>
             </div>
           </div>
-          <img src={imageHome} class="imagemGalera" alt="home" />
+          <img src={imageHome} alt="home" />
         </div>
 
         <footer className="footerHome" text="© 2023 Todos os direitos reservados">

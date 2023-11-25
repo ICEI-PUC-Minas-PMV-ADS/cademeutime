@@ -89,7 +89,7 @@
   justify-content: center;
   gap: 15px;
 }
-.container form .button:hover {
+.container form .buttonLogin:hover {
   cursor: pointer;
   opacity: 0.8;
 }
@@ -122,6 +122,7 @@
   .container form .inputContainerLogin input {
     width: 350px;
   }
+
   .container form .buttonLogin {
     width: 350px;
   }

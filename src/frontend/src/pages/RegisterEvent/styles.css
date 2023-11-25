@@ -26,20 +26,20 @@
     flex-direction: column;
   }
   
-  .container form  .inputContainer {
+  .container form  .inputContainerRegisterEvent {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
   }
   
-  .container form  .inputContainer label {
+  .container form  .inputContainerRegisterEvent label {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 8px;
   }
   
-  .container form  .inputContainer input {
+  .container form  .inputContainerRegisterEvent input {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -56,7 +56,7 @@
   margin-bottom:20px;
   }
   
-  .container form .button {
+  .container form .buttonRegisterEvent {
     width: 520px;
     height: 48px;
     background: #4B92D4;
@@ -74,7 +74,7 @@
     justify-content: center;
     gap: 15px;
   }
-  .container form .button:hover {
+  .container form .buttonRegisterEvent:hover {
     cursor: pointer;
     opacity: 0.8;
   }
@@ -100,6 +100,17 @@
     line-height: 19px;
     text-decoration-line: underline;
     color: #4763E4;
+  }
+
+  @media screen and (max-width: 600px) {
+  
+    .container form .inputContainerRegisterEvent input {
+      width: 350px;
+    }
+    .container form .buttonRegisterEvent {
+      width: 350px;
+    }
+  
   }
   
   

@@ -77,10 +77,9 @@
 
 @media screen and (max-width: 600px) {
   .headerHome {
-    width: 500px;
+    width: 350px;
     flex-direction: column;
     padding-left: 10px;
-    align-items:initial;
   }
   
   .containerHome{
@@ -92,11 +91,11 @@
     height: 250px;
   }
   .containerHome h1 {
-    width: 400px;
+    width: 350px;
     text-align: justify;
   }
   .containerHome p {
-    width: 400px;
+    width: 350px;
     text-align: justify;
   }
   .buttonHeader{

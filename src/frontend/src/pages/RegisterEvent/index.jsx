@@ -17,7 +17,7 @@ export function RegisterEvent() {
       </header>
 
       <form>
-      <div className="inputContainer">
+      <div className="inputContainerRegisterEvent">
           <label htmlFor="esporte">Esporte</label>
           <input
             type="text"
@@ -28,7 +28,7 @@ export function RegisterEvent() {
           />
         </div>
 
-        <div className="inputContainer">
+        <div className="inputContainerRegisterEvent">
           <label htmlFor="local">Local</label>
           <input
             type="text"
@@ -39,7 +39,7 @@ export function RegisterEvent() {
           />
         </div>
 
-        <div className="inputContainer">
+        <div className="inputContainerRegisterEvent">
           <label htmlFor="date">Data do evento</label>
           <input
             type="date"
@@ -50,7 +50,7 @@ export function RegisterEvent() {
           />
         </div>
 
-        <div className="inputContainer">
+        <div className="inputContainerRegisterEvent">
           <label htmlFor="date">Horário do evento</label>
           <input
             type="time"
@@ -61,7 +61,7 @@ export function RegisterEvent() {
           />
         </div>
 
-        <button className="button">
+        <button className="buttonRegisterEvent">
 
           Cadastrar Evento<img src={arrowImg} alt="->" />
         </button>
