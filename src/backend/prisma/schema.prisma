@@ -15,26 +15,19 @@ model Usuario {
   nome String
   email String @unique
   senha String
-  eventosPorUsuario Evento[]
 }
 
 model Esporte {
   id String @id @default(auto()) @map("_id") @db.ObjectId
-  modalidade String
-  qtdPessoas Int
-  local String
-  eventosPorEsporte Evento[] 
+  nome String
+  icone String
 }
 
 model Evento {
   id String @id @default(auto()) @map("_id") @db.ObjectId
-  modalidade   Esporte   @relation(fields: [esporteId], references: [id])
   esporteId String @db.ObjectId 
   nome String
   data DateTime
-  local String
-  googleMaps String
-  autorEvento Usuario @relation(fields: [usuarioId], references: [id])
-  usuarioId String @db.ObjectId 
+  latlng String  
 }
 

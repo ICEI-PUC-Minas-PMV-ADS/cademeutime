@@ -1,42 +1,20 @@
 const eventoModelo = {
     id: {
-        type: 'string',
-        description: 'Id do Evento',
-    },
-    modalidade: {
-        type: 'object',
-        properties: {
-          id: {
-            type: 'string',
-            description: 'Id da modalidade do esporte',
-          }
-        },
-    },
-    autorEvento: {
-        type: 'object',
-        properties: {
-          id: {
-            type: 'string',
-            description: 'Id do autor do evento',
-          }
-        },
-    },
-    nome: {
-        type: 'string',
-        description: 'Nome do Evento',
+      type: 'string',
+      description: 'Id do Evento',
     },
     data: {
-        type: 'number',
-        description: 'Data do Evento',
+      type: 'string',
+      description: 'Data do Evento',
     },
-    local: {
-        type: 'string',
-        description: 'Local do Evento',
+    hora: {
+      type: 'string',
+      description: 'Hora do Evento',
     },
-    googleMaps: {
-        type: 'string',
-        description: 'Google Maps localizacao',
-    },
+    latlng: {
+      type: 'string',
+      description: 'Latitude e Longitude',
+    },    
   };
   
   const eventoSchema = {

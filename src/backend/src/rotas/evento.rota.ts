@@ -11,13 +11,13 @@ export default async function eventoRota(
     app: FastifyInstance,
   ): Promise<void> {
     app.post(
-      ERotas.usuario,
+      ERotas.eventoCadastrar,
       {
         schema: {
           body: {
             type: 'object',
             properties: eventoModelo,
-            required: ['modalidade', 'nome', 'data', 'local', 'autorEvento'],
+            required: ['esporteId', 'latlng', 'data', 'hora'],
           },
           response: {
             200: eventoSchema,
@@ -25,60 +25,7 @@ export default async function eventoRota(
           },
         },
       },
-      usuarioController.cadastrar,
-    );
-
-    app.put(
-      ERotas.usuario,
-      {
-        schema: {
-          body: {
-            type: 'object',
-            properties: eventoModelo,
-            required: ['id'],
-          },
-          response: {
-            200: eventoSchema,
-            404: error404(recurso),
-          },
-        },
-      },
-      usuarioController.atualizar,
-    );
-
-    app.delete(
-      ERotas.usuario,
-      {
-        schema: {
-          body: {
-            type: 'object',
-            properties: eventoModelo,
-            required: ['id'],
-          },
-          response: {
-            200: eventoSchema,
-            404: error404(recurso),
-          },
-        },
-      },
-      usuarioController.deletar,
-    );
-
-    app.get(
-      ERotas.usuario,
-      {
-        schema: {
-          body: {
-            type: 'object',
-            properties: eventoModelo
-          },
-          response: {
-            200: eventoSchema,
-            404: error404(recurso),
-          },
-        },
-      },
-      usuarioController.listar,
+      eventoController.cadastrar,
     );
   }
 

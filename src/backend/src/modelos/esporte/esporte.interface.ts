@@ -1,3 +1,5 @@
 export interface IEsporte {
-    id?: string;
+    id: string;
+    nome: string;
+    icone: string;
 }
