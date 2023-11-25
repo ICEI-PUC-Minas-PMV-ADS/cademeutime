@@ -76,11 +76,11 @@ export function RegisterEvent() {
         </div>
 
         <div className="inputContainer">
-          <label htmlFor="google-input">Local</label>
+          <label htmlFor="local">Local</label>
           <input
             type="text"
-            name="google-input"
-            id="google-input"
+            name="local"
+            id="local"
             placeholder="Digite o endereço do seu evento!"           
           />
           <input id="latlng" type="hidden" name="latlng"/>

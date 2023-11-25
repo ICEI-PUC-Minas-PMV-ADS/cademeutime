@@ -4,7 +4,7 @@ import { iniciarFeedback, resetarFormulario, tratarFomulario } from "./utils.for
 async function cadastrarEvento(e, limparSeletores ) {
     e.preventDefault();
     const inputs = e.target.getElementsByTagName("input");
-    const formulario = tratarFomulario(inputs, ['esporteId', 'google-input', 'latlng', 'data', 'hora', 'nome']);
+    const formulario = tratarFomulario(inputs, ['esporteId', 'local', 'latlng', 'data', 'hora', 'nome']);
     if(!formulario) return;
 
     const resultado = await evento.cadastrar(formulario);

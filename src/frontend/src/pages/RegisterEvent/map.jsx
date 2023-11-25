@@ -15,7 +15,7 @@ function EventMap({
         streetViewControl: false
       });
 
-      const input = document.getElementById("google-input");
+      const input = document.getElementById("local");
       const options = {
         fields: ["formatted_address", "geometry", "name"],
         strictBounds: false,
