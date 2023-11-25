@@ -9,12 +9,12 @@ import { EventDescription } from "../pages/EventDescription";
 
 export function AppRoutes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/cademeutime">
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/registerEvent" element={<RegisterEvent />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/mapPage" element={<MapPage />} />
         <Route path="/EventDescription" element={<EventDescription />} />
       </Routes>
