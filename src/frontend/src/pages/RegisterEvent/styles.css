@@ -2,11 +2,16 @@
   
   .inputContainer{
     width: 100%;
+    margin-bottom: 10px;
   }
 
   #map {
     height: 200px;
     width: 100%;
     padding: unset;
+  }
+
+  .select {
+    width: 100%;
   }
 }

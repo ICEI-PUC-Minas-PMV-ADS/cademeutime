@@ -117,3 +117,33 @@ html, body {
   text-decoration-line: underline;
   color: #4B92D4;
 }
+
+input[invalido='true'] {
+  border-color: red !important;
+}
+
+.alerta {
+  display: none;
+}
+
+.alerta[mostrar='true'] {
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;  
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.alerta[tipo='erro'] {
+  color: rgb(197, 48, 48);
+  border: 1px solid rgb(252, 129, 129);
+  background-color: rgb(255, 245, 245);
+}
+
+.alerta[tipo='sucesso'] {
+  color: rgb(48, 197, 48);
+  border: 1px solid rgb(129, 252, 129);
+  background-color: rgb(245, 255, 245);
+}

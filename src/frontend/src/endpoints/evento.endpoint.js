@@ -1,6 +1,8 @@
 const prefixo = __ENV__.API_ENDPOINT_PREFIXO;
 
-const localizarEventoProximo = async (latlng) => {
+
+const evento = {
+  maisPromximo: async (latlng) => {
 
     console.log(latlng);
     if(!latlng || latlng.length < 10) return;
@@ -20,6 +22,31 @@ const localizarEventoProximo = async (latlng) => {
       }
 
     }, 500);    
-}
+  },
+  cadastrar : async (body) => {
 
-export { localizarEventoProximo };
+    const interval = setInterval(async () => {
+      clearTimeout(interval);
+      
+      try {
+        if(!prefixo) throw new Error('Erro ao tentar cadastrar evento');        
+        const response = await fetch(prefixo + '/evento/cadastrar', { 
+          method: 'POST',
+          body: JSON.stringify(body),
+          headers: {
+            'Content-Type': 'application/json',
+          }
+        });
+      
+        response.json();
+      
+      } catch (err) {
+        console.error(err);
+        return [];
+      }
+  
+    }, 500);    
+  }
+};
+
+export { evento };

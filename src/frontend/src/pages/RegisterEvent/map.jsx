@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import { localizarEventoProximo } from "../../endpoints/evento.endpoint";
 
 function EventMap({
     center,
@@ -16,7 +15,7 @@ function EventMap({
         streetViewControl: false
       });
 
-      const input = document.getElementById("local");
+      const input = document.getElementById("google-input");
       const options = {
         fields: ["formatted_address", "geometry", "name"],
         strictBounds: false,
@@ -43,8 +42,7 @@ function EventMap({
     
         // If the place has a geometry, then present it on a map.
         const localizacao = `${place.geometry.location.lat()}, ${place.geometry.location.lng()}`;
-        console.log(localizacao);
-        input.setAttribute('data-localizacao', localizacao);
+        document.getElementById("latlng").value = localizacao;
         
         if (place.geometry.viewport) {
           map.fitBounds(place.geometry.viewport);
@@ -54,9 +52,7 @@ function EventMap({
         }
     
         marker.setPosition(place.geometry.location);
-        marker.setVisible(true);
-        
-        await localizarEventoProximo(localizacao);
+        marker.setVisible(true);        
       });
 
     });
