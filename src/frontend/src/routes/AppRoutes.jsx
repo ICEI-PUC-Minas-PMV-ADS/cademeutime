@@ -5,8 +5,9 @@ import { Register } from "../pages/Register";
 import { RegisterEvent } from "../pages/RegisterEvent";
 import { Home } from "../pages/Home";
 import { MapPage } from "../pages/MapPage";
+import { Esportes } from "../pages/Esportes";
 import { EventDescription } from "../pages/EventDescription";
-import { CatalogoEsporte } from "../pages/CatalagoEsporte";
+
 
 export function AppRoutes() {
   return (
@@ -18,7 +19,7 @@ export function AppRoutes() {
         <Route path="/home" element={<Home />} />
         <Route path="/mapPage" element={<MapPage />} />
         <Route path="/EventDescription" element={<EventDescription />} />
-        <Route path="/CatalagoEsporte" element={<CatalogoEsporte />} />        
+        <Route path="/Esportes" element={<Esportes />} />  
       </Routes>
     </BrowserRouter>
   );

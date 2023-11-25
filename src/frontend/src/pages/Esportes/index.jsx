@@ -1,12 +1,9 @@
-// index.jsx
-import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import logoImg from "../../assets/logo.svg";
-import CatalogoEsportes from "../../components/CatalogoEsportes"; // Importa o componente
-
 import "./styles.css";
 
-export function CatalogoEsporte() {
+export function Esportes() {
   return (
     <div>
       <header className="headerHome">
@@ -24,21 +21,14 @@ export function CatalogoEsporte() {
         <div>
           <h1>Conheça nossos esportes!</h1>
 
-          {/* Renderize o componente de catálogo aqui */}
-          <CatalogoEsportes />
-
+          <p>aqui vai o catalago</p>
         </div>
       </div>
 
-      <footer className="footerHome" text="© 2023 Todos os direitos reservados">
+      <footer className="footerHome">
         <p>© 2023 Todos os direitos reservados</p>
       </footer>
     </div>
   );
 }
-
-
-
-      
-     
 
