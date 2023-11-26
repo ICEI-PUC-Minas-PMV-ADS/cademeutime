@@ -31,7 +31,7 @@ export function Login() {
       </header>
 
       <form>
-        <div className="inputContainer">
+        <div className="inputContainerLogin">
           <label htmlFor="email">E-mail</label>
           <input
             type="text"
@@ -42,7 +42,7 @@ export function Login() {
           />
         </div>
 
-        <div className="inputContainer">
+        <div className="inputContainerLogin">
           <label htmlFor="password">Senha</label>
           <input
             type="password"
@@ -54,7 +54,7 @@ export function Login() {
           <a id="esquecerSenha" href="#">Esqueceu sua senha?</a>
         </div>
 
-        <button className="button" onClick={handleSignIn}>
+        <button className="buttonLogin" onClick={handleSignIn}>
           Entrar <img src={arrowImg} alt="->" />
         </button>
         <div className="footer">

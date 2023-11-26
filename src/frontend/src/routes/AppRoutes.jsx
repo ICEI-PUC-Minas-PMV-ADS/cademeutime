@@ -7,10 +7,15 @@ import { Home } from "../pages/Home";
 import { MapPage } from "../pages/MapPage";
 import { EventDescription } from "../pages/EventDescription";
 import { FilterEvent } from "../pages/FilterEvent";
+import { ViewEvents } from "../pages/ViewEvents";
+import Header from "../pages/Header/header";
+import Footer from "../pages/Footer/footer";
+
 
 export function AppRoutes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/cademeutime"> 
+      <Header/>      
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
@@ -18,8 +23,10 @@ export function AppRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/mapPage" element={<MapPage />} />
         <Route path="/EventDescription" element={<EventDescription />} />
-        <Route path="/filterEvent" element={<FilterEvent />} />
+        <Route path="/filterEvent" element={<FilterEvent />} />        
+        <Route path="/ViewEvents" element={<ViewEvents />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }

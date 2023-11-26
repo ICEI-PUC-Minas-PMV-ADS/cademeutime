@@ -10,4 +10,5 @@ export default defineConfig({
   define: {
     __ENV__: process.env
   },
+  base:"/cademeutime",
 })

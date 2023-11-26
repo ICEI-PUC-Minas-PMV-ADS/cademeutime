@@ -1,0 +1,122 @@
+.events-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.events-container .header {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.events-container .main {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  padding-bottom: 20px; 
+  max-width: calc((350px * 5) + (15px * 4));
+}
+
+.events-container .eventContainer {
+  width: 350px; 
+  min-height: 250px; 
+  margin-right: 15px; 
+  padding: 20px;
+  background: #FFFFFF;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.events-container .footer {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #68645c;
+  color:#9c9c8d;
+  border-top: 1px solid #DDD;
+}
+
+.events-container .eventContainer a {
+  font-size: 1.1rem;
+  color: #4B92D4;
+  font-weight: bold;
+  margin-top: 12px;
+  display: inline-block;
+}
+
+.events-container .header #titulo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.events-container .header #subTitulo {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.events-container .eventContainer span,
+.events-container .eventContainer a {
+  display: block;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  font-size: 1.2rem;
+}
+
+.events-container .eventContainer span {
+  word-spacing: 0.1rem;
+}
+.events-container .main::-webkit-scrollbar {
+  display: none; 
+}
+.events-container .main {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .events-container .main {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: hidden;
+    padding-bottom: 0;
+  }
+
+  .events-container .eventContainer {
+    width: 80%; 
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .events-container .header #titulo,
+  .events-container .header #subTitulo {
+    font-size: 1.5rem; 
+  }
+
+  .events-container .eventContainer a {
+    font-size: 1rem;
+  }
+
+  .events-container .footer {
+    position: static; 
+    padding: 20px 0;
+  }
+}
+
+

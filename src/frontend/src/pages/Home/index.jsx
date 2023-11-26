@@ -6,20 +6,7 @@ import "./styles.css"
 
 export function Home (){
   return (
-      <div>
-        <header className="headerHome">
-            <img src={logoImg} alt="Cadê meu time?"/>
-              <div className="buttonHeader">
-                <Link 
-                  className="entrar"
-                  to="/login">Entrar
-                </Link>
-                <Link 
-                  className="cadastro"
-                  to="/register">Cadastrar-se
-                </Link>
-            </div>
-        </header>
+      <div>        
         <div className="containerHome">
           <div>
             <h1>Praticar esportes com pessoas da sua região é mais divertido e seguro com o 
@@ -34,11 +21,7 @@ export function Home (){
             </div>
           </div>
           <img src={imageHome} alt="home" />
-        </div>
-
-        <footer className="footerHome" text="© 2023 Todos os direitos reservados">
-          <p>© 2023 Todos os direitos reservados</p>
-        </footer>
+        </div>       
         
       </div>
        

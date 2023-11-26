@@ -64,7 +64,7 @@ export function Register() {
       </header>
 
       <form onSubmit={handleForm}> 
-      <div className="inputContainer">
+      <div className="inputContainerRegister">
           <label htmlFor="name">Nome</label>
           <input
             type="text"
@@ -77,7 +77,7 @@ export function Register() {
           />
         </div>
 
-        <div className="inputContainer">
+        <div className="inputContainerRegister">
           <label htmlFor="email">E-mail</label>
           <input
             type="text"
@@ -90,7 +90,7 @@ export function Register() {
           />
         </div>
 
-        <div className="inputContainer">
+        <div className="inputContainerRegister">
           <label htmlFor="password">Senha</label>
           <input
             type="password"
@@ -103,7 +103,7 @@ export function Register() {
           />
         </div>
 
-        <button type="submit" className="button">
+        <button type="submit" className="buttonRegister">
           Cadastrar <img src={arrowImg} alt="->" />
         </button>
         <div className="footer">

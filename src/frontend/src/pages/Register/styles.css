@@ -26,20 +26,20 @@
   flex-direction: column;
 }
 
-.container form  .inputContainer {
+.container form  .inputContainerRegister {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
 
-.container form  .inputContainer label {
+.container form  .inputContainerRegister label {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   margin-bottom: 8px;
 }
 
-.container form  .inputContainer input {
+.container form  .inputContainerRegister input {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -54,6 +54,29 @@
 
 #password {
 margin-bottom:20px;
+}
+
+.container form .buttonRegister {
+  width: 520px;
+  height: 48px;
+  background: #4B92D4;
+  border-radius: 12px;
+  color: #fff;
+  border: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.container form .buttonRegister:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .container form .footer {
@@ -77,5 +100,15 @@ margin-bottom:20px;
   line-height: 19px;
   text-decoration-line: underline;
   color: #4763E4;
+}
+
+@media screen and (max-width: 600px) {
+  
+  .container form .inputContainerRegister input {
+    width: 350px;
+  }
+  .container form .buttonRegister {
+    width: 350px;
+  }
 }
 

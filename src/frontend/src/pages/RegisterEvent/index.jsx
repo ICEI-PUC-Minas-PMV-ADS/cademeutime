@@ -51,7 +51,6 @@ export function RegisterEvent() {
         <span id="subTitulo"> Chegou a hora de encontrar o seu time!</span>
         <div id="feedback" className="alerta"></div>
       </header>
-      
       <form id="evento-form" onSubmit={(e) => cadastrarEvento(e, limparSeletores)}>
         <div className="inputContainer">
           <label htmlFor="nome">Nome do Evento</label>
