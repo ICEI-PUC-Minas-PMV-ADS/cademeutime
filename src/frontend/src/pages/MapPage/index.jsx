@@ -17,10 +17,7 @@ export function MapPage () {
     };
   
     return (
-      <div>
-        <header className="headerMap">
-          <img src={logoImg} alt="Cadê meu time?"/>
-        </header>
+      <div>        
         <div className="tituleMap">
             <h1>Encontre um time perto de você!</h1>
             <p>
@@ -51,10 +48,7 @@ export function MapPage () {
           <div className="verMais">
             <Link to="/event"> Ver mais eventos </Link>
           </div>          
-        </div>
-        <footer className="footerHome" text="© 2023 Todos os direitos reservados">
-          <p>© 2023 Todos os direitos reservados</p>
-        </footer>
+        </div>        
       </div>
     );
   };
