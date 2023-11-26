@@ -73,7 +73,7 @@ export function FilterEvent() {
             <div className='row'>
               <div className='col-7'>
                 <Wrapper apiKey={apiKey} render={render}>
-                  <EventMap zoom={11} />
+                  <EventMap zoom={11} esporteId={esporteSelecionado?.value} />
                 </Wrapper>                
               </div>
               <div className='col-3 m-2'>
@@ -82,8 +82,8 @@ export function FilterEvent() {
                 <ol id='lista-eventos'/>
               </div>              
             </div>
-          )}
-          <button type="button" className="button" onClick={(e) => setLocalizar(true)} disabled={!esporteSelecionado}>
+          )}          
+          <button id="localizar-btn" type="button" onClick={(e) => setLocalizar(true)} disabled={!esporteSelecionado}>
             Localizar mais próximo<img src={arrowImg} alt="->" />
           </button>     
         </form>

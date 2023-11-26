@@ -14,12 +14,12 @@ const evento = {
       return [];
     }
   },
-  maisProximo: async (latlng) => {
+  maisProximo: async (latlng, esporteId) => {
     if(!latlng || latlng.length < 10) return;
 
     try {
       if(!prefixo) throw new Error('Erro ao ler a variável API_ENDPOINT_PREFIXO em .env');        
-      const response = await fetch(prefixo + '/evento/localizar?latlng=' + latlng, { method: 'GET' });      
+      const response = await fetch(`${prefixo}/evento/localizar?latlng=${latlng}&esporte=${esporteId}`, { method: 'GET' });      
       return response.json();     
     } catch (err) {
       console.error(err);

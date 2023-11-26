@@ -3,10 +3,17 @@ import { iniciarGeolocalizacao } from "../../services/geolocation";
 import { iniciarFeedback } from "../../forms/utils.form";
 import { evento } from "../../endpoints/evento.endpoint";
 
+function coordenadaGoogle(latlng) {
+  const coordenadas = latlng.split(',');
+  return { lat: +coordenadas[0], lng: +coordenadas[1] };
+}
+
 function EventMap({
     zoom,
+    esporteId
   }) {
     const ref = useRef();
+    
   
     useEffect(() => {
       const feedback = iniciarFeedback();    
@@ -37,20 +44,51 @@ function EventMap({
         feedback.esconder();
 
         let time = 1;
-        const locais = await evento.maisProximo(`${center.lat}, ${center.lng}`);
+        const locais = await evento.maisProximo(`${center.lat},${center.lng}`, esporteId);
         
         feedback.exibirTexto(`Foram encontradas ${locais.length} eventos próximos a você.`);
         feedback.estilo.info();
 
+        const selecionarEvento = (latlng) => {
+          const position = coordenadaGoogle(latlng);
+          map.setCenter(position);
+          map.setZoom(16);
+        };
+
         const ul = document.getElementById('lista-eventos');
         ul.innerHTML = '';
+
+        const div = document.createElement("div");
+          div.onclick = (e) =>  { 
+            map.setCenter(center);
+            map.setZoom(12);
+          }
+          div.innerHTML = `
+            <button type='button'>
+              Meu local
+            </button>            
+          `;
+          ul.appendChild(div);
   
         for(const local of locais) {
           time++;
-          const coordenadas = local.latlng.split(',');
-          const position = { lat: +coordenadas[0], lng: +coordenadas[1] };
+          const position = coordenadaGoogle(local.latlng);
 
           const li = document.createElement("li");
+          li.onclick = (e) => { 
+            selecionarEvento(local.latlng);
+
+            const button  = document.getElementById('seletor-evento') || document.createElement('button');
+
+            button.id = 'seletor-evento';
+            button.innerText = 'Informar Presença';
+            button.setAttribute('type', 'button');
+            button.className = 'sm';
+            button.onclick = () => window.location.href = '/cademeutime/login';
+            li.appendChild(button);
+            
+          }
+
           li.innerHTML = `
             <div>
               <strong>Evento</strong>: ${local.nome}
@@ -67,8 +105,6 @@ function EventMap({
             <hr>
           `;
           ul.appendChild(li);
-
-          console.log(local);
           
           setTimeout(() => {
             const marker = new google.maps.Marker({
@@ -84,6 +120,8 @@ function EventMap({
             });
           }, time * 500);
         }
+
+        
 
         map.setZoom(12);
       }
