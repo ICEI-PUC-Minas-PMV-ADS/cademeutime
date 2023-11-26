@@ -2,6 +2,7 @@ import { useState } from "react";
 import logoImg from "../../assets/logo.svg"
 import { Link } from "react-router-dom"
 import "./header.css"
+import { FcSportsMode } from "react-icons/fc";
 
 function Header() {
   return (
@@ -11,7 +12,8 @@ function Header() {
               <div className="buttonHeader">
                 <Link 
                   className="entrar"
-                  to="/login">Entrar
+                  to="/login"><FcSportsMode
+                   size={30} /> Entrar 
                 </Link>
                 <Link 
                   className="cadastro"

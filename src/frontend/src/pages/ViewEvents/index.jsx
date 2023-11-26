@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
+import { FaFutbol } from "react-icons/fa";
 
 // Mock de dados para testes
 const mockEvents = [
@@ -27,7 +28,7 @@ return (
   <div className="events-container">
     
     <header className="header">
-      <span id="titulo"> Eventos perto de você! </span>
+      <span id="titulo"> Eventos perto de você!</span>
     </header>
     <main className="main"> {/* Adicione a classe aqui */}
       {events.length > 0 ? (
@@ -36,7 +37,7 @@ return (
             <span>{event.esporte}</span>
             <span>{event.local}</span>
             <span>{`${event.date}, ${event.time}`}</span>
-            <Link to={`/events/${event.id}`}>Ver mais</Link>
+            <Link to={`/events/${event.id}`}>Ver mais <FaFutbol /> </Link>
           </div>
         ))
       ) : (
