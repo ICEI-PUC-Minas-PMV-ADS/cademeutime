@@ -56,60 +56,62 @@ export function Register() {
 
 
   return (
-    <div className="container">
-      <header className="header">
-      <span id="titulo"> Cadastrar </span>
-        <span id="subTitulo"> Faça seu cadastro e encontre seu time hoje mesmo!</span>
-      </header>
+    <div className="content">
+      <div className="container">
+        <header className="header">
+        <span id="titulo"> Cadastrar </span>
+          <span id="subTitulo"> Faça seu cadastro e encontre seu time hoje mesmo!</span>
+        </header>
 
-      <form onSubmit={handleForm}> 
-      <div className="inputContainerRegister">
-          <label htmlFor="name">Nome</label>
-          <input
-            type="text"
-            name="nome"
-            id="name"
-            placeholder="Nome Completo"
-            required
-            value={formData.nome}
-            onChange={(e) => {handleFormEdit(e, "nome")}}
-          />
-        </div>
+        <form onSubmit={handleForm}> 
+        <div className="inputContainer">
+            <label htmlFor="name">Nome</label>
+            <input
+              type="text"
+              name="nome"
+              id="name"
+              placeholder="Nome Completo"
+              required
+              value={formData.nome}
+              onChange={(e) => {handleFormEdit(e, "nome")}}
+            />
+          </div>
 
-        <div className="inputContainerRegister">
-          <label htmlFor="email">E-mail</label>
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="Digite seu email"
-            required
-            value={formData.email}
-            onChange={(e) => {handleFormEdit(e, "email")}}
-          />
-        </div>
+          <div className="inputContainer">
+            <label htmlFor="email">E-mail</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Digite seu email"
+              required
+              value={formData.email}
+              onChange={(e) => {handleFormEdit(e, "email")}}
+            />
+          </div>
 
-        <div className="inputContainerRegister">
-          <label htmlFor="password">Senha</label>
-          <input
-            type="password"
-            name="senha"
-            id="password"
-            placeholder="Digite sua nova senha"
-            required
-            value={formData.senha}
-            onChange={(e) => {handleFormEdit(e, "senha")}}
-          />
-        </div>
+          <div className="inputContainer">
+            <label htmlFor="password">Senha</label>
+            <input
+              type="password"
+              name="senha"
+              id="password"
+              placeholder="Digite sua nova senha"
+              required
+              value={formData.senha}
+              onChange={(e) => {handleFormEdit(e, "senha")}}
+            />
+          </div>
 
-        <button type="submit" className="buttonRegister">
-          Cadastrar <img src={arrowImg} alt="->" />
-        </button>
-        <div className="footer">
-          <p>Você já tem uma conta?</p>
-          <Link to="/login">Acesse sua conta aqui</Link>
-        </div>
-      </form>
+          <button type="submit" className="button">
+            Cadastrar <img src={arrowImg} alt="->" />
+          </button>
+          <div className="footer">
+            <p>Você já tem uma conta?</p>
+            <Link to="/login">Acesse sua conta aqui</Link>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
