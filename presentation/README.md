@@ -6,3 +6,6 @@
 <li><a href="https://youtu.be/CbYQugc48Ig"> Apresentação da solução - etapa 2 - API - vídeo rotas / teste
 <li><a href="https://youtu.be/t4aR77RmVXk"> Apresentação do frontend - etapa 3  
 <li><a href="https://youtu.be/xwnlbh4VDk0"> Apresentação do CRUD - LOGIN - etapa 3  
+<li><a href="https://youtu.be/ZUsYoVuJg2k"> Apresentação da funcionalidade de busca de evento por proximidade
+<li><a href="https://youtu.be/aOiYeLpGuNg"> Apresentação da funcionalidade de cadastro de eventos (integração back e front)
+<li><a href="https://youtu.be/hyNTFCcMDWQ"> Apresentação da integração da API do Google Maps - geolocalização.
