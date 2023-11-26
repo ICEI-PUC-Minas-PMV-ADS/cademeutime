@@ -7,6 +7,10 @@ const eventoModelo = {
       type: 'string',
       description: 'Nome do Evento',
     },
+    esporte: {
+      type: 'string',
+      description: 'Esporte do Evento',
+    },
     local: {
       type: 'string',
       description: 'Local informado pelo Google',
@@ -45,6 +49,18 @@ const eventoModelo = {
         type: 'string',
         description: 'Nome do Evento',
     },
+    esporte: {
+      type: 'string',
+      description: 'Esporte do Evento',
+    },
+    local: {
+      type: 'string',
+      description: 'Local informado pelo Google',
+    },
+    data: {
+      type: 'string',
+      description: 'Data do Evento',
+    }, 
     latlng: {
         type: 'string',
         description: 'Localização do evento',

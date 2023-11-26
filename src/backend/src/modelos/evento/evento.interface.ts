@@ -11,7 +11,10 @@ export interface IEvento {
 export interface IEventoLocalizar {
     id?: string;
     nome: string;
-    latlng: string;    
+    latlng: string;
+    esporte?: string;
+    local: string;
+    data: string;  
     distancia: {
         texto : string;
         valor: number;

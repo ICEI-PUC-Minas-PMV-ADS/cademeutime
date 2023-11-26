@@ -107,33 +107,12 @@ async function encontrarMaisProximo(
         const key = process.env.GOOGLE_API_KEY;
         if(!key) throw new Error('Erro ao ler a variavel GOOGLE_API_KEY');
 
-        const eventos = [
-            {
-                nome: "Evento A",
-                latlng: '-29.044360726595404, -49.60599644500426'
-            },
-            {
-                nome: "Evento B",
-                latlng: '-29.07115757364247, -49.636784330808844'
-            },
-            {
-                nome: "Evento C",
-                latlng: '-29.103430446054087, -49.637721161921476'
-            },
-            {
-                nome: "Evento D",
-                latlng: '-29.09067861589867, -49.61950812027246'
-            },
-            {
-                nome: "Evento E",
-                latlng: '-29.097651410199518, -49.620121939707424'
-            },
-            {
-                nome: "Evento F",
-                latlng: '-29.09093244709195, -49.61944871778759'
+        const eventos = await prisma.evento.findMany({
+            include: {
+                esporte: true
             }
-        ];
-        
+        });      
+    
         const cliente =  new Client();
         const resultado = await cliente.distancematrix({
             params: {
@@ -148,12 +127,16 @@ async function encontrarMaisProximo(
         if(!elementos) throw new Error('Não foi possível determinar qual o evento mais próximo');
 
         const localizacoes : IEventoLocalizar[] = [];
-        elementos.forEach((element : DistanceMatrixRowElement, key: number) => {
+        elementos.forEach(async (element : DistanceMatrixRowElement, key: number) => {
+
             if(!element?.distance?.text) return; // pula se não encontra nada            
             localizacoes.push({
                 id: String(key + 1),
                 nome: eventos[key].nome,
                 latlng: eventos[key].latlng,
+                esporte: eventos[key].esporte?.nome,
+                local: eventos[key].local,
+                data: eventos[key].data.toString(),
                 distancia: {
                     texto: element.distance.text,
                     valor: element.distance.value,

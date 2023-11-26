@@ -21,11 +21,13 @@ model Esporte {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   nome String
   icone String
+  eventos Evento[]
 }
 
 model Evento {
   id String @id @default(auto()) @map("_id") @db.ObjectId
-  esporteId String @db.ObjectId 
+  esporte   Esporte?   @relation(fields: [esporteId], references: [id])
+  esporteId  String  @db.ObjectId
   nome String
   local String
   data DateTime
