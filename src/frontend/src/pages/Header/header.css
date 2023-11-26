@@ -32,11 +32,11 @@
           
   @media screen and (max-width: 600px) {
     .headerHome {
-      width: 350px;
       flex-direction: column;
       padding-left: 10px;
     }	
-  
+  }
+
   .buttonHeader{
       margin-top: 50px;
     }
