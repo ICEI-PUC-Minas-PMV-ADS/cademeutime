@@ -45,71 +45,73 @@ export function RegisterEvent() {
   };
 
   return (
-    <div className="container">
-      <header className="header">      
-        <span id="titulo"> Cadastrar Evento </span>
-        <span id="subTitulo"> Chegou a hora de encontrar o seu time!</span>
-        <div id="feedback" className="alerta"></div>
-      </header>
-      <form id="evento-form" onSubmit={(e) => cadastrarEvento(e, limparSeletores)}>
-        <div className="inputContainer">
-          <label htmlFor="nome">Nome do Evento</label>
-          <input
-            type="text"
-            name="nome"
-            placeholder="Digite o nome do seu evento!"
-          />
-        </div>
-        <div className="inputContainer">
-          <label htmlFor="esporte-input">Esporte</label>
-          <Select
-            className='select'
-            styles={selectControl()}
-            placeholder='Selecione o esporte'
-              ref={ref => {
-                esporteSeletor = ref;
-              }}
-            name="esporteId"
-            options={esportes}
-          />
-        </div>
+    <div className="content">
+      <div className='container'>
+        <header className="header">      
+          <span id="titulo"> Cadastrar Evento </span>
+          <span id="subTitulo"> Chegou a hora de encontrar o seu time!</span>
+          <div id="feedback" className="alerta"></div>
+        </header>
+        <form id="evento-form" onSubmit={(e) => cadastrarEvento(e, limparSeletores)}>
+          <div className="inputContainer">
+            <label htmlFor="nome">Nome do Evento</label>
+            <input
+              type="text"
+              name="nome"
+              placeholder="Digite o nome do seu evento!"
+            />
+          </div>
+          <div className="inputContainer">
+            <label htmlFor="esporte-input">Esporte</label>
+            <Select
+              className='select'
+              styles={selectControl()}
+              placeholder='Selecione o esporte'
+                ref={ref => {
+                  esporteSeletor = ref;
+                }}
+              name="esporteId"
+              options={esportes}
+            />
+          </div>
 
-        <div className="inputContainer">
-          <label htmlFor="local">Local</label>
-          <input
-            type="text"
-            name="local"
-            id="local"
-            placeholder="Digite o endereço do seu evento!"           
-          />
-          <input id="latlng" type="hidden" name="latlng"/>
-          <Wrapper apiKey={apiKey} render={render} libraries={["places"]}>
-            <EventMap center={position} zoom={11} />
-          </Wrapper>
-            
-        </div>
-        <div className="inputContainer">
-          <label htmlFor="date">Data do evento</label>
-          <input
-            type="date"
-            name="data"
-            placeholder="Digite a data do seu evento!"
-          />
-        </div>
+          <div className="inputContainer">
+            <label htmlFor="local">Local</label>
+            <input
+              type="text"
+              name="local"
+              id="local"
+              placeholder="Digite o endereço do seu evento!"           
+            />
+            <input id="latlng" type="hidden" name="latlng"/>
+            <Wrapper apiKey={apiKey} render={render} libraries={["places"]}>
+              <EventMap center={position} zoom={11} />
+            </Wrapper>
+              
+          </div>
+          <div className="inputContainer">
+            <label htmlFor="date">Data do evento</label>
+            <input
+              type="date"
+              name="data"
+              placeholder="Digite a data do seu evento!"
+            />
+          </div>
 
-        <div className="inputContainer">
-          <label htmlFor="date">Horário do evento</label>
-          <input
-            type="time"
-            name="hora"
-            placeholder="Digite a hora do seu evento!"
-          />          
-        </div>
+          <div className="inputContainer">
+            <label htmlFor="date">Horário do evento</label>
+            <input
+              type="time"
+              name="hora"
+              placeholder="Digite a hora do seu evento!"
+            />          
+          </div>
 
-        <button type="submit" className="button">
-          Cadastrar Evento<img src={arrowImg} alt="->" />
-        </button>     
-      </form>
+          <button type="submit" className="button">
+            Cadastrar Evento<img src={arrowImg} alt="->" />
+          </button>     
+        </form>
+      </div>
     </div>
   );
 }

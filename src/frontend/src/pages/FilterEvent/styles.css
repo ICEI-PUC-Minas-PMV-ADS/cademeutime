@@ -1,24 +1,39 @@
-.container{
+.container-filter{
   position: relative;
   left: 10%;
   width: 80%;
 }
 
-  form {
-    width: 100%;
-  }
+form {
+  width: 100%;
+}
   
-  .inputContainer{
-    width: 100%;
-    margin-bottom: 10px;
-  }
+.inputContainer{
+  width: 100%;
+  margin-bottom: 10px;
+}
 
-  #map {
-    height: 500px;
-    width: 100%;
-    padding: unset;
-  }
+#map {
+  height: 500px;
+  width: 100%;
+  padding: unset;
+}
 
-  .select {
-    width: 100%;
-  }
+.select {
+  width: 100%;
+}
+
+#lista-eventos li {
+  font-size: 14px;
+  margin: 0px 20px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#lista-eventos li:hover {
+  background-color: aliceblue;  
+}
+
+#lista-eventos li hr {
+  margin-top: 10px;
+}

@@ -1,4 +1,3 @@
-
   
   .inputContainer{
     width: 100%;
@@ -13,16 +12,5 @@
 
   .select {
     width: 100%;
-  }
-
-  @media screen and (max-width: 600px) {
-  
-    .container form .inputContainer input {
-      width: 350px;
-    }
-    .container form .buttonRegisterEvent {
-      width: 350px;
-    }
-  
   }
  

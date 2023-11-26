@@ -45,48 +45,49 @@ export function FilterEvent() {
   };
 
   return (
-    <div className="container">
-      <header className="header">      
-        <span id="titulo">Selecionar evento</span>
-        <span id="subTitulo">Escolha o esporte que deseja praticar agora.</span>
-        <div id="feedback" className="alerta"></div>
-      </header>
-      
-      <form>
-        <div className="inputContainer">
-          <label htmlFor="esporte-input">Esporte</label>
-          <Select
-            className='select'
-            styles={selectControl()}
-            isClearable={true}
-            name="esporteId"
-            options={esportes}
-            onChange={(valor) => {
-              setLocalizar(false)
-              setEsporteSelecionado(valor)
-            }}
-          />
-        </div>
+    <div className="content">
+      <div className='container lg'>
+        <header className="header">      
+          <span id="titulo">Selecionar evento</span>
+          <span id="subTitulo">Escolha o esporte que deseja praticar agora.</span>
+          <div id="feedback" className="alerta"></div>
+        </header>
+        
+        <form>
+          <div className="inputContainer">
+            <label htmlFor="esporte-input">Esporte</label>
+            <Select
+              className='select'
+              styles={selectControl()}
+              isClearable={true}
+              name="esporteId"
+              options={esportes}
+              onChange={(valor) => {
+                setLocalizar(false)
+                setEsporteSelecionado(valor)
+              }}
+            />
+          </div>
 
-        { localizar &&  (
-          <div>
-            <div style={{width: '70%'}}>
-              
+          { localizar &&  (
+            <div className='row'>
+              <div className='col-7'>
                 <Wrapper apiKey={apiKey} render={render}>
                   <EventMap zoom={11} />
-                </Wrapper>
-              
+                </Wrapper>                
+              </div>
+              <div className='col-3 m-2'>
+                <h2>Lista de Eventos</h2>
+                <br/>
+                <ol id='lista-eventos'/>
+              </div>              
             </div>
-            <div style={{width: '30%'}}>
-              
-            </div>
-            
-          </div>
-        )}
-        <button type="button" className="button" onClick={(e) => setLocalizar(true)} disabled={!esporteSelecionado}>
-          Localizar mais próximo<img src={arrowImg} alt="->" />
-        </button>     
-      </form>
+          )}
+          <button type="button" className="button" onClick={(e) => setLocalizar(true)} disabled={!esporteSelecionado}>
+            Localizar mais próximo<img src={arrowImg} alt="->" />
+          </button>     
+        </form>
+      </div>
     </div>
   );
 }

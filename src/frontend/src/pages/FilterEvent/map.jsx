@@ -42,10 +42,33 @@ function EventMap({
         feedback.exibirTexto(`Foram encontradas ${locais.length} eventos próximos a você.`);
         feedback.estilo.info();
 
+        const ul = document.getElementById('lista-eventos');
+        ul.innerHTML = '';
+  
         for(const local of locais) {
           time++;
           const coordenadas = local.latlng.split(',');
           const position = { lat: +coordenadas[0], lng: +coordenadas[1] };
+
+          const li = document.createElement("li");
+          li.innerHTML = `
+            <div>
+              <strong>Evento</strong>: ${local.nome}
+            </div>            
+            <div>
+              <strong>Esporte</strong>: ${local.esporte}
+            </div>
+            <div>
+              <strong>Distância</strong>: ${local.distancia.texto}
+            </div>
+            <div class='mt-2'>
+              <strong>Local</strong>: ${local.local}
+            </div>
+            <hr>
+          `;
+          ul.appendChild(li);
+
+          console.log(local);
           
           setTimeout(() => {
             const marker = new google.maps.Marker({

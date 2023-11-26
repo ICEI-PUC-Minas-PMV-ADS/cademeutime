@@ -1,6 +1,4 @@
-.container {
-    width: 100vw;
-    height: 100vh;
+  .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +42,6 @@
     flex-direction: row;
     align-items: flex-start;
     padding: 16px;
-    width: 520px;
     height: 49px;
     border: 1px solid #4B92D4;
     border-radius: 12px;

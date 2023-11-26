@@ -19,14 +19,7 @@ html, body {
   font-weight: 500;
 }
 
-.container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+
 .container .header {
   display: flex;
   align-items: center;
@@ -45,6 +38,7 @@ html, body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 80px;
 }
 
 .container form  .inputContainer {
@@ -65,7 +59,7 @@ html, body {
   flex-direction: row;
   align-items: flex-start;
   padding: 16px;
-  width: 520px;
+  width: 100%;
   height: 49px;
   border: 1px solid #4B92D4;
   border-radius: 12px;
@@ -92,7 +86,7 @@ html, body {
   font-size: 16px;
   line-height: 19px;
   text-decoration-line: underline;
-  color: #4B92D4;
+  color: #4B92D4;  
 }
 
 input[invalido='true'] {
@@ -132,7 +126,7 @@ input[invalido='true'] {
 }
 
 .button {
-  width: 520px;
+  width: 100%;
   height: 48px;
   background: #4B92D4;
   border-radius: 12px;
@@ -160,4 +154,52 @@ input[invalido='true'] {
 
 .button:hover {
   cursor: pointer;
+}
+
+
+/* REVISADO */
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  width: 420px;    
+}
+
+.container.lg {
+  width: 750px;
+}
+
+.row {
+  width: 100%;
+  margin: 10px 0px;
+  display: flex;
+}
+
+.col-7 {
+  width: 70%;
+}
+
+.col-3 {
+  width: 30%;
+}
+
+.separador {
+  margin-bottom: 40px;
+}
+
+.m-2 {
+  margin: 8px;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 80%;    
+  }
 }

@@ -48,8 +48,7 @@ export function Register() {
       });
     
     const json = await response.json()
-    console.log(response.status)
-    console.log(json)
+    
     } catch (err) {
       console.error(err);
     }
