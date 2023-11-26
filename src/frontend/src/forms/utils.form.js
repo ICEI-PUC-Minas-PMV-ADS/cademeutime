@@ -21,6 +21,7 @@ function iniciarFeedback() {
         estilo : {
             erro: () =>  feedback.setAttribute('tipo', 'erro'),
             sucesso: () => feedback.setAttribute('tipo', 'sucesso'),
+            info: () => feedback.setAttribute('tipo', 'info'),
         },
         exibirTexto: (texto) => {
             feedback.innerHTML = texto;
