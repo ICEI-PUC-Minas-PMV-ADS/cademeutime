@@ -68,13 +68,21 @@ export function FilterEvent() {
           />
         </div>
 
-        <div className="inputContainer">
-          { localizar && 
-            <Wrapper apiKey={apiKey} render={render}>
-              <EventMap zoom={11} />
-            </Wrapper>
-          }
-        </div>       
+        { localizar &&  (
+          <div>
+            <div style={{width: '70%'}}>
+              
+                <Wrapper apiKey={apiKey} render={render}>
+                  <EventMap zoom={11} />
+                </Wrapper>
+              
+            </div>
+            <div style={{width: '30%'}}>
+              
+            </div>
+            
+          </div>
+        )}
         <button type="button" className="button" onClick={(e) => setLocalizar(true)} disabled={!esporteSelecionado}>
           Localizar mais próximo<img src={arrowImg} alt="->" />
         </button>     
