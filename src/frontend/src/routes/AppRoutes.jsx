@@ -20,7 +20,7 @@ export function AppRoutes() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/registerEvent" element={<RegisterEvent />} />
-         {/* A home será a rota padrão no mobile ao abrir. Por isso, deve ser a rota base -> '/' */}
+        {/* A home será a rota padrão no mobile ao abrir. Por isso, deve ser a rota base -> '/' */}
         <Route path="/" element={<Home />} />
         <Route path="/mapPage" element={<MapPage />} />
         <Route path="/EventDescription" element={<EventDescription />} />
