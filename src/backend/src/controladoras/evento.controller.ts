@@ -96,12 +96,12 @@ async function deletar(
 } */
 
 async function encontrarMaisProximo(
-    requisicao: FastifyRequest<{Querystring: {latlng: string}}>,
+    requisicao: FastifyRequest<{Querystring: {latlng: string, esporteId: string}}>,
     resposta: FastifyReply,
 ): Promise<void> {
     try {
         
-        const { latlng } = requisicao.query;
+        const { latlng, esporteId } = requisicao.query;
         if(!latlng) throw new Error('Para localizar o evento mais próximo informe latitude e longitude do ponto inicial.');
 
         const key = process.env.GOOGLE_API_KEY;
@@ -110,6 +110,9 @@ async function encontrarMaisProximo(
         const eventos = await prisma.evento.findMany({
             include: {
                 esporte: true
+            },
+            where: {
+                esporteId : esporteId
             }
         });      
     

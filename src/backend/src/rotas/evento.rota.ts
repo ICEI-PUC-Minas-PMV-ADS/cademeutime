@@ -55,7 +55,8 @@ export default async function eventoRota(
       {
         schema: {
           querystring: {
-            latlng: { type: 'string' },            
+            latlng: { type: 'string' },
+            esporteId: { type: 'string' },           
           },
           response: {
             200: eventoLocalizarSchema,
