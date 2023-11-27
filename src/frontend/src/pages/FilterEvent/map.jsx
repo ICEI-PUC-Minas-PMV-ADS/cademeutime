@@ -46,8 +46,19 @@ function EventMap({
         let time = 1;
         const locais = await evento.maisProximo(`${center.lat},${center.lng}`, esporteId);
         
-        feedback.exibirTexto(`Foram encontradas ${locais.length} eventos próximos a você.`);
-        feedback.estilo.info();
+        if(locais?.length) {
+          let mensagem = `Foram encontradas ${locais.length} eventos próximos a você.`;
+          if(locais.length === 1)
+            mensagem=`Foi encontrado ${locais.length} evento próximo a você.`;
+
+          feedback.exibirTexto(mensagem);
+          feedback.estilo.info();
+        } else {
+          feedback.exibirTexto(`Sem Eventos próximos para essa modalida de esporte`);
+          feedback.estilo.erro();
+        }
+
+        
 
         const selecionarEvento = (latlng) => {
           const position = coordenadaGoogle(latlng);

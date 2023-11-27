@@ -19,7 +19,7 @@ const evento = {
 
     try {
       if(!prefixo) throw new Error('Erro ao ler a variável API_ENDPOINT_PREFIXO em .env');        
-      const response = await fetch(`${prefixo}/evento/localizar?latlng=${latlng}&esporte=${esporteId}`, { method: 'GET' });      
+      const response = await fetch(`${prefixo}/evento/localizar?latlng=${latlng}&esporteId=${esporteId}`, { method: 'GET' });      
       return response.json();     
     } catch (err) {
       console.error(err);
