@@ -34,6 +34,12 @@ Evidência da integração da page register back c/ front com resposta no banco 
 
 ##
 
+## CT-04 - Visualização de Eventos
+
+![WhatsApp Image 2023-11-26 at 21 47 20](https://github.com/ICEI-PUC-Minas-PMV-ADS/cademeutime/assets/104144665/6259cd52-0e96-48af-90d4-06c1b1f0d22e)
+
+##
+
 ## CT-05 - Participação em Eventos
 
 ![WhatsApp Image 2023-11-26 at 21 39 31](https://github.com/ICEI-PUC-Minas-PMV-ADS/cademeutime/assets/104144665/fe1232f6-49f9-46f8-8f8a-91352bd45db4)
