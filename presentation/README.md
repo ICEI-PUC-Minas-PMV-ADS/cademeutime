@@ -10,4 +10,4 @@
 <li><a href="https://youtu.be/aOiYeLpGuNg"> Apresentação da funcionalidade de cadastro de eventos (integração back e front)
 <li><a href="https://youtu.be/hyNTFCcMDWQ"> Apresentação da integração da API do Google Maps - geolocalização.
 <li><a href="https://youtu.be/FsOO3lA757k"> Apresentação do frontend - Mobile
-<li><a href="<li><a href="https://youtu.be/M4Bh1fnJ0oo"> Apresentação do frontend - Mobile"> Apresentação do review da aplicação Cadê meu time - release etapa 3 e 4.
+<li><a href="<li><a href="https://youtu.be/M4Bh1fnJ0oo"> Apresentação do review da aplicação Cadê meu time - release etapa 3 e 4.
