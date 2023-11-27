@@ -34,6 +34,12 @@ Evidência da integração da page register back c/ front com resposta no banco 
 
 ##
 
+## CT-05 - Participação em Eventos
+
+![WhatsApp Image 2023-11-26 at 21 39 31](https://github.com/ICEI-PUC-Minas-PMV-ADS/cademeutime/assets/104144665/fe1232f6-49f9-46f8-8f8a-91352bd45db4)
+
+##
+
 ## CT-06 - Integração com API de Geolocalozação 
 
 ![WhatsApp Image 2023-11-26 at 19 00 11](https://github.com/ICEI-PUC-Minas-PMV-ADS/cademeutime/assets/104144665/8f0d8894-cc02-409c-8b5d-720c8f342822)
