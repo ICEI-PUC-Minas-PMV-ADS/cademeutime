@@ -8,6 +8,17 @@
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/5c2f1958-dc0c-4261-b270-8d713bcbf7e2)
 
+##
+
+## CT-02 - Autenticação e Autorização
+
+![WhatsApp Image 2023-11-26 at 21 09 53](https://github.com/ICEI-PUC-Minas-PMV-ADS/cademeutime/assets/104144665/e37135e0-714d-415d-a1e5-37443ff2752f)
+
+![WhatsApp Image 2023-11-26 at 21 13 26](https://github.com/ICEI-PUC-Minas-PMV-ADS/cademeutime/assets/104144665/e74643ad-4656-4683-a880-562e50d2d2c1)
+
+![WhatsApp Image 2023-11-26 at 21 14 08](https://github.com/ICEI-PUC-Minas-PMV-ADS/cademeutime/assets/104144665/7d8c4812-53a7-4dee-b900-0388eacdf721)
+
+![WhatsApp Image 2023-11-26 at 21 11 23](https://github.com/ICEI-PUC-Minas-PMV-ADS/cademeutime/assets/104144665/95c57422-a0f4-405d-a33e-5a07c76458ca)
 
 ##
 
@@ -21,16 +32,13 @@ Evidência da integração da page register back c/ front com resposta no banco 
 
 ![WhatsApp Image 2023-11-26 at 19 25 48](https://github.com/ICEI-PUC-Minas-PMV-ADS/cademeutime/assets/104144665/81368264-63de-475f-8f83-0cbf53159107)
 
-
 ##
 
 ## CT-06 - Integração com API de Geolocalozação 
 
 ![WhatsApp Image 2023-11-26 at 19 00 11](https://github.com/ICEI-PUC-Minas-PMV-ADS/cademeutime/assets/104144665/8f0d8894-cc02-409c-8b5d-720c8f342822)
 
-![WhatsApp Image 2023-11-26 at 19 04 16](https://github.com/ICEI-PUC-Minas-PMV-ADS/cademeutime/assets/104144665/fe3ef612-ddea-4684-bdeb-a46255347a73)
+![WhatsApp Image 2023-11-26 at 21 20 06](https://github.com/ICEI-PUC-Minas-PMV-ADS/cademeutime/assets/104144665/f489b9e5-a61a-4621-9865-6f0dc055cb6b)
 
-
-
-
+![WhatsApp Image 2023-11-26 at 21 21 07](https://github.com/ICEI-PUC-Minas-PMV-ADS/cademeutime/assets/104144665/2f6eadad-720e-4adc-8c58-7c0f27088bbb)
 
