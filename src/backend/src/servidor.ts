@@ -7,6 +7,8 @@ import usuarioRota from './rotas/usuario.rota.js';
 import prismaPlugin from './plugins/prisma.js';
 import { createRequire } from "module";
 import { JWT } from 'fastify-jwt-deprecated';
+import eventoRota, { eventoLocalizarRota } from './rotas/evento.rota.js';
+import esporteRota from './rotas/esporte.rota.js';
 
 
 interface IFastfyInstance extends FastifyInstance {
@@ -46,7 +48,7 @@ async function ligarServidor(): Promise<FastifyInstance> {
     app.route({
       method: 'GET',
       url: '/secret',
-      preHandler: [app.authenticate],
+      preHandler: [app.authenticate as any],
       handler: (req, reply) => {
         reply.send('Logado')
       }
@@ -84,6 +86,9 @@ async function ligarServidor(): Promise<FastifyInstance> {
   await app.register(prismaPlugin);
   
   await app.register(usuarioRota, { prefix: apiPrefix });
+  await app.register(eventoRota, { prefix: apiPrefix });
+  await app.register(eventoLocalizarRota, { prefix: apiPrefix });
+  await app.register(esporteRota, { prefix: apiPrefix });
   
   app.post('/signup', (req, reply) => {
     const body : any = req.body;

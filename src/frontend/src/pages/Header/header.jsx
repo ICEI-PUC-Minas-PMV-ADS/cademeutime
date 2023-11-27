@@ -1,8 +1,8 @@
-import { useState } from "react";
-import logoImg from "../../assets/logo.svg"
-import { Link } from "react-router-dom"
-import "./header.css"
+import logoImg from "../../assets/logo.svg";
+import { Link } from "react-router-dom";
 import { FcSportsMode } from "react-icons/fc";
+
+import "./header.css";
 
 function Header() {
   return (
@@ -21,8 +21,8 @@ function Header() {
                 </Link>
             </div>
         </header>
+        <hr className="separador"/>
 		  </div>
-       
   )
 }
 

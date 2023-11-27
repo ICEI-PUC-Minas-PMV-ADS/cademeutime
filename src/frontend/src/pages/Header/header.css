@@ -5,8 +5,9 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
   }
+
   .buttonHeader .cadastro {
     width: 12rem;
     margin-top: 2rem;
@@ -32,14 +33,15 @@
           
   @media screen and (max-width: 600px) {
     .headerHome {
-      width: 350px;
+      width: 100%;
       flex-direction: column;
       padding-left: 10px;
-    }	
+    }
   
   .buttonHeader{
       margin-top: 50px;
     }
+  }
   
    
           

@@ -2,7 +2,8 @@ import { FastifyInstance } from "fastify";
 import { ERotas } from "./constantes.rota.js";
 import { error404 } from "./util.rota.js";
 import { usuarioController } from "../controladoras/usuario.controller.js";
-import { eventoModelo, eventoSchema } from "../modelos/evento/evento.schema.js";
+import { eventoListaSchema, eventoLocalizarSchema, eventoModelo, eventoSchema } from "../modelos/evento/evento.schema.js";
+import { eventoController } from "../controladoras/evento.controller.js";
 
 const recurso = 'Evento';
 
@@ -10,13 +11,13 @@ export default async function eventoRota(
     app: FastifyInstance,
   ): Promise<void> {
     app.post(
-      ERotas.usuario,
+      ERotas.eventoCadastrar,
       {
         schema: {
           body: {
             type: 'object',
             properties: eventoModelo,
-            required: ['modalidade', 'nome', 'data', 'local', 'autorEvento'],
+            required: ['esporteId', 'latlng', 'data', 'hora'],
           },
           response: {
             200: eventoSchema,
@@ -24,59 +25,45 @@ export default async function eventoRota(
           },
         },
       },
-      usuarioController.cadastrar,
-    );
-
-    app.put(
-      ERotas.usuario,
-      {
-        schema: {
-          body: {
-            type: 'object',
-            properties: eventoModelo,
-            required: ['id'],
-          },
-          response: {
-            200: eventoSchema,
-            404: error404(recurso),
-          },
-        },
-      },
-      usuarioController.atualizar,
-    );
-
-    app.delete(
-      ERotas.usuario,
-      {
-        schema: {
-          body: {
-            type: 'object',
-            properties: eventoModelo,
-            required: ['id'],
-          },
-          response: {
-            200: eventoSchema,
-            404: error404(recurso),
-          },
-        },
-      },
-      usuarioController.deletar,
+      eventoController.cadastrar,
     );
 
     app.get(
-      ERotas.usuario,
+      ERotas.evento,
       {
         schema: {
-          body: {
+          querystring: {
             type: 'object',
-            properties: eventoModelo
+            properties: {}            
           },
           response: {
-            200: eventoSchema,
+            200: eventoListaSchema,
             404: error404(recurso),
           },
         },
       },
-      usuarioController.listar,
+      eventoController.listar,
+    );
+  }
+
+  export async function eventoLocalizarRota(
+    app: FastifyInstance,
+  ): Promise<void> {
+ 
+    app.get(
+      ERotas.localizarEvento,
+      {
+        schema: {
+          querystring: {
+            latlng: { type: 'string' },
+            esporteId: { type: 'string' },           
+          },
+          response: {
+            200: eventoLocalizarSchema,
+            404: error404(recurso),
+          },
+        },
+      },
+      eventoController.encontrarMaisProximo,
     );
   }
