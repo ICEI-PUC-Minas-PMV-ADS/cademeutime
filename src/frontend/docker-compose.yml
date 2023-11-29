@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+
+  web:
+    build:
+      context: ./
+      target: dev
+    volumes:
+      - .:/app
+    command: npm run dev
+    ports:
+      - "5173:5173"
+    environment:
+      NODE_ENV: development
+    networks:
+      - mongo-network      
+
+  
+networks: 
+    mongo-network:
+      driver: bridge
