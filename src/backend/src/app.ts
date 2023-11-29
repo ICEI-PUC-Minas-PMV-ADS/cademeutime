@@ -2,7 +2,7 @@ import ligarServidor from "./servidor.js";
 
 const server = await ligarServidor();
 const port = 3000;
-const host = 'localhost';
+const host = '0.0.0.0';
 
 async function main(): Promise<void> {
   try {

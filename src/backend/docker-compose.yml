@@ -2,6 +2,26 @@ version: '3.7'
 
 services:
 
+  api:
+    build:
+      context: ./
+      target: dev
+    volumes:
+      - .:/app
+    command: npm run dev
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+      DEBUG: nodejs-docker-express:*
+    depends_on:
+      - rs1
+      - rs2
+      - rs3
+      - mongo-startup
+    networks:
+      - mongo-network
+
   rs1:
     container_name: rs1
     image: mongo
@@ -78,7 +98,7 @@ services:
             {"_id" : 2, "priority" : 1, "host" : "rs3:27017"}
           ] 
         };
-        rs.initiate(config);'
+        rs.initiate(onfig);'
     networks:
       - mongo-network
 
