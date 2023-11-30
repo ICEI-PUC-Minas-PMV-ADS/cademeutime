@@ -67,7 +67,7 @@ async function ligarServidor(): Promise<FastifyInstance> {
         description: 'Testando api via fastfy',
         version: '0.1.0',
       },
-      host: 'localhost:3000/docs',
+      host: '35.238.41.130:3000/docs',
       schemes: ['http'],
       consumes: ['application/json'],
       produces: ['application/json'],

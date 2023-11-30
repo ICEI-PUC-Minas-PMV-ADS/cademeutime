@@ -6,7 +6,7 @@
   "main": "dist/app.js",
   "scripts": {
     "cli:run": "nodemon --exec node --loader ts-node/esm src/app.ts",
-    "dev": "set API_ENVIRONMENT=DEV && npm run cli:run",
+    "start": "set API_ENVIRONMENT=DEV && npm run cli:run",
     "qa": "set API_ENVIRONMENT=QA && npm run cli:run",
     "prisma:generate": "prisma generate",
     "test": "jest"
