@@ -2,26 +2,6 @@ version: '3.7'
 
 services:
 
-  api:
-    build:
-      context: ./
-      target: dev
-    volumes:
-      - .:/app
-    command: npm run dev
-    ports:
-      - "3000:3000"
-    environment:
-      NODE_ENV: development
-      DEBUG: nodejs-docker-express:*
-    depends_on:
-      - rs1
-      - rs2
-      - rs3
-      - mongo-startup
-    networks:
-      - mongo-network
-
   rs1:
     container_name: rs1
     image: mongo
@@ -33,11 +13,11 @@ services:
     restart: always
     command: mongod --replSet replica-set
     volumes:
-      - './src/data/rs1:/data/db'
+      - './data/rs1:/data/db'
     ports:
       - "27017:27017"
     networks:
-      - mongo-network
+      - api-network
 
   rs2:
     container_name: rs2
@@ -50,11 +30,11 @@ services:
     restart: always
     command: mongod --replSet replica-set
     volumes:
-      - './src/data/rs2:/data/db'
+      - './data/rs2:/data/db'
     ports:
       - "27018:27017"
     networks:
-      - mongo-network
+      - api-network
 
   rs3:
     container_name: rs3
@@ -67,11 +47,11 @@ services:
     restart: always
     command: mongod --replSet replica-set
     volumes:
-      - './src/data/rs3:/data/db'
+      - './data/rs3:/data/db'
     ports:
       - "27019:27017"
     networks:
-      - mongo-network
+      - api-network
     
   # simply container to startup the replica set
   mongo-startup:
@@ -100,8 +80,8 @@ services:
         };
         rs.initiate(onfig);'
     networks:
-      - mongo-network
+      - api-network
 
 networks: 
-    mongo-network:
+    api-network:
       driver: bridge
