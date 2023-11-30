@@ -10,4 +10,10 @@ export default defineConfig({
     __ENV__: process.env
   },
   base:"/cademeutime",
+  server: {
+    https: {
+      key: fs.readFileSync('server.key'),
+      cert: fs.readFileSync('server.cert')
+    }
+  }
 })
