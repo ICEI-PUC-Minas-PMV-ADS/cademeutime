@@ -48,7 +48,9 @@ export function Register() {
         body: JSON.stringify(formData)
       });
     
-    const json = await response.json()
+    const json = await response.json();
+
+    window.location.href = '/cademeutime/login';
     
     } catch (err) {
       console.error(err);
