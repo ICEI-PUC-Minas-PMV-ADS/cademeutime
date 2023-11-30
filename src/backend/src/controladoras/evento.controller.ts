@@ -121,7 +121,7 @@ async function encontrarMaisProximo(
             params: {
                 key,
                 origins: [latlng],                
-                destinations: eventos.map(e => e.latlng),                
+                destinations: eventos.map((e: any) => e.latlng),                
                 language: Language.pt_BR
             },
         });
