@@ -37,9 +37,10 @@ export function Register() {
   }
 
   const handleForm = async (event) => {
+    const prefixo = __ENV__.API_ENDPOINT_PREFIXO;
     try {
       event.preventDefault()
-      const response = await fetch('http://localhost:3000/api/v1/usuario', {
+      const response = await fetch(prefixo + '/usuario', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
