@@ -1,8 +1,8 @@
 import ligarServidor from "./servidor.js";
 
-const server = await ligarServidor();
-const port = 3000;
-const host = '0.0.0.0';
+export const server = await ligarServidor();
+export const port = 3000;
+export const host = '0.0.0.0';
 
 async function main(): Promise<void> {
   try {

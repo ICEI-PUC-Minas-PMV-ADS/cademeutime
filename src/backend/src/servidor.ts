@@ -6,20 +6,18 @@ import { SwaggerTheme } from 'swagger-themes';
 import usuarioRota from './rotas/usuario.rota.js';
 import prismaPlugin from './plugins/prisma.js';
 import { createRequire } from "module";
-import { JWT } from 'fastify-jwt-deprecated';
 import eventoRota, { eventoLocalizarRota } from './rotas/evento.rota.js';
 import esporteRota from './rotas/esporte.rota.js';
-
+import loginRota from './rotas/login.rota.js';
 
 interface IFastfyInstance extends FastifyInstance {
-  jwt: JWT;
+  jwt: any;
   authenticate?: preHandlerHookHandler<any>
 }
 const require = createRequire(import.meta.url);
-const fastfyJWT = require('fastify-jwt');
 
-async function ligarServidor(): Promise<FastifyInstance> {
-  const app : IFastfyInstance = Fastify({ logger: true });
+async function ligarServidor(): Promise<IFastfyInstance> {
+  const app : IFastfyInstance = Fastify({ logger: true }) as any;
   
   const theme = new SwaggerTheme('v3');
   const optionDark = theme.getBuffer('dark');
@@ -47,7 +45,7 @@ async function ligarServidor(): Promise<FastifyInstance> {
     
     app.route({
       method: 'GET',
-      url: '/secret',
+      url: '/auth',
       preHandler: [app.authenticate as any],
       handler: (req, reply) => {
         reply.send('Logado')
@@ -55,8 +53,7 @@ async function ligarServidor(): Promise<FastifyInstance> {
     })
   })
 
-  app.register(fastfyJWT, {
-    secret: 'strongpasswordsecret'
+  app.register(require('@fastify/jwt'), { secret: 'cademeutimeseila'
   });
 
   await app.register(swagger, {
@@ -67,7 +64,7 @@ async function ligarServidor(): Promise<FastifyInstance> {
         description: 'Testando api via fastfy',
         version: '0.1.0',
       },
-      host: '35.238.41.130:3000/docs',
+      host: '/docs',
       schemes: ['http'],
       consumes: ['application/json'],
       produces: ['application/json'],
@@ -89,6 +86,7 @@ async function ligarServidor(): Promise<FastifyInstance> {
   await app.register(eventoRota, { prefix: apiPrefix });
   await app.register(eventoLocalizarRota, { prefix: apiPrefix });
   await app.register(esporteRota, { prefix: apiPrefix });
+  await app.register(loginRota, { prefix: apiPrefix });
   
   app.post('/signup', (req, reply) => {
     const body : any = req.body;
@@ -107,6 +105,5 @@ async function ligarServidor(): Promise<FastifyInstance> {
   });
   return app;
 }
-
 
 export default ligarServidor;

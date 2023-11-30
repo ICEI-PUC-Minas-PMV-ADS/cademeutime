@@ -6,11 +6,7 @@ const usuarioModelo = {
   email: {
     type: 'string',
     description: 'Email do usuário',
-  },
-  senha: {
-    type: 'string',
-    description: 'Senha do usuário',
-  },
+  }
 }
 
 const usuarioSchema = {

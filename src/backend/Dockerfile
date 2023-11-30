@@ -8,5 +8,4 @@ RUN npm install
 
 RUN ./node_modules/.bin/prisma generate
 
-
 CMD ["npm", "start"]

@@ -1,4 +1,5 @@
 export enum ERotas {
+    login = '/login',
     usuario = '/usuario',
     esporte = '/esporte',
     evento = '/evento',
