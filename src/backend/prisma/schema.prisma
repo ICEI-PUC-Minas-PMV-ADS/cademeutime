@@ -8,7 +8,8 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = "mongodb://rs1:27017,rs2:27018,rs3:27019/cademeutime?replicaSet=replica-set"
+  url      = "mongodb://rs1:27017,rs2:27018,rs3:27019/cademeutime?replicaSet=replica-set&readPreference=primary&appname=MongoDB%20Compass&ssl=false"
+
 }
 
 model Usuario {
