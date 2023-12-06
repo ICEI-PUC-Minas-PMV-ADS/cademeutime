@@ -12,6 +12,4 @@
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/104144665/41e4bf00-7dcf-48c1-8d38-b4dd85e1b7f7)
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/104144665/5f80ea30-1aea-4024-bc09-973736c5230e)
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/104144665/3d41f6b1-6c6b-4142-a497-61227e4c4558)
