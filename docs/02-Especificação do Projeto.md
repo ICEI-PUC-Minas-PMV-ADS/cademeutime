@@ -81,8 +81,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-004| Visualização de Eventos: Os usuários devem poder ver uma lista de eventos esportivos disponíveis, com detalhes como localização no mapa, participantes confirmados e informações relevantes.   | MÉDIA |
 |RF-005| Participação em Eventos: Os usuários devem poder se inscrever em eventos esportivos existentes e confirmar sua participação.   | MÉDIA |
 |RF-006| Integração com API de Geolocalização:A aplicação deve integrar-se a uma API de geolocalização para exibir a localização dos eventos no mapa. Os eventos devem ser marcados de forma clara no mapa, permitindo que os usuários visualizem facilmente sua proximidade.   | MÉDIA |
-|RF-007| Notificações: Os usuários devem receber notificações sobre eventos próximos, atualizações de eventos em que estão inscritos e outras informações relevantes.  | MÉDIA |
-|RF-008| Avaliação e Comentários: Os usuários devem poder avaliar eventos após a participação e deixar comentários para compartilhar experiências. | MÉDIA |
 
 ### Requisitos não Funcionais
 
