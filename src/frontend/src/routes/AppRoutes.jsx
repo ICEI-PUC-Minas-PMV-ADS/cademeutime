@@ -5,7 +5,6 @@ import { Register } from "../pages/Register";
 import { RegisterEvent } from "../pages/RegisterEvent";
 import { Home } from "../pages/Home";
 import { MapPage } from "../pages/MapPage";
-import { EventDescription } from "../pages/EventDescription";
 import { FilterEvent } from "../pages/FilterEvent";
 import { ViewEvents } from "../pages/ViewEvents";
 import Header from "../pages/Header/header";
@@ -23,7 +22,6 @@ export function AppRoutes() {
         {/* A home será a rota padrão no mobile ao abrir. Por isso, deve ser a rota base -> '/' */}
         <Route path="/" element={<Home />} />
         <Route path="/mapPage" element={<MapPage />} />
-        <Route path="/EventDescription" element={<EventDescription />} />
         <Route path="/filterEvent" element={<FilterEvent />} />        
         <Route path="/ViewEvents" element={<ViewEvents />} />
       </Routes>

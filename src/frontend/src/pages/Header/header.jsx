@@ -38,6 +38,7 @@ function Header() {
           <div className="container" ref={containerRef}>
             <input type="checkbox" className="container_botao" id="menu" checked={menuOpen} onChange={toggleMenu} />
             <label htmlFor="menu" className="container_rotulo">
+              <FcSportsMode size={30} />
               <span className="cabecalho_menu_hamburguer container_img">Menu</span>
             </label>
             <ul className="lista_menu" style={{ display: menuOpen ? "block" : "none" }}>
@@ -59,10 +60,10 @@ function Header() {
             </ul>
           </div>
           <Link className="cadastro" to="/login">
-            <FcSportsMode size={30} /> Entrar
+             Entrar
           </Link>
           <Link className="cadastro" to="/register">
-            Cadastrar-se
+            Cadastre-se
           </Link>
         </div>
       </header>
