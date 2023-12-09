@@ -20,7 +20,9 @@ CADÊ MEU TIME? é uma aplicação voltada para o encontro! Encontrar parceiros 
 A identidade Visual do projeto, bem como os conceitos de marca e design podem ser acessados nas seções: <a href="3-Projeto de Interface.md"> Projeto de Interface</a> e 
 <a href="6-Template Padrão da Aplicação.md"> Template Padrão da Aplicação</a>
 
-## Considerações Finais (Avaliação dos Frameworks e Tecnologias Utilizadas:
+# Considerações Finais
+
+## Avaliação dos Frameworks e Tecnologias Utilizadas:
 
 Acreditamos que todas as escolhas são consideradas atuais e amplamente utilizadas na comunidade de desenvolvedores, cada uma atendendo a propósitos específicos. A escolha entre elas muitas vezes depende dos requisitos do projeto e das preferências da equipe de desenvolvimento.
 
