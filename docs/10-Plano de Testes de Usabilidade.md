@@ -12,10 +12,10 @@ Para cada tarefa do participante é possível medir:
 
 | Tarefa 1 | Critério | O que será avaliado | Observação |
 | ---------| -------- | --------------------| -----------|
-|1.	Cadastro de Usuário | Os usuários devem poder criar contas na aplicação, fornecendo informações básicas como nome, e-mail e senha. | N/A |
-|
-|
-|
-|
+|Cadastro de Usuário | Os usuários devem poder criar contas na aplicação, fornecendo informações básicas como nome, e-mail e senha. | Concluir o cadastro, considerando o direcionamento do sistema para a tela de "ENTRAR" utilizando e-mail e senha.| N/A |
+
+|Tarefa 2 | Critério | Oque será avaliado | Observação |
+|---------|----------|--------------------|------------|
+| Logar no aplicativo | O sistema será direcionado para página inicial com a opçãp  'JUNTE-SE AO NOSSO TIME', dando a opção de a pessoa escolher seu evento, horário e local. | Facilidade em realizar a ação. Efetivação de tarefa. | N/A |
 
 
