@@ -19,6 +19,6 @@ O teste de usabilidade permite avaliar a qualidade da interface com o usuário d
 <li><a href="https://youtu.be/aOiYeLpGuNg"> Apresentação da funcionalidade de cadastro de eventos (integração back e front)
 
 
-Pesquisa de enventos próximos: Concluir a atualização de filtros para pesquisa de eventos próximos, de um esporte específico escolhido pelo usuário, podendo pesquisar por barras de pesquisa ou mapa utilizando o 'GOOGLE MAPS'. Facilidade em realizar a pesquisa. Efetivação da tarefa. Segue abaixo nosso link do teste realizado:
+5. Pesquisa de enventos próximos: Concluir a atualização de filtros para pesquisa de eventos próximos, de um esporte específico escolhido pelo usuário, podendo pesquisar por barras de pesquisa ou mapa utilizando o 'GOOGLE MAPS'. Facilidade em realizar a pesquisa. Efetivação da tarefa. Segue abaixo nosso link do teste realizado:
 
 <li><a href="https://youtu.be/hyNTFCcMDWQ"> Apresentação da integração da API do Google Maps - geolocalização.
