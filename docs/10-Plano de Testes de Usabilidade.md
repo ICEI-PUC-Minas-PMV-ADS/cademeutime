@@ -16,7 +16,7 @@ O teste de usabilidade permite avaliar a qualidade da interface com o usuário d
 
 | Tarefa 4 | Critério | O que será avaliado | Observção |
 |----------|----------|---------------------|-----------|
-| Cadastro de enventos | Realizar cadatro de eventos com as seguintes informações: esporte, local, data, hora e participantes | Orientado pelo professor que revisasse, pois não estaria filtrando apenas um esporte escolhido. |
+| Cadastro de enventos | Realizar cadatro de eventos com as seguintes informações: esporte, local, data, hora e participantes | Facilidade em realizar a ação. Efetivação da tarefa. | Orientado pelo professor que revisasse, pois não estaria filtrando apenas um esporte escolhido. |
 
 | Tarefa 5 | Critério | Oque será avaliado | Obsevação |
 |----------|----------|--------------------|-----------|
