@@ -5,7 +5,6 @@ O teste de usabilidade permite avaliar a qualidade da interface com o usuário d
 ## A cada etapa foi gerado um artefato em vídeo que ilustra o trabalho da equipe de desenvolvimento do APP. Encontra-se disponíveis os links do teste de cada tarefa
 
 <li><a href="https://youtu.be/xwnlbh4VDk0"> Apresentação do CRUD - LOGIN 
-
   
 | Tarefa 1 | Critério | O que será avaliado | 
 | ---------| -------- | --------------------| 
@@ -19,6 +18,8 @@ O teste de usabilidade permite avaliar a qualidade da interface com o usuário d
 |----------|----------|---------------------|
 | Página Inicial |O sistema será direcionado para página inicial com a opção  'JUNTE-SE AO NOSSO TIME', dando a opção de a pessoa escolher seu evento, horário e local. | Facilidade em realizar a ação. Efetivação da tarefa. |
 
+<li><a href="https://youtu.be/aOiYeLpGuNg"> Apresentação da funcionalidade de cadastro de eventos (integração back e front)
+  
 | Tarefa 4 | Critério | O que será avaliado | 
 |----------|----------|---------------------|
 | Cadastro de enventos | Realizar cadatro de eventos com as seguintes informações: esporte, local, data, hora e participantes | Facilidade em realizar a ação. Efetivação da tarefa. |
