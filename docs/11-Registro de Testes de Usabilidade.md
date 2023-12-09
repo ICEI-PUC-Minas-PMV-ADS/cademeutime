@@ -11,3 +11,8 @@ Após realizar os testes de usabilidade, obtém-se um relatório a partir das an
 | 002 Tela entrar - login  | XXXX | ![tela entrar teste 1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-aplicdistrib-t5-grupo4-cademeutime/assets/103156976/0c24fc51-e601-42c8-8194-87689265940e)|
 
 
+# FeedBacks e Observações sobre nosso site
+
+* Cadastro de Usuário: Após realizar cadastro o usuário terá a opção de logar com e-mail e senha. Foi orientado ao grupo que a opção 'CADASTRE-SE' fosse retirada após o cadastro concluído.
+* Logar no aplicativo:  Foi orientado ao grupo que adicionasse o ícone de um avatar para o usuário.
+* Cadastro de enventos: Orientado pelo professor que revisasse, pois não estaria filtrando apenas um esporte escolhido.
