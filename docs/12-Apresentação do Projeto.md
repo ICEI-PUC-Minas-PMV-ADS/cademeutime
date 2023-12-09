@@ -20,4 +20,11 @@ CADÊ MEU TIME? é uma aplicação voltada para o encontro! Encontrar parceiros 
 A identidade Visual do projeto, bem como os conceitos de marca e design podem ser acessados nas seções: <a href="3-Projeto de Interface.md"> Projeto de Interface</a> e 
 <a href="6-Template Padrão da Aplicação.md"> Template Padrão da Aplicação</a>
 
+## Considerações Finais (Avaliação dos Frameworks Utilizados; 
+
+## Quadro Visual Atual de Gestão de Trabalho no Github
+
+O quadro pode ser acessado pelo link do Github-Projects para maior detalhes do status de contribuições dos membros do time : [Github-Projects](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/459).
+
+## Comentários Adicionais sobre as Participações Individuais; Análise Crítica e Proposta de Melhoria do Projeto Arquitetural e Implementação).
 
