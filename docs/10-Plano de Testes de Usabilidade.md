@@ -20,4 +20,4 @@ Apresentação da funcionalidade de cadastro de eventos (integração back e fro
 
 5. Pesquisa de enventos próximos: Concluir a atualização de filtros para pesquisa de eventos próximos, de um esporte específico escolhido pelo usuário, podendo pesquisar por barras de pesquisa ou mapa utilizando o 'GOOGLE MAPS'. Facilidade em realizar a pesquisa. Efetivação da tarefa. Segue abaixo nosso link do teste realizado:
 
-presentação da integração da API do Google Maps - geolocalização - (https://youtu.be/hyNTFCcMDWQ)
+Apresentação da integração da API do Google Maps - geolocalização - (https://youtu.be/hyNTFCcMDWQ)
