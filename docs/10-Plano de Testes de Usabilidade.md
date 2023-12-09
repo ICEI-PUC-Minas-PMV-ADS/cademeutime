@@ -12,7 +12,7 @@ O teste de usabilidade permite avaliar a qualidade da interface com o usuário d
 
 | Tarefa 3 | Critério | O que será avaliado | Observção |
 |----------|----------|---------------------|-----------|
-| Página Inicial |O sistema será direcionado para página inicial com a opção  'JUNTE-SE AO NOSSO TIME', dando a opção de a pessoa escolher seu evento, horário e local. | Facilidade em realizar a ação. Efetivação da tarefa. Quantidade de erros cometidos. | N/A |
+| Página Inicial |O sistema será direcionado para página inicial com a opção  'JUNTE-SE AO NOSSO TIME', dando a opção de a pessoa escolher seu evento, horário e local. | Facilidade em realizar a ação. Efetivação da tarefa. | N/A |
 
 | Tarefa 4 | Critério | O que será avaliado | Observção |
 |----------|----------|---------------------|-----------|
