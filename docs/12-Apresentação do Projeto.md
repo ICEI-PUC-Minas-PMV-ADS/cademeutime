@@ -20,7 +20,26 @@ CADÊ MEU TIME? é uma aplicação voltada para o encontro! Encontrar parceiros 
 A identidade Visual do projeto, bem como os conceitos de marca e design podem ser acessados nas seções: <a href="3-Projeto de Interface.md"> Projeto de Interface</a> e 
 <a href="6-Template Padrão da Aplicação.md"> Template Padrão da Aplicação</a>
 
-## Considerações Finais (Avaliação dos Frameworks Utilizados; 
+## Considerações Finais (Avaliação dos Frameworks e Tecnologias Utilizadas:
+
+Acreditamos que todas as escolhas são consideradas atuais e amplamente utilizadas na comunidade de desenvolvedores, cada uma atendendo a propósitos específicos. A escolha entre elas muitas vezes depende dos requisitos do projeto e das preferências da equipe de desenvolvimento.
+
+- GitHub
+- Git
+- GitHub
+- Figma	
+- VSCode	
+- MongoDB	
+- MongoCompass	
+- Node.js
+- Yarn	
+- Draw.io	
+- Vite	
+- Prisma	
+- Fastify
+- TypeScript	
+- TailwindCSS	
+- Docker
 
 ## Quadro Visual Atual de Gestão de Trabalho no Github
 
@@ -38,5 +57,43 @@ Por fim, é importante que cada membro do grupo assuma a responsabilidade por su
 
 Apesar do grupo ter passado por todos essas situações declaradas no texto, conseguimos seguir enfrente e entregar o objetivo proposto, mais uma vez saímos fortalecidos para o próximo semestre, e deste, tiramos que o nosso principal aliado é a comunicação!
 
-## Proposta de Melhoria do Projeto Arquitetural e Implementação.
+## Proposta de Melhoria do Projeto Arquitetural e Implementação do projeto:
+
+Diante das dificuldades enfrentadas durante o desenvolvimento do trabalho em grupo, é fundamental implementar melhorias no projeto arquitetural e na execução para otimizar a colaboração e garantir um processo mais eficiente. Aqui estão algumas propostas:
+
+1. Cronograma Detalhado e Flexível:
+
+- Elaborar um cronograma que leve em consideração os horários disponíveis de cada membro do grupo.
+- Utilizar ferramentas de gestão de projetos, como Trello ou Asana, para manter o acompanhamento das tarefas e prazos.
+
+2. Comunicação Efetiva:
+
+- Estabelecer canais de comunicação claros, como grupos no Slack, para facilitar a troca de informações.
+- Realizar reuniões periódicas, presenciais ou por videoconferência, para alinhar expectativas, discutir progresso e resolver possíveis mal-entendidos.
+
+3. Incentivo à Participação Ativa:
+
+- Criar um ambiente virtual para compartilhamento contínuo de ideias e atualizações.
+= Utilizar ferramentas colaborativas, como Google Docs, para permitir a contribuição simultânea de todos os membros.
+
+4. Respeito à Diversidade de Ideias:
+
+- Implementar práticas que valorizem a diversidade, incentivando a expressão de diferentes perspectivas.
+- Estabelecer diretrizes para debates construtivos e resolução de conflitos.
+
+5. Responsabilidade e Comprometimento:
+
+- Dividir as responsabilidades de forma equitativa, levando em consideração as habilidades e interesses de cada membro.
+- Estabelecer metas individuais e coletivas para garantir que todos estejam comprometidos com o sucesso do projeto.
+
+6. Feedback e Avaliação Contínua:
+
+- Implementar um sistema de feedback regular entre os membros do grupo para identificar pontos de melhoria.
+- Realizar avaliações periódicas do desempenho do grupo e ajustar estratégias conforme necessário.
+
+7. Criação de um Ambiente Positivo:
+
+- Fomentar um ambiente seguro e acolhedor, onde todos se sintam à vontade para expressar suas opiniões.
+- Reconhecer e celebrar as conquistas individuais e coletivas, promovendo um senso de realização e motivação.
+- Ao implementar essas melhorias, buscamos fortalecer a colaboração, superar desafios e garantir um ambiente propício para o desenvolvimento eficiente de trabalhos em grupo. A comunicação, como destacado no aprendizado do grupo, permanece como o pilar fundamental para o sucesso conjunto.
 
