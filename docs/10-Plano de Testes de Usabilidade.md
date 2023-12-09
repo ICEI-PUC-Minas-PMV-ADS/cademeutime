@@ -20,7 +20,7 @@ O teste de usabilidade permite avaliar a qualidade da interface com o usuário d
 
 | Tarefa 5 | Critério | Oque será avaliado | Obsevação |
 |----------|----------|--------------------|-----------|
-| Pesquisa de enventros próximos | Concluir a atualização de filtros para pesquisa de eventos próximos, de um esporte específico escolhido pelo usuário| Facilidade em realizar a pesquisa. Efetivação da tarefa | N/A |
+| Pesquisa de enventos próximos | Concluir a atualização de filtros para pesquisa de eventos próximos, de um esporte específico escolhido pelo usuário| Facilidade em realizar a pesquisa. Efetivação da tarefa | N/A |
 
 
 
