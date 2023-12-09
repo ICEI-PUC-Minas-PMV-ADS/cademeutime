@@ -4,7 +4,7 @@ O teste de usabilidade permite avaliar a qualidade da interface com o usuário d
 
 ## A cada etapa foi gerado um artefato em vídeo que ilustra o trabalho da equipe de desenvolvimento do APP. Encontra-se disponíveis os links do teste de cada tarefa
 
-<li><ahttps://youtu.be/xwnlbh4VDk0?si=-E-9fJ5kD9t_qRfi</li>
+<li><ahttps://youtu.be/xwnlbh4VDk0?si=-E-9fJ5kD9t_qRfi</li> - Apresentação do frontend
   
 | Tarefa 1 | Critério | O que será avaliado | 
 | ---------| -------- | --------------------| 
