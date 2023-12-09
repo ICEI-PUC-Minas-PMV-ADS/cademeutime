@@ -3,12 +3,10 @@
 O teste de usabilidade permite avaliar a qualidade da interface com o usuário da aplicação interativa. O Plano de Testes de Software é gerado a partir da especificação do sistema e consiste em casos de testes que deverão ser executados quando a implementação estiver parcial ou totalmente pronta.
 
 ## A cada etapa foi gerado um artefato em vídeo que ilustra o trabalho da equipe de desenvolvimento do APP. Encontra-se disponíveis os links do teste de cada tarefa
+ 
 
-  <li><a href="https://youtu.be/t4aR77RmVXk"> Apresentação do frontend - etapa 3
-    
-| Tarefa 1 | Critério | O que será avaliado | 
-| ---------| -------- | --------------------| 
-|Cadastro de Usuário | Os usuários devem poder criar contas na aplicação, fornecendo informações básicas como nome, e-mail e senha. | Conclusão de cadastro, considerando o direcionamento do sistema para a tela de 'ENTRAR' utilizando e-mail e senha.|
+Cadastro de Usuário: Os usuários devem poder criar contas na aplicação, fornecendo informações básicas como nome, e-mail e senha. Após concluir o cadastro, considerando o direcionamento do sistema para a tela de 'ENTRAR' utilizando e-mail e senha. Segue abaixo nosso link do teste realizado:
+<li><a href="https://youtu.be/xwnlbh4VDk0"> Apresentação do CRUD - LOGIN 
 
 |Tarefa 2 | Critério | Oque será avaliado |
 |---------|----------|--------------------|
@@ -26,3 +24,6 @@ O teste de usabilidade permite avaliar a qualidade da interface com o usuário d
 | Tarefa 5 | Critério | Oque será avaliado |
 |----------|----------|--------------------|
 | Pesquisa de enventos próximos | Concluir a atualização de filtros para pesquisa de eventos próximos, de um esporte específico escolhido pelo usuário| Facilidade em realizar a pesquisa. Efetivação da tarefa |
+
+
+Segue abaixo o link 
