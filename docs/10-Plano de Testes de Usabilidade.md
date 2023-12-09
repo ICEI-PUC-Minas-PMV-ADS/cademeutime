@@ -10,4 +10,9 @@ O teste de usabilidade permite avaliar a qualidade da interface com o usuário d
 |---------|----------|--------------------|------------|
 | Logar no aplicativo | O sistema será direcionado para página inicial com a opçãp  'JUNTE-SE AO NOSSO TIME', dando a opção de a pessoa escolher seu evento, horário e local. | Facilidade em realizar a ação. Efetivação de tarefa. | N/A |
 
+| Tarefa 3 | Critério | O que será avaliado | Observção |
+|----------|----------|---------------------|-----------|
+| Cadastro de eventos | Concluir cadastro de seu esporte escolhido com nome de esporte, horário, data, local e participantes. | Facilidade em realizar a ação. Efetivação da tarefa. Quantidade de erros cometidos. | Orintado pelo professor que revisasse o de não conseguir filtrar apenas um esporte escolhido. |
+
+
 
