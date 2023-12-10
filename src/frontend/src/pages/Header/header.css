@@ -14,6 +14,11 @@
   align-items: center;
 }
 
+.headerHome .container .container_rotulo {
+  display: flex;
+  align-items: center;
+}
+
 .headerHome .container .container_rotulo .cabecalho_menu_hamburguer {
   display: flex;
   cursor: pointer;
@@ -26,6 +31,7 @@
   z-index: 1;
   background-color: #FAC372;
   list-style: none;
+  border-radius: 12px;
 }
 
 .headerHome .container .lista_menu .lista_menu_item .lista_menu_link {
