@@ -1,0 +1,20 @@
+#map {
+  height: 500px;
+  width: 100%;
+  padding: unset;
+}
+
+#lista-eventos li {
+  font-size: 14px;
+  margin: 0px 20px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#lista-eventos li:hover {
+  background-color: aliceblue;  
+}
+
+#lista-eventos li hr {
+  margin-top: 10px;
+}

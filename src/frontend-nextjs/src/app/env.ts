@@ -1,0 +1,5 @@
+// const API_ENDPOINT_PREFIXO='https://35.238.41.130/api/v1';
+const API_ENDPOINT_PREFIXO='http://localhost:3000/api/v1';
+const GOOGLE_API_KEY='AIzaSyCfxC-g_-22324NLt4Iw9M2eJ6EIGOe9lo';
+
+export {API_ENDPOINT_PREFIXO, GOOGLE_API_KEY};

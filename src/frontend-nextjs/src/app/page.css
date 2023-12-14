@@ -1,0 +1,58 @@
+.containerHome{
+    margin: 4rem auto;
+    padding-left: 115px;
+    padding-right: 115px;
+    display: grid;
+    grid-template-columns: 800px 3fr;
+    gap: 2.5rem;
+  }
+  
+  .containerHome h1 {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    color: #0F3353;
+  }
+  
+  .containerHome p {
+    color:#848993;
+    margin-top: 1.25rem;
+    margin-bottom:80px;
+    font-size: 1.6rem;
+    font-weight:100;
+  }
+  .containerHome img {
+    width: 500px;
+    height: 500px;
+  }
+  .buttonHome {
+    width: 20rem;
+    padding: 1.5rem 2rem 2rem;
+    font-size: 1.25rem;
+    background: #FAC372;
+    color:#1C1B1F;
+    border-radius: 10px;
+    text-align: center;
+    font-weight:900;
+  }
+  
+  @media screen and (max-width: 600px) {
+    
+    .containerHome{
+      padding-left: 20px;
+      grid-template-columns: none;
+    }
+    .containerHome img {
+      width: 250px;
+      height: 250px;
+    }
+    .containerHome h1 {
+      width: 350px;
+      text-align: justify;
+    }
+    .containerHome p {
+      width: 350px;
+      text-align: justify;
+    }  
+  }
+   
+  

@@ -1,0 +1,87 @@
+.headerHome {
+  margin: 0;
+  padding-left: 120px;
+  padding: 1.5rem 7.5rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headerHome .container {
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+
+.headerHome .container .container_rotulo {
+  display: flex;
+  align-items: center;
+}
+
+.headerHome .container .container_rotulo .cabecalho_menu_hamburguer {
+  display: flex;
+  cursor: pointer;
+}
+
+.headerHome .container .lista_menu {
+  display: none;
+  position: absolute;
+  top: 7em;
+  z-index: 1;
+  background-color: #FAC372;
+  list-style: none;
+  border-radius: 12px;
+}
+
+.headerHome .container .lista_menu .lista_menu_item .lista_menu_link {
+  color: #1C1B1F;
+}
+
+.headerHome .container .container_botao:checked~.lista_menu {
+  display: block;
+}
+
+
+.headerHome .container .lista_menu .lista_menu_item {
+  padding: 1em;
+}
+
+.headerHome .container .container_botao {
+  display: none;
+}
+
+.buttonHeader {
+  display: flex;
+  gap: 1em;
+  margin-top: 2rem;
+}
+
+.buttonHeader .cadastro {
+  width: 12rem;
+  padding: 0.75rem 0.75rem 0.75rem;
+  font-size: 1rem;
+  background: #FAC372;
+  color: #1C1B1F;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .headerHome {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .buttonHeader {
+    margin-top: 50px;
+  }
+
+  .headerHome .container .lista_menu {
+    top: 12.1em;
+  }
+}
