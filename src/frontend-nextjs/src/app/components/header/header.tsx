@@ -16,7 +16,7 @@ function Header() {
 
   useEffect(() => {
     
-    const logadoStatus : any = localStorage.getItem('logado');
+    const logadoStatus : any = localStorage ? localStorage.getItem('logado') : 'false';
     setLogado(logadoStatus);
 
     const handleOutsideClick = (event: any) => {
