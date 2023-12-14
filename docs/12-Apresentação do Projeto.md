@@ -99,9 +99,11 @@ Diante das dificuldades enfrentadas durante o desenvolvimento do trabalho em gru
 - Reconhecer e celebrar as conquistas individuais e coletivas, promovendo um senso de realização e motivação.
 - Ao implementar essas melhorias, buscamos fortalecer a colaboração, superar desafios e garantir um ambiente propício para o desenvolvimento eficiente de trabalhos em grupo. A comunicação, como destacado no aprendizado do grupo, permanece como o pilar fundamental para o sucesso conjunto.
 
-## Vídeo da aplicação 
+## Vídeo da aplicação - Apresentação final
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/cademeutime/assets/103156976/10ef9afe-38f8-4c63-8aeb-7a4ddd3500cf
+https://github.com/ICEI-PUC-Minas-PMV-ADS/cademeutime/assets/103156976/d5a5d055-8880-4136-b2c4-31f9821579c2
+
+
 
 
 

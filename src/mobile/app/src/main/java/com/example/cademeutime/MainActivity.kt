@@ -14,7 +14,7 @@ class MainActivity : ComponentActivity() {
 
         webView = findViewById<WebView>(R.id.web) as WebView
 
-        webView.loadUrl("https://icei-puc-minas-pmv-ads.github.io/cademeutime/")
+        webView.loadUrl("https://faberdata.com.br/cademeutime/")
 
         webView.settings.javaScriptEnabled = true
 
