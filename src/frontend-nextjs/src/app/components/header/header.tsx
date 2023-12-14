@@ -11,12 +11,12 @@ import Link from "next/link";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [logado, setLogado] = useState('false');
+  const [logado, setLogado] = useState(false);
   const containerRef = useRef<any>(null);
 
   useEffect(() => {
     
-    const logadoStatus : any = localStorage ? localStorage.getItem('logado') : 'false';
+    const logadoStatus : any = localStorage ? localStorage.getItem('logado') : false;
     setLogado(logadoStatus);
 
     const handleOutsideClick = (event: any) => {
