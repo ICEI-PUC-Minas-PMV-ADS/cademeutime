@@ -9,6 +9,9 @@ import { createRequire } from "module";
 import eventoRota, { eventoLocalizarRota } from './rotas/evento.rota.js';
 import esporteRota from './rotas/esporte.rota.js';
 import loginRota from './rotas/login.rota.js';
+import { PrismaClient } from '@prisma/client'
+
+const prisma = new PrismaClient();
 
 interface IFastfyInstance extends FastifyInstance {
   jwt: any;
@@ -88,10 +91,17 @@ async function ligarServidor(): Promise<IFastfyInstance> {
   await app.register(esporteRota, { prefix: apiPrefix });
   await app.register(loginRota, { prefix: apiPrefix });
   
-  app.post('/signup', (req, reply) => {
+  app.post('/signup', async (req, reply) => {
     const body : any = req.body;
 
-    if(body.login === 'rider@gmail.com' && body.senha === 'testedelogin'){
+    const usuario = await prisma.usuario.findFirst({
+      where: {
+          email: body.login,
+          senha: body.senha
+      },
+    });
+
+    if(usuario){
       const token = app.jwt.sign({result: 'ok'})
       reply.send({token})
     }
