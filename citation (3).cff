@@ -1,0 +1,26 @@
+message: Please cite this software using these metadata.
+title: CADÊ MEU TIME?
+authors:
+  - family-names: Alves de Lima Sales
+    given-names: Ayrles 
+  - family-names: Araujo Macieira
+    given-names: Fernanda 
+  - family-names: França Alves Miranda
+    given-names: Gabriela 
+  - family-names: Ribeiro de Jesus Oliveira
+    given-names: Katryn 
+  - family-names: Marsura Verreschi de Oliveira
+    given-names: Paola 
+  - family-names: Rocha Cantuária
+    given-names: Ríder 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Cipriano da Silva
+    given-names: Wagner 
+keywords:
+  - Encontro
+  - dupla
+  - esporte
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/cademeutime
+version: 1.0.0
+date-released: 2023-12-10
